@@ -1,1 +1,1 @@
-console.log('here we gonna learn about Blocking and Non-Blocking Code');
+console.log('here we gonna be learn about Blocking and Non-Blocking Code');
