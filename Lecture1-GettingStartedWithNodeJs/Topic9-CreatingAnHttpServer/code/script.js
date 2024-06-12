@@ -15,16 +15,21 @@ const http = require('http');
 
 const server = http.createServer((req,res)=>{
     // response has (end) method in it:which basically stop the request response cycle of the paritcular request:and sends response back to the client:acc to its request:
-    res.end('hey! every one welcome to the NodeJs Server')
+    res.end('hey! every one welcome to my first NodeJs Server')
 });
 
-// => 3 = third know we have to define the port for our server.which will basically proivde the unique identity to our server.so using that port we are gonna be able to start our server:
+// => 3 = third after creating server. we have to define the (port) for our server.through which basically we are gonna be able to proivde the unique identity to our server and also make it accessible to our clients:
 // A port is basically a unique-address that identifies a process or service. Each application has a unique port number assigned to it. When running multiple servers on a single computer, using a different port number for each server allows the client to know which server to communicate with:
 const PORT = 8000;
 
 // => 4 = fourth after creating or specifying a port number for server:
-// V.IMP = we have to connect it with our server.and start acessing the clients requests through it:so for doing that we need to use the (listen) method:with the help of that we are gonna be able to start our server:on the particular port number:
-// the (listen) method. it takes two arguments:the port number and the callback function:but here we are only giving him the port number:
-server.listen(PORT);
+// V.IMP = we have to connect it with our server.and start acessing the clients requests through it:so for doing that we need to use the (listen) method of our server:after that we are gonna be able to start our server:for this particular port number:and start listening for requests:which are coming on this port number.
+// V.IMP => (listen) = listen() method creates an http server object and then configures it to receive incoming TCP connections on a specific port and IP address so that when clients request a connection to that port and send an http request, the server can receive that http request and process it, sending a response.
+// V.IMP = the (listen) method. it takes two arguments:the port number and the callback function:the callback function basically tells us that our server is up and running:
+// after this we did not have to create the console.log statement separately to check that our server is running or not:
+server.listen(PORT,()=>{
+    console.log(`Server is listening at http://localhost:${PORT}`);
+});
 
-// here we 
+// here we also write the console.log:statement through which we are gonna be able to know that our server is up and running:
+// console.log(`Server is listening at http://localhost:${PORT}`);
