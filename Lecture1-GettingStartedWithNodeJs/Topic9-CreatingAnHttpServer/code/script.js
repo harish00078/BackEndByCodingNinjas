@@ -16,4 +16,15 @@ const http = require('http');
 const server = http.createServer((req,res)=>{
     // response has (end) method in it:which basically stop the request response cycle of the paritcular request:and sends response back to the client:acc to its request:
     res.end('hey! every one welcome to the NodeJs Server')
-})
+});
+
+// => 3 = third know we have to define the port for our server.which will basically proivde the unique identity to our server.so using that port we are gonna be able to start our server:
+// A port is basically a unique-address that identifies a process or service. Each application has a unique port number assigned to it. When running multiple servers on a single computer, using a different port number for each server allows the client to know which server to communicate with:
+const PORT = 8000;
+
+// => 4 = fourth after creating or specifying a port number for server:
+// V.IMP = we have to connect it with our server.and start acessing the clients requests through it:so for doing that we need to use the (listen) method:with the help of that we are gonna be able to start our server:on the particular port number:
+// the (listen) method. it takes two arguments:the port number and the callback function:but here we are only giving him the port number:
+server.listen(PORT);
+
+// here we 
