@@ -23,7 +23,7 @@ const server = http.createServer((req,res)=>{
 const PORT = 8000;
 
 // => 4 = fourth after creating or specifying a port number for server:
-// V.IMP = we have to connect it with our server.and start acessing the clients requests through it:so for doing that we need to use the (listen) method of our server:after that we are ready to start our server:for this particular port number:and start listening for requests:which are coming on this port number.
+// V.IMP = we have to connect it with our server.and start accessing the clients requests through it:so for doing that we need to use the (listen) method from our server's object or instance:after that we are ready to start our server for this particular port number:and start listening for requests which are coming on this port number.
 // V.IMP => (listen) = listen() method creates an http server object and then configures it to receive incoming TCP connections on a specific port and IP address so that when clients request a connection to that port and send an http request, the server can receive that http request and process it, sending a response.
 // V.IMP = the (listen) method. it takes two arguments:the port number and the callback function:the callback function basically tells us that our server is up and running by showing some text or console-statement which we have given to him :it is bascially listening our Listener:
 // after this we did not have to create the console.log statement separately to check that our server is running or not:
