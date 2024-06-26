@@ -8,7 +8,6 @@ function div(x, y) {
   return x / y;
 }
 
- 
 //V.IMP = we can also use the modules directly with the functions and with others things as well:
 
 // => first =  we see that how we can do that with the help of (commonjs) modules:
@@ -31,14 +30,13 @@ function div(x, y) {
 // IMP = we can create its functions in two ways:
 // => 1 =  create function using function-keyword:
 export function divide(x, y) {
-    return x / y;
+  return x / y;
 }
 
 // => 2 = more simpler way is that we can use the arrow-functions:
 export const divide = (x, y) => {
-    return x / y;
-}
-
+  return x / y;
+};
 
 // IMP = using modules we can share our code.or we can say that the particular section of our code from file to another:with the help of modules we can use something on the other file which we have created on this file:
 // IMP = we have two ways to do that:these are not types they are only the ways to create a module:we can also call them two diff syntaxes to create modules in nodejs:
@@ -62,10 +60,10 @@ module.exports = {
 // IMP = we can create its functions in two ways:
 // -> 1 =  create function using function-keyword:
 export function divide(x, y) {
-    return x / y;
+  return x / y;
 }
 
 // -> 2 = more simpler way is that we can use the arrow-functions:
 export const divide = (x, y) => {
-    return x / y;
-}
+  return x / y;
+};
