@@ -3,7 +3,7 @@
 const http = require("http");
 
 const server = http.createServer((req, res) => {
-  // IMP = here the request-argument is basically a object:which basically have all the things related to request that has been send by the client to us:
+  // IMP = here the request-argument is basically a http-object or req-object:which basically have all the things related to request that has been send by the client to us:
   // like:the type of (request) and (url) of the request:
   console.log(req.url);
   // here we are checking our request-urls with the help of (if-conditions):
