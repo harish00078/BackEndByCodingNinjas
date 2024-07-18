@@ -8,8 +8,6 @@
 // -> 1 = CommonJs Module syntax:
 // -> 2 = ES6 Module syntax:
 
-
-
 // => first = here we see that how we can do that with the help of (commonjs) modules method:
 // for that here we gonna create the two arithametic functions:both of these arithametic functions gonna get the same type of (argument) variables:
 
@@ -17,15 +15,15 @@
 //   return x + y;
 // }
 
-function div(x, y) {
-  return x / y;
-}
+// function div(x, y) {
+//   return x / y;
+// }
 
 // In commonjs modules method we use (module.exports) keyword:it is basically receive a (object) or its (object):In which we assign our function,variables,or anything that we want to export from our file:as a key-value pair:same thing we do with the objects:
 // V.IMP(NOTE):here we use (exports) keyword:
 
 // => CommonJs Module:CommonJS is the default module system in Node.js that uses the ‘require’ function to import modules and the ‘module.exports’ object to export them:
-
+// VIMP-NOTE = here these function gonna be exports as properties:
 // => we can also use module.exports object in two ways:
 // -> first = is that we can do it as key-value pair with in the module.exports object:
 // module.exports = {
@@ -33,31 +31,49 @@ function div(x, y) {
 //   Div: div,
 // };
 // -> second = is that we can simply proivde our created functions as keys with in the module.exports object:
-module.exports = {
-  
- add:div,
-};
+// module.exports = {
+//   sum,
+//   div,
+// };
 
-//V.IMP(NOTE) = here we also gonna see that how we can also use the (commonjs-modules) method directly with the functions and with others things as well:
+
+//V.V.IMP(NOTE) = here we also gonna see that how we can also use the (commonjs-modules) method directly with the functions and with others things as well:
 
 // V.IMP = we use it with both function types:(simple-functions) and (arrow-functions):
 
-// -> 1 =  create function using function-keyword:
+// -> 1 =  create function using simple function-keyword:
+// V.V.IMP-NOTE = here its gonna be export the functions as functions:
 
-module.exports = function sum(x, y) {
-    return x + y;
-};
+// module.exports  = function sum(x, y) {
+//   return x + y;
+// }
+
 
 // -> 2 = more simpler way is that we can use the arrow-functions:
+// V.IMP-NOTE = here this function is also gonna be export as properties:
 
 // module.exports.multiple = (x, y) => {
 //     return x * y;
 // };
 
 
+// V.V.IMP = here we see that we can also use the (exports) object directly with the functions and with others things as well:
+// IMP(NOTE) = 2 => this method specifically works to assign or export the functions as functions:
+// V.IMP = we use it with both function types:(simple-functions) and (arrow-functions):
+// -> simple function:
+// V.IMP-NOTE =  here it also gonna be  export the functions as functions:
+
+exports.add = function (x, y){
+  return x + y;
+}
+// -> arrow function: here this function is also gonna be export as properties:
+
+// exports.sum=(x, y)=> {
+//   return x + y;
+// }
 
 
-// => second =  here we see that how we can do that with the help of (ES6) modules:
+// => second =  here we see that how we can do that with the help of (ES6) modules: 
 // V.IMP = here we use (export) keyword:
 
 // => ES6 Module:The ES6 module syntax is a more modern approach that is supported by modern JavaScript environments, and it employs the "import" and "export" keywords:
