@@ -8,6 +8,9 @@
 // -> 1 = CommonJs Module syntax:
 // -> 2 = ES6 Module syntax:
 
+
+
+// => first = here we see that how we can do that with the help of (commonjs) modules method:
 // for that here we gonna create the two arithametic functions:both of these arithametic functions gonna get the same type of (argument) variables:
 
 function sum(x, y) {
@@ -18,11 +21,24 @@ function div(x, y) {
   return x / y;
 }
 
-//V.IMP(NOTE) = here we see that be can also use the modules directly with the functions and with others things as well:
-
-// => first = here we see that how we can do that with the help of (commonjs) modules method:
 // In commonjs modules method we use (module.exports) keyword:it is basically a (object):In which we assign our function,variables,or anything that we want to export from our file:as a key-value pair:same thing we do with the objects:
 // V.IMP(NOTE):here we use (exports) keyword:
+
+// => CommonJs Module:CommonJS is the default module system in Node.js that uses the ‘require’ function to import modules and the ‘module.exports’ object to export them:
+
+// => we can also do it in two ways:
+// -> first = is that we can do it as key-value pair with in the module.exports object:
+// module.exports = {
+//   add: sum,
+//   Div: div,
+// };
+// -> second = is that we can simply proivde our created functions as keys with in the module.exports object:
+module.exports = {
+  sum,
+  div,
+};
+
+//V.IMP(NOTE) = here we also gonna see that how we can also use the (commonjs-modules) methoddirectly with the functions and with others things as well:
 
 // V.IMP = we use it with both function types:(simple-functions) and (arrow-functions):
 
@@ -38,19 +54,7 @@ function div(x, y) {
 //     return x * y;
 // };
 
-// => CommonJs Module:CommonJS is the default module system in Node.js that uses the ‘require’ function to import modules and the ‘module.exports’ object to export them:
 
-// => we can also do it in two ways:
-// -> first = is that we can do it as key-value pair with in the module.exports object:
-// module.exports = {
-//   add: sum,
-//   Div: div,
-// };
-// -> second = is that we can simply proivde our created functions as keys with in the module.exports object:
-module.exports = {
-  sum,
-  div,
-};
 
 
 // => second =  here we see that how we can do that with the help of (ES6) modules:
