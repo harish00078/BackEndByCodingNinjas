@@ -42,14 +42,21 @@
 // V.IMP = we use it with both function types:(simple-functions) and (arrow-functions):
 
 // -> 1 =  create function using simple function-keyword:
-// V.V.IMP-NOTE = here its gonna be export the functions as functions:
+// IMP = it also have two ways in it:
+// V.V.IMP-NOTE = (first-way) => here its gonna be export the functions as functions:
 
 // module.exports  = function sum(x, y) {
 //   return x + y;
 // }
 
+// V.V.IMP-NOTE = (second-way) => we can also create the function:like this but its gonna be again working as (properties):
+// V.IMP-NOTE:we have use this method in our (backend-codeial) project:we can also use the (async-await) method with it:
 
-// -> 2 = more simpler way is that we can use the arrow-functions:
+module.exports.sum = function (x, y) {
+  return x + y;
+}
+
+// -> 3 = more simpler way is that we can use the arrow-functions:
 // V.IMP-NOTE = here this function is also gonna be export as properties:
 
 // module.exports.multiple = (x, y) => {
@@ -58,15 +65,16 @@
 
 
 // V.V.IMP = here we see that we can also use the (exports) object directly with the functions and with others things as well:
-// IMP(NOTE) = 2 => this method specifically works to assign or export the functions as functions:
+// IMP(NOTE) = 2 => (this method specifically export the functions or anything as properties):
 // V.IMP = we use it with both function types:(simple-functions) and (arrow-functions):
 // -> simple function:
-// V.IMP-NOTE =  here it also gonna be  export the functions as functions:
+// V.IMP-NOTE =  here it also gonna be  export the simple-functions as proeperties:
 
-exports.add = function (x, y){
-  return x + y;
-}
-// -> arrow function: here this function is also gonna be export as properties:
+// exports.sum = function(x, y) {
+//   return x + y;
+// }
+
+// -> arrow function: here this arrow-function is also gonna be export as properties:
 
 // exports.sum=(x, y)=> {
 //   return x + y;

@@ -16,9 +16,10 @@
 // [first-way] = first is that we can import the entire file into a variable-name and use it to access our modules or its module-functions:
 
 // const arithameticModules = require("./arithametic");
-// console.log(arithameticModules.sum(9,5));
-
+// console.log(arithameticModules.add());
+const arithameticModules = require("./arithametic");
+console.log(arithameticModules.sum(5,5));
 // [second-way] = second is that we can only import the modules direclty that we want to use from the file:
 
-const add = require("./arithametic");
-console.log(add(9, 5));
+// const sum = require("./arithametic");
+// console.log(sum(3,5));
