@@ -22,5 +22,3 @@
 
 const add = require("./arithametic");
 console.log(add(9, 5));
-
-// const sum = require("i
