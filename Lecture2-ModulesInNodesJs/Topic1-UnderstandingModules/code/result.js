@@ -1,6 +1,6 @@
 // here we are gonna use those arithametical functions modules:and get the result from them and print it on the terminal:
 
-// V.IMP => first we gonna see that how we can import things which are exported by the CommonJs-based modules:
+// ===> here we gonna learn about:how to use the (commonjs-modules) method exports:
 
 // V.V.IMP = here we do it with the help of (require) method:
 // V.V.IMP(NOTE) = here we can see that. when we are calling our module functions here they are respersenting there selfs as (properties):because of the module.exports object:because we are exporting those functions with in the object:
