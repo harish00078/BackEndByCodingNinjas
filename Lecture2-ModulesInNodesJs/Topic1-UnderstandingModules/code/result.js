@@ -14,10 +14,11 @@
 // V.IMP-NOTE = if we export some thing as (functions) then we have to use the second-way here to import things:
 
 // [first-way] = first is that we can import the entire file into a variable-name and use it to access our modules or its module-functions:
+//(IMP-NOTE) = here we can see that. so when we are importing the same file again:then it did not work because of our module.exports object or method:because when we import our files with this method.then in its first time this file.it basically get stored in the (cache) Method.so that's why when we are importing it again it will not work:because system gonna be still have that same with in him or in its (cache) Method:
 
-// const arithameticModules = require("./arithametic");
-// console.log(arithameticModules.add());
 const arithameticModules = require("./arithametic");
+
+const arithameticModules1 = require("./arithametic");
 console.log(arithameticModules.sum(5,5));
 // [second-way] = second is that we can only import the modules direclty that we want to use from the file:
 

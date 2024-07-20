@@ -81,6 +81,11 @@ module.exports.sum = function (x, y) {
 // }
 
 
+// (IMP-NOTE) = so when we are exporting any function or anything from this file with the help of commonjs module method:and use it in the another-file:At that time we are basically executing this (hole-file):
+// we can see that with the help of (console) statement:
+console.log('executing the hole file');
+
+
 
 
 // => second =  here we see that how we can do that with the help of (ES6) modules: 
@@ -103,4 +108,3 @@ module.exports.sum = function (x, y) {
 
 
 
-// V.V.IMP(NOTE) = 
