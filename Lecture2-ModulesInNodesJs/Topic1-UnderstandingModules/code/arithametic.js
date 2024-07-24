@@ -57,6 +57,9 @@
 module.exports.sum = function (x, y) {
   return x + y;
 }
+module.exports.multiple = function (x, y) {
+  return x * y;
+}
 
 // -> 3 = more simpler way is that we can use the arrow-functions:
 // V.IMP-NOTE = here this function is also gonna be export as properties:

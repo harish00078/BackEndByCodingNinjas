@@ -13,13 +13,18 @@
 // => 2 = and if we are using the module.exports object direclty with the functions:and assigning them to it:then we use the second-way here to import things:
 // V.IMP-NOTE = if we export some thing as (functions) then we have to use the second-way here to import things:
 
-// [first-way] = first is that we can import the entire file into a variable-name and use it to access our modules or its module-functions:
+// [first-way] = In first way.we have two ways to import the things:
+// => 1 =  first is that we can import the hole-file:and store it in the variable:and from that variable-name we can access our module functions or other things those we have exported:and access them by using the dot (.) keyword on the variable-name:
+// => 2 = second way is that we can only import those modules which we want to use from the  exported-file:for doing this basically we need to import the modules using (require) method:and put in the (object) by using currly braces:
+
 //(IMP-NOTE) = here we can see that. so when we are importing the same file again:then it did not work because of our module.exports object or method:because when we import our files with this method.then in its first time this file.it basically get stored in the (cache) Method.so that's why when we are importing it again it will not work:because system gonna be still have that same with in him or in its (cache) Method:
 
-const arithameticModules = require("./arithametic");
+// const arithameticModules = require("./arithametic");
+const { sum, multiple } = require("./arithametic");
 
-const arithameticModules1 = require("./arithametic");
-console.log(arithameticModules.sum(5,5));
+// const arithameticModules1 = require("./arithametic");
+console.log(sum(5, 5));
+console.log(multiple(5, 5));
 // [second-way] = second is that we can only import the modules direclty that we want to use from the file:
 
 // const sum = require("./arithametic");
