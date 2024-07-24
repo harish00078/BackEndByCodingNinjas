@@ -3,7 +3,7 @@
 // ===> here we gonna learn about:how to use the (commonjs-modules) method exports:
 
 // V.V.IMP = here we do it with the help of (require) method:
-// V.V.IMP(NOTE) = here we can see that. when we are calling our module functions here they are respersenting there selfs as (properties):because of the module.exports object:because we are exporting those functions with in the object:
+// V.V.IMP(NOTE) = here we can see that. when we are calling our module functions they are respersenting there selfs as (properties):because of the module.exports object:because we are exporting those functions with in the object:
 
 // we can also do it in two ways:
 // V.V.IMP = It mostly depend on that how we are exporting things:
