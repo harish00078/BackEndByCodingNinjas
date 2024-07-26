@@ -25,11 +25,11 @@
 // [first-type]:
 // const arithameticModules = require("./arithametic");
 // [second-type]:
-const { sum, multiple } = require("./arithametic");
+// const { sum, multiple } = require("./arithametic");
 
 // const arithameticModules1 = require("./arithametic");
-console.log(sum(5, 5));
-console.log(multiple(5, 5));
+// console.log(sum(5, 5));
+// console.log(multiple(5, 5));
 // [second-way] = second is that we can only import the modules direclty that we want to use from the file:
 
 // const sum = require("./arithametic");

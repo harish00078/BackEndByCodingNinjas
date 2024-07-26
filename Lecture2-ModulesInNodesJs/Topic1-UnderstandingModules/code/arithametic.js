@@ -54,12 +54,12 @@
 // V.V.IMP-NOTE = (second-way) => we can also create the function:like this but its gonna be again working as (properties):
 // V.IMP-NOTE:we have use this method in our (backend-codeial) project:we can also use the (async-await) method with it:
 
-module.exports.sum = function (x, y) {
-  return x + y;
-}
-module.exports.multiple = function (x, y) {
-  return x * y;
-}
+// module.exports.sum = function (x, y) {
+//   return x + y;
+// }
+// module.exports.multiple = function (x, y) {
+//   return x * y;
+// }
 
 // -> 3 = more simpler way is that we can use the arrow-functions:
 // V.IMP-NOTE = here this function is also gonna be export as properties:
