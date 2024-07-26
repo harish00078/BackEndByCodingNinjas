@@ -2,9 +2,9 @@
 // for importing them:we simple need to use the (import) keyword:
 // IMP-NOTE: when we say that.we are importing the all modules at once:it basically means that we are only importing the modules which we have exported:and not importing any other modules:
 
-// IMP => we have three ways to import the things:
+// IMP => In (ES6) module method:we have three ways to import the things:
 // => 1 = first is that we can use the asterisk- keyword (*):To import all modules at once:
-
+import * as arithameticModules from "./arithametic";
 
 // => 2 = second is that we can import the hole-file:and store it in the variable:and from that variable-name we can access our module functions or other things those we have exported:and access them by using the dot (.) keyword on the variable-name:
 
