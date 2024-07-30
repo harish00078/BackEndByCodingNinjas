@@ -7,8 +7,9 @@
 
 // IMP => In (ES6) module method:we have three ways to import the things:
 // => 1 = first is that we can use the asterisk- keyword (*):To import all modules at once:and store them in the variable-name:
+// V.IMP = all things are gonna we store with in the variable-name's (object):
 import * as arithameticModules from "./script.mjs";
-console.log(typeof (arithameticModules.multiple));
+console.log(arithameticModules.multiple(5,5));
 
 // => 2 = second is that we can import the hole-file:and store it in the variable:and from that variable-name we can access our module functions or other things those we have exported:and access them by using the dot (.) keyword on the variable-name:
 
