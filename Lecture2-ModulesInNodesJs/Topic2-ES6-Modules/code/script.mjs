@@ -15,6 +15,6 @@ export function multiple(x, y) {
 }
 
 // -> 2 = more simpler way is that we can use the arrow-functions:
-export const divide = (x, y) => {
-  return x / y;
+export const sum = (x, y) => {
+  return x + y;
 };
