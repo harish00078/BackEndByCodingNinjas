@@ -13,7 +13,7 @@
 export function multiple(x, y) {
   return x * y; 
 }
-export function divide(x, y) {
+export function divided(x, y) {
   return x / y; 
 }
 
