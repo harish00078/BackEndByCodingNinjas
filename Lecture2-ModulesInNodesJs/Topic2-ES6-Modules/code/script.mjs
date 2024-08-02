@@ -17,6 +17,7 @@ export function divided(x, y) {
   return x / y; 
 }
 
+
 // -> 2 = more simpler way is that we can use the arrow-functions:
 export const sum = (x, y) => {
   return x + y;
