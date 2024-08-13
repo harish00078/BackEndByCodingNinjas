@@ -1,7 +1,7 @@
 // here we gonna see that:how Modules are help full in Nodejs:
 
 // Modules help us to do mainly two things:
-// => first =  using modules we can share our code.or we can say that the particular section of our code from one-file to another-file:with the help of modules we can use something on the other file which we have created on the one particular file:
+// => first =  using modules we can share our code.or we can say that the particular section of our code-file from one-file to another-file:with the help of modules we can use something on the other file which we have created on the one particular file:
 // => Secondly = V.V.IMP(Note)= In Node.js, with the help of modules, we are able to connect our code or its multiple files:within one file and that one file is basically connected to our main app-file or server-file:We can also connect those files one by one with the main server-file. Instead of combining them first into one file:this is how we connect multiple files with in our Node.js or server application.
 
 // IMP => we have two ways to do that:these are not types they are only the ways to create a module:we can also call them two diff syntaxes to create modules in nodejs:
