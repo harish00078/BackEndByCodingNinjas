@@ -22,3 +22,5 @@ export function divided(x, y) {
 export const sum = (x, y) => {
   return x + y;
 };
+
+// (IMP-NOTE) = When you import something from another file using either ES6 or CommonJS module syntax, the entire file you are importing from runs once. After that, only the specific parts you imported are used in your code, and the file doesn't run again unless the module cache is cleared.its little different for ES6 modules:because of its tree shaking approach:
