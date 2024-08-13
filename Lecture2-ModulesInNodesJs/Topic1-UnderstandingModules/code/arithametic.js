@@ -87,7 +87,7 @@
 // }
 
 
-// (IMP-NOTE) =  If we export something (like a function) and import it in another file, the entire file gets executed once. later the imports use the already executed code. But only the specific parts that we import will be accessible in the importing file. This is different in ES6 modules, which can eliminate unused code.because of its tree shaking approach:
+// (IMP-NOTE) =  If we export something (like a function) and import it in another file, the entire file gets executed once. later the imports use the already executed code. But only the specific parts that we import will be accessible in the importing file. This is little different in ES6 modules, which can eliminate unused code.because of its tree shaking approach:
 
 // we can see that with the help of (console) statement:
 console.log('executing the hole file');
