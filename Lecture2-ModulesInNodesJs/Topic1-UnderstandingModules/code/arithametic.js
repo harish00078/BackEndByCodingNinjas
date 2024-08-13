@@ -86,7 +86,7 @@
 // }
 
 
-// (IMP-NOTE) = so when we are exporting any function or anything from this file with the help of commonjs module method:and use it in the another-file:At that time we are basically executing this (hole-file):
+// (IMP-NOTE) = so when we are exporting any function or anything with the help of (commonjs)Module syntas which we are using with in this file:and using them in the another-file:At that time we are basically executing this (hole-file):
 // we can see that with the help of (console) statement:
 console.log('executing the hole file');
 
