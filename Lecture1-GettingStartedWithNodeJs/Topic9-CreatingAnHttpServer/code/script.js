@@ -2,8 +2,8 @@
 // => 1 = first we need to import the (http) module from the nodejs.it is built in library or module in nodejs:
 // -> through which we are gonna be able to initiate the communication-protocal on our server application:
 // -> with the help of that clients are gonna be able to access and work with our server:
-// IMP =  for importing some thing in node.js:we use the (require) function:it is one of way to import something:
-// this require function basically return us that module.and for using it we have to store it in the variable
+// IMP =  for importing some thing in node.js:we use the (require) function:it is one of way to import things:
+// this require function basically return us that module.and for using it we have to store it in the variable:
 const http = require('http');
 // => 2 = second we need to create-server:so for creating server we need to use the http-module:only because of that we are gonna be able to create the server:
 // IMP = so creating server using http-module.we have to access its (createServer) method:with the help of that method we are gonna be able to create the simple http-server:
