@@ -39,7 +39,6 @@
 //   div,
 // };
 
-
 //V.V.IMP(NOTE) = here we also gonna see that how we can also use the (commonjs-modules) method directly with the functions and with others things as well:
 
 // V.IMP = we use it with both function types:(simple-functions) and (arrow-functions):
@@ -69,7 +68,6 @@
 //     return x * y;
 // };
 
-
 // V.V.IMP = here we see that we can also use the (exports) object directly with the functions and with others things as well:
 // IMP(NOTE) = 2 => (this method specifically export the functions or anything as properties):
 // V.IMP = we use it with both function types:(simple-functions) and (arrow-functions):
@@ -86,14 +84,7 @@
 //   return x + y;
 // }
 
-
 // (IMP-NOTE) =  If we export something (like a function) and import it in another file, the entire file gets executed once. later the imports use the already executed code. But only the specific parts that we import will be accessible in the importing file. This is little different in ES6 modules, which can eliminate unused code.because of its tree shaking approach:
 
 // we can see that with the help of (console) statement:
-console.log('executing the hole file');
-
-
-
-
-
-
+console.log("executing the hole file");
