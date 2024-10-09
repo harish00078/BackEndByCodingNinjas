@@ -5,7 +5,6 @@
 // IMP =  for importing some thing in node.js:we use the (require) function:it is one of way to import things:
 // this require function basically return us that module.and for using it we have to store it in the variable:
 const http = require("http");
-
 // => 2 = second we need to create-server:so for creating server we need to use the http-module:only because of that we are gonna be able to create the server:
 // IMP = so creating server using http-module.we have to access its (createServer) method:with the help of that method we are gonna be able to create the simple http-server:
 // V.IMP = this method takes one parameter as an argument:and that is a callback function.this callback function is basically a (request-listener):which help us to get requests from the client:and return back responses to them:acc to the requests that we get from the client.
