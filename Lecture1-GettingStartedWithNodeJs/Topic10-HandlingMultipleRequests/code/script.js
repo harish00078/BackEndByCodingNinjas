@@ -9,6 +9,7 @@ const server = http.createServer((req, res) => {
   // here we are checking our request-urls with the help of (if-conditions):
   if (req.url == "/product") {
     // IMP = we also have other way to append or add content in our response-object:and that is (write) function:but this functon mostly help us to modify our response or we can say add more content in our response:
+    
     res.write("welcome to my server:   ");
 
     // IMP = we also need to use the (return) statement with the (responses) end-method:so that our responses exection functions did not crash with each other:
