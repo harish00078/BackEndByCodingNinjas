@@ -18,10 +18,15 @@ const server = http.createServer((req, res) => {
     // => 2 = other things is that if after sending  response and ending the request:we wanna do more changes on that request or its response.then we  have to avoid using the return statement on end method:
 
     return res.end("this is a Product Page");
+
   } else if (req.url == "/user") {
+
     return res.end("this is a User Page");
+
   } else {
+
     return res.end("this is a Home Page");
+    
   }
 });
 
