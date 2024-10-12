@@ -30,6 +30,9 @@ const server = http.createServer((req, res) => {
   // V.V.IMP = Its gonna crashes with the (conditional-statement) responses:if we did not use the (return) statement with the end-method:because (systems) gonna thing about that we are ending or using the end.method twice on the particular request:
 
   return res.end("welcome! To the Website ");
+
+  // NOTE-IMP:if
+
 });
 
 const PORT = 8000;
