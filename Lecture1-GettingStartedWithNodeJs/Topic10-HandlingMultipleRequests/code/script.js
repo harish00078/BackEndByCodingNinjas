@@ -18,16 +18,13 @@ const server = http.createServer((req, res) => {
     // => 2 = other things is that if after sending  response and ending the request:we wanna do more changes on that request or its response.then we  have to avoid using the return statement on end method:
 
     return res.end("Products! that we have");
-
   } else if (req.url == "/user") {
-
     return res.end("hey! I am new-user ");
-
-  } else {
-
-    return res.end("welcome! To the Website ");
-
   }
+  // V.IMP = here if we are ending the request then we have to use the (return) statement with the (end) method:because without it our response-object did not get ending and did  get crash with each other:if we are using it outsite the (conditional-statements):
+  // V.V.IMP = Its gonna crashes with the (conditional-statement) responses:if we did not use the (return) statement with the end-method:because (systems) gonna thing about that we are ending or using the end.method twice on the particular request:
+
+  return res.end("welcome! To the Website ");
 });
 
 const PORT = 8000;
