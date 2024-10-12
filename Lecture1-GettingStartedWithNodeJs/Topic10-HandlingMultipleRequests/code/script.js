@@ -32,7 +32,6 @@ const server = http.createServer((req, res) => {
   return res.end("welcome! To the Website ");
 
   // NOTE-IMP:if
-
 });
 
 const PORT = 8000;
