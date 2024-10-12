@@ -13,7 +13,8 @@ const server = http.createServer((req, res) => {
 
     res.write("welcome to my server:   ");
 
-    // IMP = we also need to use the (return) statement with the (responses) end-method:so that our responses (exection-functions) did not crash with each other:
+    // IMP = we also need to use the (return) statement with the (responses) end-method:so that our responses (execution-functions) did not crash with each other:
+    // NOTE = (Execution-Functions): are functions
     // => 1 = it happens because.when we are ending the request.then only the request gets ending not its execution-function:so we also have to end its execution-function.because we did not want the two execution-function of the end-method did not get crash with each other:
     // => 2 = other things is that if after sending  response and ending the request:we wanna do more changes on that request or its response.then we  have to avoid using the return statement on end method:
 
