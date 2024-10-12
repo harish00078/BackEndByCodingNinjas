@@ -17,15 +17,15 @@ const server = http.createServer((req, res) => {
     // => 1 = it happens because.when we are ending the request.then only the request gets ending not its execution-function:so we also have to end its execution-function.because we did not want the two execution-function of the end-method did not get crash with each other:
     // => 2 = other things is that if after sending  response and ending the request:we wanna do more changes on that request or its response.then we  have to avoid using the return statement on end method:
 
-    return res.end("this is a Product Page");
+    return res.end("Products! that we have");
 
   } else if (req.url == "/user") {
 
-    return res.end("this is a User Page");
+    return res.end("hey! I am new-user ");
 
   } else {
 
-    return res.end("this is a Home Page");
+    return res.end("welcome! To the Website ");
 
   }
 });
