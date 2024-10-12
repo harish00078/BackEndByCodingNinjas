@@ -10,7 +10,7 @@ const server = http.createServer((req, res) => {
   // IMP: we can also convert our data into (string) format:
   // NOTE-V.V.IMP = here we are using the (toString()) method:it is a method of (buffer) object:which is used to convert the data into (string) format:because we know that the (readFileSync) method of (fs) module returns a (buffer) object by default:and we wanna work with string data:
   // V.IMP = Buffer-object: Is a way to handle raw binary data directly in memory. It's particularly useful when dealing with streams of data like files, network protocols, or other binary formats such as images, videos, or any type of encoded data.
-  // explanation (toString()):
+  // explanation (toString()):i
   // -> 1 = fs.readFileSync("./index.html") reads the file index.html. But when it reads it, it gets the data in a format called binary (which is how computers understand data).
   // -> 2 = The .toString() part converts that binary data into text (a format we humans can read).
   // -> 3 = Since index.html is a text file (HTML), we need it as text to work with it. That's why we use .toString()—to turn the computer's binary format into readable text format.
