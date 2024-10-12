@@ -15,12 +15,13 @@ const server = http.createServer((req, res) => {
 
     // IMP = we also need to use the (return) statement with the (responses) end-method:so that our responses (execution-functions) did not crash with each other:
 
+    // NOTE => (IMP-points):
+    // => 1 = it happens because.when we are ending the request.then only the request gets ending not its execution-function:so we also have to end its execution-function.because we did not want the two execution-function of the end-method did not get crash with each other:
+    // (v.IMP)=> 2 = other things is that if after sending  response and ending the request:we wanna do more changes on that request or its response.then we  have to avoid using the return statement on end method:
+
     // NOTE = (Execution-Functions): An execution context in JavaScript is the environment in which code is executed. There are different kinds of execution contexts, but the two most common are:
     // => 1 = Global Execution Context: This is the default context in which the code that is not inside any function runs. In a browser, it refers to the global window object.
     // => 2 = Function Execution Context: Each time a function is called, a new execution context is created for that function.
-
-    // => 1 = it happens because.when we are ending the request.then only the request gets ending not its execution-function:so we also have to end its execution-function.because we did not want the two execution-function of the end-method did not get crash with each other:
-    // => 2 = other things is that if after sending  response and ending the request:we wanna do more changes on that request or its response.then we  have to avoid using the return statement on end method:
 
     return res.end("Products! that we have");
   } else if (req.url == "/user") {
@@ -30,8 +31,6 @@ const server = http.createServer((req, res) => {
   // V.V.IMP = Its gonna crashes with the (conditional-statement) responses:if we did not use the (return) statement with the end-method:because (systems) gonna thing about that we are ending or using the end.method twice on the particular request:
 
   return res.end("welcome! To the Website ");
-
-  // NOTE-IMP:if
 });
 
 const PORT = 8000;
