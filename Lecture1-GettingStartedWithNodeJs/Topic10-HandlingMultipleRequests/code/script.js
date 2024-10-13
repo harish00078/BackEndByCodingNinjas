@@ -21,7 +21,7 @@ const server = http.createServer((req, res) => {
     // For-Example:if wanna do some (logging) or other things with those particular request's response:
 
     // NOTE = (Execution-Functions): An execution context in JavaScript is the environment in which code is executed. There are different kinds of execution contexts, but the two most common are:
-    // => 1 = Global Execution Context: This is the default context in which the code that is not inside any function runs. In a browser, it refers to the global window object:
+    // => 1 = Global Execution Context: This is the default context in which the code that is not inside any function runs. In a browser, it refers to the global-window-object:
     // => 2 = Function Execution Context: Each time a function is called, a new execution context is created for that function:
 
     return res.end("Products! that we have");
@@ -29,7 +29,7 @@ const server = http.createServer((req, res) => {
     return res.end("hey! I am new-user ");
   }
   // V.IMP = here if we are ending the request then we have to use the (return) statement with the (end) method:because without it our response-object did not get ending and did  get crash with each other:if we are using it outsite the (conditional-statements):
-  // V.V.IMP = Its gonna crashes with the (conditional-statement) responses:if we did not use the (return) statement with the end-method:because (systems) gonna thing about that we are ending or using the end.method twice on the particular request:
+  // V.V.IMP(NOTE) = Its gonna crashes with the (conditional-statement) responses:if we did not use the (return) statement with the end-method:because (systems) gonna thing about that we are ending or using the end.method twice on the particular request:
 
   return res.end("welcome! To the Website ");
 });
