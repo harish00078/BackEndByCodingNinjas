@@ -41,7 +41,6 @@
 // };
 
 //V.V.IMP(NOTE) = here we also gonna see that how we can also use the (commonjs-modules) method directly with the functions and with others things as well:
-
 // V.IMP = we use it with both function types:(simple-functions) and (arrow-functions):
 
 // -> 1 =  create function using simple function-keyword:
