@@ -5,7 +5,8 @@
 // => Secondly = V.V.IMP(Note)= In Node.js, with the help of modules, we are able to connect our code or its multiple files:within one file and that one file is basically connected to our main app-file or server-file:We can also connect those files one by one with the main server-file. Instead of combining them first into one file:this is how we connect multiple files with in our Node.js or server application:same thing we do with the front-end section of our application as well:
 // => third = V.V.IMP(NOTE):modules syntax allows us to import built-in modules (like 'fs' for file system operations) and other libraries that we install into our application using Node.js environment. This enables us to access and use them in our application files:
 
-// IMP => we have two ways to do that:these are not types they are only the ways that how we have or create a modules and access them after that:we can also call them two diff syntaxes to create modules in nodejs:
+// IMP => we have two ways to do that:these are not types they are the ways that how we can have or create modules and access them after that:
+// V.V.IMP = we have two diff syntaxes to create modules in nodejs:
 // -> 1 = CommonJs Module syntax:
 // -> 2 = ES6 Module syntax:
 
@@ -22,7 +23,7 @@
 //   return x / y;
 // }
 
-// In commonjs modules method or way we use (module.exports) keyword to (export) things:it is basically receives or have a (object) or its (object) in it:In which we assign our function,variables,or anything that we want to export from our file:its gonna export them as key-value pairs:same thing we have wiht in the objects:
+// In commonjs modules method or way we use (module.exports) keyword to (export) things:it is basically receives or have a (object) in it:In which we assign our function,variables,or anything that we want to export from our file:its gonna export them as key-value pairs:same thing we have with the simple-objects:
 // V.IMP(NOTE):In CommonJs modules method we use (exports) keyword:because here In this syntax we can export mulitple things at one time:
 
 // => CommonJs Module:CommonJS is the default module system in Node.js that uses the ‘require’ function to import modules and the ‘module.exports’ object to export them:
