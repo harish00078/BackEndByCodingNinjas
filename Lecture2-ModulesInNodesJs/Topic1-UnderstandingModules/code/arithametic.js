@@ -22,8 +22,8 @@
 //   return x / y;
 // }
 
-// In commonjs modules method we use (module.exports) keyword:it is basically receive a (object) or its (object):In which we assign our function,variables,or anything that we want to export from our file:as a key-value pair:same thing we do with the objects:
-// V.IMP(NOTE):In CommonJs modules method we use (exports) keyword:
+// In commonjs modules method or way we use (module.exports) keyword to (export) things:it is basically receives or have a (object) or its (object) in it:In which we assign our function,variables,or anything that we want to export from our file:its gonna export them as key-value pairs:same thing we have wiht in the objects:
+// V.IMP(NOTE):In CommonJs modules method we use (exports) keyword:because here In this syntax we can export mulitple things at one time:
 
 // => CommonJs Module:CommonJS is the default module system in Node.js that uses the ‘require’ function to import modules and the ‘module.exports’ object to export them:
 
