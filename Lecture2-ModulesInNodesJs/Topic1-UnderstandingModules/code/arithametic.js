@@ -46,7 +46,7 @@
 // };
 
 // ->[second-way]:
-// =>[second-way]:here in the second-way:we also have t he multiple ways to do it as well:
+// =>[second-way]:here in the second-way:we also have the multiple ways to do it as well:
 //V.V.IMP(NOTE) = here we also gonna see that how we can also use the (commonjs-modules) method directly with the functions and with others things as well:
 // V.IMP = we use it with both function types:(simple-functions) and (arrow-functions):
 
