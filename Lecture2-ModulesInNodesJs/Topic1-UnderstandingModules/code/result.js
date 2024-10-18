@@ -21,6 +21,7 @@
 //(IMP-NOTE) = here we can see that. so when we are importing the same file again:then it did not work because of our module.exports object or method:because when we import our files with this method.then in its first time this file.it basically get stored in the (cache) Method.so that's why when we are importing it again it will not work:because system gonna be still have that same with in him or in its (cache) Method:
 
 // => First-ways:To types to import modules:
+
 // [first-type]:
 // const arithameticModules = require("./arithametic");
 // [second-type]:
@@ -29,6 +30,7 @@
 // const arithameticModules1 = require("./arithametic");
 // console.log(sum(5, 5));
 // console.log(multiple(5, 5));
+
 // [second-way] = second is that we can only import the modules direclty that we want to use from the file:
 
 // const sum = require("./arithametic");
