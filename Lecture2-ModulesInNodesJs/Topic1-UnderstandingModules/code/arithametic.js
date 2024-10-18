@@ -28,22 +28,24 @@
 // IMP(NOTE): so its gonna export them as (key-value) pairs:same thing that we  have with in the simple-objects:
 
 
-// => CommonJs Module:CommonJS is the (default) module-system in Node.js which uses the ‘require’ function to import modules and the ‘module.exports’ object to export them: 
-// V.IMP-NOTE = here these functions gonna be exports as properties:And as we also know that if we export (functions) as properties then those (functions) gonna become (methods):
+// => CommonJs Module:CommonJS is the (default) module-system in Node.js which uses the (require) function to import modules and the (module.exports) object to export them: 
+// V.IMP-NOTE = here these functions gonna be exports as properties:as we already know that if we export (functions) as properties then those (functions) become's (methods):
 
-// V.IMP(NOTE)=> we can also use module.exports object in two ways:
-// => [first-way]:with in this first-way: we also have the mulitple ways do it as well:
-// -> first = is that we can do it as key-value pair with in the module.exports object:
+// V.IMP(NOTE)=> we can also use module.exports object or (commonjs-export) syntax in two ways:
+// -> [first-way]:
+// => [first-way]:with in this first-way: we also have the mulitple ways do it as well:mainly its in two-ways:
+// -> first = is that we can do it as key-value pairs by providing (keys) to our functions:with in the module.exports object:
 // module.exports = {
 //   add: sum,
 //   Div: div,
 // };
-// -> second = is that we can simply proivde our created functions as keys with in the module.exports object:
+// -> second = is that we can simply proivde our created-functions as keys or values we can say with in the module.exports object:and they will automatically becomes the key-value pairs by there self:
 // module.exports = {
 //   sum,
 //   div,
 // };
 
+// ->[second-way]:
 // =>[second-way]:here in the second-way:we also have t he multiple ways to do it as well:
 //V.V.IMP(NOTE) = here we also gonna see that how we can also use the (commonjs-modules) method directly with the functions and with others things as well:
 // V.IMP = we use it with both function types:(simple-functions) and (arrow-functions):
