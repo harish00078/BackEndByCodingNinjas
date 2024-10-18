@@ -28,10 +28,11 @@
 // V.V.IMP(NOTE): so its gonna export them as (key-value) pairs:same thing that we  have with in the simple-objects:
 // V.IMP(NOTE):In CommonJs modules method we use (exports) keyword:because here In this syntax we can export mulitple things at one time:
 
-// => CommonJs Module:CommonJS is the default module system in Node.js that uses the ‘require’ function to import modules and the ‘module.exports’ object to export them:
 
-// VIMP-NOTE = here these function gonna be exports as properties:
-// => we can also use module.exports object in two ways:
+// => CommonJs Module:CommonJS is the default module system in Node.js that uses the ‘require’ function to import modules and the ‘module.exports’ object to export them: 
+// V.IMP-NOTE = here these functions gonna be exports as properties:with in properties the (functions) become's the (methods):
+// V.IMP(NOTE)=> we can also use module.exports object in two ways:
+// => [first-way]:with in this first-way: we also have the mulitple ways do it as well:
 // -> first = is that we can do it as key-value pair with in the module.exports object:
 // module.exports = {
 //   add: sum,
@@ -43,6 +44,7 @@
 //   div,
 // };
 
+// =>[second-way]:here in the second-way:we also have t he multiple ways to do it as well:
 //V.V.IMP(NOTE) = here we also gonna see that how we can also use the (commonjs-modules) method directly with the functions and with others things as well:
 // V.IMP = we use it with both function types:(simple-functions) and (arrow-functions):
 
