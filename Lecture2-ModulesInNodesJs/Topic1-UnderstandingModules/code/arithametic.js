@@ -23,7 +23,7 @@
 //   return x / y;
 // }
 
-// In commonjs modules method or syntax way we use (module.exports) keywords with  (object) or without the (object) to (export) things:
+// In commonjs modules method or syntax way we use (module.exports) keywords with  (object) or without the (object) to (export) things:acc to that how many of things we want to export:
 // V.IMP(NOTE):CommonJs basically uses a (object) to (export) things that's why it receives or have a (object) with in it:In which we assign our function,variables,or anything that we want to export from our file:
 // IMP(NOTE): And that's why its gonna export them as (key-value) pairs:same thing that we  have with in the simple-objects:
 
