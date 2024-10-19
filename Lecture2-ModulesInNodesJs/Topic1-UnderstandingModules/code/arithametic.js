@@ -24,12 +24,12 @@
 // }
 
 // In commonjs modules method or syntax way we use (module.exports) keywords or (object) to (export) things:
-// V.IMP(NOTE):It is basically uses a (object) that's why it receives or have a (object) with in it:In which we assign our function,variables,or anything that we want to export from our file:
-// IMP(NOTE): so its gonna export them as (key-value) pairs:same thing that we  have with in the simple-objects:
+// V.IMP(NOTE):CommonJs basically uses a (object) to (export) things that's why it receives or have a (object) with in it:In which we assign our function,variables,or anything that we want to export from our file:
+// IMP(NOTE): And that's why its gonna export them as (key-value) pairs:same thing that we  have with in the simple-objects:
 
 
-// => CommonJs Module:CommonJS is the (default) module-system in Node.js which uses the (require) function to import modules and the (module.exports) object to export them: 
-// V.IMP-NOTE = here these functions gonna be exports as properties:as we already know that if we export (functions) as properties then those (functions) become's (methods):
+// => CommonJs Module:CommonJS is the (default) module-system in Node.js which uses the (require) function to import-modules and the (module.exports) object to export them: 
+// V.IMP-NOTE = here these functions gonna be exports as properties because of the (object) usage:and also as we have already know that if we export (functions) as properties then those (functions) become's (methods):
 
 // V.IMP(NOTE)=> we can also use module.exports object or (commonjs-export) syntax in two ways:
 // -> [first-way]:
