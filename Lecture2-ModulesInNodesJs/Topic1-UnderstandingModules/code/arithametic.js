@@ -25,21 +25,25 @@
 
 // V.V.IMP: In commonjs modules method or syntax way we use (module.exports) keywords with  (object) or without the (object) to (export) things:we use them according to how many of things we want to export:
 // V.IMP(NOTE):CommonJs basically uses a (object) to (export) things that's why it receives or have a (object) with in it:In which we assign our function,variables,or anything that we want to export from our file:
-// IMP(NOTE): And that's why its gonna be iexport them as (key-value) pairs or (Properties):same thing that we  have with in the simple-objects:
+// IMP(NOTE): And that's why its gonna be export them as (key-value) pairs or (Properties):same thing that we  have with in the simple-objects:
 
 
 // => CommonJs Module:CommonJS is the (default) module-system in Node.js which uses the (require) function to import-modules and the (module.exports) object to export them: 
 // V.IMP-NOTE = here these functions gonna be exports as properties because of the (object) usage:and also as we have already know that if we export (functions) as properties then those (functions) become's (methods):
 
 // V.IMP(NOTE)=> we can also use module.exports object or (commonjs-export) syntax in two ways:
-// -> [first-way]:
-// => [first-way]:with in this first-way: we also have the mulitple ways do it as well:mainly its in two-ways:
-// -> first = is that we can do it as key-value pairs by providing (keys) to our functions:with in the module.exports object:
+
+// => [first-way]:Is with the help of (objects):
+// IMP => with in this first-way: we also have the mulitple ways do it as well:mainly its in two-ways:
+// -> [1] == is that we can do it as key-value pairs by providing (keys) to our functions:with in the module.exports object:
+
 // module.exports = {
 //   add: sum,
 //   Div: div,
 // };
+
 // -> second = is that we can simply proivde our created-functions as keys or values we can say with in the module.exports object:and they will automatically becomes the key-value pairs by there self:
+
 // module.exports = {
 //   sum,
 //   div,
