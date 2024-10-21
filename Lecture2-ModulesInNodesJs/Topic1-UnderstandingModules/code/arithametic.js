@@ -63,7 +63,6 @@
 // }
 
 // V.V.IMP-NOTE = (second-way) => we can also create the function:like this but its gonna be again working as (properties):
-
 // V.IMP-NOTE:we have use this method in our (backend-codeial) project:we can also use the (async-await) method with it:
 
 // module.exports.sum = function (x, y) {
