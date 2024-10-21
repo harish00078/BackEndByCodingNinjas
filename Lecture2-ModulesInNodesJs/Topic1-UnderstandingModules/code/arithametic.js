@@ -49,9 +49,8 @@
 //   div,
 // };
 
-// ->[second-way]:
-// =>[second-way]:here in the second-way:we also have the multiple ways to do it as well:
-//V.V.IMP(NOTE) = here we also gonna see that how we can also use the (commonjs-modules) method directly with the functions and with others things as well:
+// ->[second-way]:In the second-way:we do it without the (objects):we also have the multiple ways here to do it as well:
+//V.V.IMP(NOTE) = here we also gonna see that how we can also use the (commonjs-modules) export-method directly with the functions and with others things as well:
 // V.IMP = we use it with both function types:(simple-functions) and (arrow-functions):
 
 // -> 1 =  create function using simple function-keyword:
