@@ -33,8 +33,8 @@
 
 // V.IMP(NOTE)=> we can also use module.exports object or (commonjs-export) syntax in two ways:
 
-// => [first-way]:Is with the help of (objects):
-// IMP => with in this first-way: we also have the mulitple ways do it as well:mainly its in two-ways:
+// => [first-way]:Is with the help of (objects):with in this first-way:we also have the mulitple ways do it as well:mainly its in two-ways:
+
 // -> [1] == is that we can do it as key-value pairs by providing (keys) to our functions:with in the module.exports object:
 
 // module.exports = {
