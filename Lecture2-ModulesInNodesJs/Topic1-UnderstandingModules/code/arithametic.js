@@ -29,7 +29,7 @@
 
 
 // => CommonJs Module:CommonJS is the (default) module-system in Node.js which uses the (require) function to import-modules and the (module.exports) object to export them: 
-// V.IMP-NOTE = here these functions gonna be exports as properties because of the (object) usage:and also as we have already know that if we export (functions) as properties then those (functions) become's (methods):
+// V.IMP-NOTE = here these functions gonna be exports as properties because of the (object) usage:and we have also already know that if we export (functions) as properties then those (functions) become's (methods):
 
 // V.IMP(NOTE)=> we can also use module.exports object or (commonjs-export) syntax in two ways:
 
