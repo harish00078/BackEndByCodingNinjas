@@ -41,7 +41,7 @@
 //   Div: div,
 // };
 
-// -> [2-second] = Is that we can simply provide our created-functions as keys and values we can say with in the module.exports object:and they will automatically becomes the (key-value) pairs by there self:
+// -> [2-second] = Is that we can simply provide our created-functions and other things as it is they are as keys or values we can say with in the module.exports object:and they will automatically becomes the (key-value) pairs by there self:
 
 // module.exports = {
 //   sum,
