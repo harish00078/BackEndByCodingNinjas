@@ -49,20 +49,20 @@
 // };
 
 // =>[second-way]:In the second-way:we do it without the (objects):we also have the multiple ways here to do it as well:
-//V.V.IMP(NOTE) = here we also gonna see that how we can also use the (commonjs-modules) export-method directly with the functions and with others things as well:
-// V.IMP = here we use it with both the function types:(simple-functions) and (arrow-functions):
+//V.V.IMP(NOTE) = here we gonna see that how we can also use the (commonjs-modules) export-method directly with the functions and others things as well:
+// V.IMP = here we see it using with both the function-types: (simple-functions) and (arrow-functions):
 
-// [first-way]:we are using Commonjs Export-Syntax:with the (simple-function) directly:which we create using (function) keyword:
+// [first-type]: Simple-Functions:
+// here we are using Commonjs Export-Syntax:with the (simple-function) directly:which we have created using (function) keyword:
 
-// => Created the function using simple function-keyword:
-// V.IMP = It also have two ways in it:
-// -> 1 [first] => V.V.IMP-NOTE: here this way  gonna be export the (function) as (function):
+// V.V.IMP = It also have two ways in it:
+// -> [first-way] => Here in this way:we are gonna be export the (function) as (function):
 
 // module.exports  = function sum(x, y) {
 //   return x + y;
 // }
 
-// V.V.IMP-NOTE = (second-way) => we can also create the function:like this but its gonna be again working as (properties):
+// -> [Second-way] => we can also create the function:like this but its gonna be again working as (properties):
 // V.IMP-NOTE:we have use this method in our (backend-codeial) project:we can also use the (async-await) method with it:
 
 // module.exports.sum = function (x, y) {
