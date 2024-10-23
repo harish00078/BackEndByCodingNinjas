@@ -56,13 +56,15 @@
 // here we are using Commonjs Export-Syntax:with the (simple-function) directly:which we have created using (function) keyword:
 
 // V.V.IMP = It also have two ways in it:
-// -> [first-way] => Here in this way:we are gonna be export the (function) as (function):
+
+// -> [first-way] => In this way have created the function in the (simpler-way):And its gonna be export the (function) as (function):
 
 // module.exports  = function sum(x, y) {
 //   return x + y;
 // }
 
-// -> [Second-way] => we can also create the function:like this but its gonna be again working as (properties):
+// -> [Second-way] => In this way we have created the function in different way.why providing the function-name directly to the module.exports object.and then create the function:
+// we can also create the function:like this but its gonna be again working as (properties):
 // V.IMP-NOTE:we have use this method in our (backend-codeial) project:we can also use the (async-await) method with it:
 
 // module.exports.sum = function (x, y) {
