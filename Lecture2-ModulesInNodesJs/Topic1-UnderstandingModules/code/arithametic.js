@@ -85,7 +85,7 @@
 // V.IMP = we use it with both function types:(simple-functions) and (arrow-functions):
 // -> simple function:
 
-// V.IMP-NOTE =  here it also gonna be  export the simple-functions as proeperties:
+// V.IMP-NOTE =  here it also gonna be  export the simple-functions as properties:
 
 // exports.sum = function(x, y) {
 //   return x + y;
