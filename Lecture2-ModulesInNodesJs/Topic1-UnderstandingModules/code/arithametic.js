@@ -54,7 +54,7 @@
 
 // [first-way]:we are using Commonjs Export-Syntax:with the (simple-function) direclty:which we create using (function) keyword:
 
-// -> Created the function using simple function-keyword:
+// => Created the function using simple function-keyword:
 // V.IMP = It also have two ways in it:
 // -> 1 [first] => V.V.IMP-NOTE: here this way  gonna be export the (function) as (function):
 
