@@ -13,7 +13,7 @@
 // ===> In this Topic-file we will specifically gonna be learn about (CommonJs Module syntax):
 
 // => first = here we see that how we can do that with the help of (commonjs) modules method:
-// for that here we gonna create the two arithametic functions:both of these arithametic functions gonna get the same type of (argument) variables:
+// for that here we gonna create the two arithmetic functions:both of these arithmetic functions gonna get the same type of (argument) variables:
 
 // function sum(x, y) {
 //   return x + y;
@@ -32,7 +32,7 @@
 
 // V.IMP(NOTE)=> we can also use (module.exports) object or (commonjs-export) syntax in two ways:
 
-// => [first-way]:Is with the help of (objects):with in this first-way:we also have the mulitple ways do it as well:mainly its in two-ways:
+// => [first-way]:Is with the help of (objects):with in this first-way:we also have the multiple ways do it as well:mainly its in two-ways:
 
 // -> [1-first] == is that we can do it as key-value pairs by providing (keys) to our functions:with in the module.exports object:
 
@@ -41,7 +41,7 @@
 //   Div: div,
 // };
 
-// -> [2-second] = Is that we can simply proivde our created-functions as keys and values we can say with in the module.exports object:and they will automatically becomes the (key-value) pairs by there self:
+// -> [2-second] = Is that we can simply provide our created-functions as keys and values we can say with in the module.exports object:and they will automatically becomes the (key-value) pairs by there self:
 
 // module.exports = {
 //   sum,
