@@ -52,7 +52,7 @@
 //V.V.IMP(NOTE) = here we also gonna see that how we can also use the (commonjs-modules) export-method directly with the functions and with others things as well:
 // V.IMP = here we use it with both the function types:(simple-functions) and (arrow-functions):
 
-// [first-way]:we are using Commonjs Export-Syntax:with the (simple-function) direclty:which we create using (function) keyword:
+// [first-way]:we are using Commonjs Export-Syntax:with the (simple-function) directly:which we create using (function) keyword:
 
 // => Created the function using simple function-keyword:
 // V.IMP = It also have two ways in it:
