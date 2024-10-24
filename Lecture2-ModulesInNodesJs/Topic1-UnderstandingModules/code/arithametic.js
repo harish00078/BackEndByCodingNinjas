@@ -68,7 +68,7 @@
 // V.IMP-NOTE:we have use this method in our (backend-codeial) project:we can also use the (async-await) method with it:
 
 // module.exports.sum = function (x, y) {
-//   return x + y;
+//   return x + y; 
 // }
 // module.exports.multiple = function (x, y) {
 //   return x * y;
