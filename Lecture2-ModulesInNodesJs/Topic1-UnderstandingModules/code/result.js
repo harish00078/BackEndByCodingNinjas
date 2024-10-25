@@ -33,5 +33,5 @@
 
 // [second-way] = second is that we can only import the modules directly that we want to use from the file:
 
-// const sum = require("./arithmetic");
-// console.log(sum(3,5));
+const sum = require("./arithmetic");
+console.log(sum(3,5));
