@@ -89,7 +89,7 @@
 //     return x * y;
 // };
 
-// => [Third-way]: we can also do it only with the help of (exports) keyword:
+// -> [Third-way]: we can also do it only with the help of (exports) keyword:
 // V.V.IMP = here we see that we can also use the (exports) object directly with the functions and with others things as well:
 
 // IMP(NOTE) = 2 => (this method specifically export the functions or anything as properties):
