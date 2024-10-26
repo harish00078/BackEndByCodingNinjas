@@ -55,9 +55,10 @@
 // [first-type]: Simple-Functions:
 // here we are using Commonjs Export-Syntax:with the (simple-function) directly without the (object)declaration:which we have created using (function) keyword:
 
-// V.V.IMP = It also have two ways in it:
+// V.V.IMP = we can also do it in two ways:
 
-// -> [first-way] => In this way have created the function in the (simpler-way):And its gonna be export the (function) as (function):
+// -> [first-way] => In this way have created the function in the (simpler-way) using (function) keyword:
+// V.V.IMP-[NOTE]:-> And here this (function) gonna be exported as(function):this is the only way we can export the our own created function as (function) on nodejs with its (CommonJs) syntax:
 
 // module.exports  = function sum(x, y) {
 //   return x + y;
