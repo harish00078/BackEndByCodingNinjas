@@ -53,21 +53,22 @@
 // V.IMP = here we are using it with both the functions:And we also gonna see that how we can use it with both the function-types:
 // (simple-functions) and (arrow-functions):
 
-// [first-type]: Simple-Functions:
+// [first-type]: Simple-Functions:means those functions:which has been created using the (function) keyword:
 // here we are using Commonjs Export-Syntax:with the (simple-function) directly without the (object)declaration:
 
 // V.V.IMP = we can also do it in two ways:
 
-// -> [first-way] => In this way have created the function in the (simpler-way) using (function) keyword:
-// V.V.IMP-[NOTE]:-> And here this (function) gonna be exported as(function):this is the only way we can export the our own created function as (function) on nodejs with its (CommonJs) syntax:
+// -> [first-way] => In first-way we have created the function in the (simpler-way) using (function) keyword:
+// V.V.IMP-[NOTE]:-> Only here this (function) gonna be exported as (function) through the (commonjs) syntax:
+// this is the only way we can export the our own created function as (function) on nodejs with its (CommonJs) syntax:
 
 // module.exports  = function sum(x, y) {
 //   return x + y;
 // }
 
-// -> [Second-way] => In this way we have created the function in different way.why providing the function-name directly to the module.exports object.and then create the function:
+// -> [Second-way] => In this way we have created the function in different way:why providing our (function-name) directly to the (module.exports) keyword with the help of (dot):and then create the function:using (function) keyword:
 // we can also create the function:like this but its gonna be again working as (properties):
-// V.IMP-NOTE:we have use this method in our (backend-codeial) project:we can also use the (async-await) method with it:
+// V.V.IMP-[NOTE]:we have use this method in our (backend-codeial) project:we can also use the (async-await) method with it:
 
 // module.exports.sum = function (x, y) {
 //   return x + y;
