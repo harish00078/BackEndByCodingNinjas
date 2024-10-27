@@ -69,10 +69,10 @@
 //   return x + y;
 // }
 
-// -> [Second-way] => In this way we have created the function in different way:why providing our (function-name) directly to the (module.exports) keywords with the help of (.) dot-keyword:and then create the function using (function) keyword:
-// V.IMP = this way we can also do it like this but its gonna be again working as (properties):
+// -> [Second-way] => In this way we gonna create the function in different way:why providing our (function-name) directly to the (module.exports) keywords with the help of (.) dot-keyword:and then create the function using (function) keyword:
+// V.IMP =  we can also do it like this but its gonna be again working as (properties):
 
-// V.V.IMP-[NOTE]:we have use this method in our (backend-codeial) project:we can also use the (async-await) method with it:mostly we are gonna be use this way in our (backend) projects:
+// V.V.IMP-[NOTE]:we have use this method in our (backend-codeial) project:we can also use the (async-await) methods with it:mostly we are gonna be use this way in our (backend) projects:
 
 // module.exports.sum = function (x, y) {
 //   return x + y;
@@ -82,7 +82,7 @@
 // }
 
 // [Second-type]: Arrow-Functions:means those function which we are not created using the (function) keywords:they are created using the (arrow-functions):
-// IMP = here we are using the (arrow-functions) directly:And we declare (arrow-functions) using (equalTo(=)) and (greaterThan(>)) sign combine:
+// IMP = here we are using the (arrow-functions) directly:And we can declare (arrow-functions) by combining (equalTo(=)) and (greaterThan(>)) sign:
 
 // V.IMP-NOTE = here this function is also gonna be export as properties:
 
@@ -90,7 +90,7 @@
 //     return x * y;
 // };
 
-// -> [Third-way]: we can also do it only with the help of (exports) keyword:
+// -> [Third-way] => we can also do it only with the help of (exports) keyword:
 // V.V.IMP = here we see that we can also use the (exports) object directly with the functions and with others things as well:
 
 // IMP(NOTE) = 2 => (this method specifically export the functions or anything as properties):
