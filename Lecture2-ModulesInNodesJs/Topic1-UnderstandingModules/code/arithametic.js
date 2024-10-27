@@ -53,7 +53,7 @@
 
 // =>[second-way]:In the second-way:we do it without the (objects):we also have the multiple ways here to do it as well:
 //V.V.IMP(NOTE) = here we gonna see that how we can also use the (commonjs-modules) export-method directly with the functions and others things as well:
-// V.IMP = here we are using it with both the functions:And we also gonna see that how we can use it with both the function-types:
+// V.IMP = here we are using it with the functions:And we also gonna see that how we can use it with both the function-types:
 // (simple-functions) and (arrow-functions):
 
 // [first-type]: Simple-Functions:means those functions:which has been created using the (function) keyword:
@@ -61,17 +61,18 @@
 
 // V.V.IMP = we can also do it in two ways:
 
-// -> [first-way] => In first-way we have created the function in the (simpler-way) using (function) keyword:
-// V.V.IMP-[NOTE]:-> Only here this (function) gonna be exported as (function) through the (commonjs) syntax:
-// this is the only way we can export the our own created function as (function) on nodejs with its (CommonJs) syntax:
+// -> [first-way] => In first-way we create the function in the (simpler-way) using (function) keyword:and then simply pass that function to the (module.exports) keyword using the (equalTo) sign:
+
+// V.V.IMP-[NOTE]:-> this is the only way we can export our own created function as (function) on nodejs with its (CommonJs) syntax:
 
 // module.exports  = function sum(x, y) {
 //   return x + y;
 // }
 
-// -> [Second-way] => In this way we have created the function in different way:why providing our (function-name) directly to the (module.exports) keyword with the help of (dot):and then create the function:using (function) keyword:
-// we can also create the function:like this but its gonna be again working as (properties):
-// V.V.IMP-[NOTE]:we have use this method in our (backend-codeial) project:we can also use the (async-await) method with it:
+// -> [Second-way] => In this way we have created the function in different way:why providing our (function-name) directly to the (module.exports) keywords with the help of (.) dot-keyword:and then create the function using (function) keyword:
+// V.IMP = this way we can also do it like this but its gonna be again working as (properties):
+
+// V.V.IMP-[NOTE]:we have use this method in our (backend-codeial) project:we can also use the (async-await) method with it:mostly we are gonna be use this way in our (backend) projects:
 
 // module.exports.sum = function (x, y) {
 //   return x + y;
