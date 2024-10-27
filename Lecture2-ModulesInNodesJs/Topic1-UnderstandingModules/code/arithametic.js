@@ -90,14 +90,15 @@
 //     return x * y;
 // };
 
-// -> [Third-way] => we can also do it only with the help of (exports) keyword:
-// V.V.IMP = here we see that we can also use the (exports) object directly with the functions and with others things as well:
+// -> [Third-way] => we can also do it only with the help of (exports) keyword:we did not have to use the (module) keyword:
+// V.V.IMP = here we see that we can also use the (exports) keyword or object directly with the functions and others things as well:
 
 // IMP(NOTE) = 2 => (this method specifically export the functions or anything as properties):
-// V.IMP = we use it with both function types:(simple-functions) and (arrow-functions):
-// -> simple function:
+// V.IMP = we gonna use it with both the function-types:
+// (simple-functions) and (arrow-functions):
 
-// V.IMP-NOTE =  here it also gonna be  export the simple-functions as properties:
+// => [simple-function]:
+// V.V.IMP-NOTE =  here it also gonna be export the simple-functions as properties:not as (function) which we have with the (module.exports) keywords:
 
 // exports.sum = function(x, y) {
 //   return x + y;
@@ -109,7 +110,9 @@
 //   return x + y;
 // }
 
-// (IMP-NOTE) =  If we export something (like a function) and import it in another file, the entire file gets executed once. later the imports use the already executed code. But only the specific parts that we import will be accessible in the importing file. This is little different in ES6 modules, which can eliminate unused code.because of its tree shaking approach:
+// (V.IMP-NOTE)-[Commonjs-Syntax] :- If we export something (like a function) and import it in another file:
+// V.V.IMP-[NOTE]: Then that entire file gets executed once from where we are exporting that some-thing:
+// V.V.IMP: later the imports use that already executed code. But only the specific parts that we import will be accessible in the importing file. This is little different in ES6 modules, which can eliminate unused code.because of its (tree-shaking) approach:
 
 // we can see that with the help of (console) statement:
 console.log("executing the hole file");
