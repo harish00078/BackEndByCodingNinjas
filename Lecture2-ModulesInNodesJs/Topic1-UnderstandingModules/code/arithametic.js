@@ -91,9 +91,14 @@
 // };
 
 // -> [Third-way] => we can also do it only with the help of (exports) keyword:we did not have to use the (module) keyword:
-// V.V.IMP = here we see that we can also use the (exports) keyword or object directly with the functions and others things as well:
+// V.V.IMP-[NOTE] = 2 => (This method (specifically) export the functions or anything as properties):
+// V.V.IMP = here we gonna see that: how we can use this particular method with the (objects) and (non-objects) way:
 
-// IMP(NOTE) = 2 => (this method specifically export the functions or anything as properties):
+
+// => [Objects]:
+
+
+
 // V.IMP = we gonna use it with both the function-types:
 // (simple-functions) and (arrow-functions):
 
