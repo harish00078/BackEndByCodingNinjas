@@ -91,9 +91,9 @@
 // };
 
 // -> [Third-way] => we can also do it only with the help of (exports) keyword:we did not have to use the (module) keyword:
-// V.V.IMP-[NOTE] = 2 => (This method (specifically) export the functions or anything as properties):
+// V.V.IMP-[NOTE] => This method (specifically) export the functions or anything as properties:
 
-// V.V.IMP = here we gonna see that: how we can use this particular method with the (objects) and (non-objects) way:
+// V.V.IMP = here we gonna see that: how we can use this particular method with both ways (objects) and (non-objects) way:
 
 // ->[first-way]=> using-Object:
 
