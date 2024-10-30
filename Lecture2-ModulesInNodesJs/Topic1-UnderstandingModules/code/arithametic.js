@@ -95,7 +95,7 @@
 
 // V.V.IMP = here we gonna see that: how we can use this particular method with both ways (objects) and (non-objects) way:
 
-// ->[first-way] => using-Object:i
+// ->[first-way] => using-Object:
 
 
 
