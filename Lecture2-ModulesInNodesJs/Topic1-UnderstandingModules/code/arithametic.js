@@ -95,9 +95,7 @@
 
 // V.V.IMP = here we gonna see that: how we can use this particular method with both ways (objects) and (non-objects) way:
 
-// ->[first-way] => using-Object:
-
-
+// ->[first-way] => using-Object:we can not use the  
 
 // V.IMP = we gonna use it with both the function-types:
 // (simple-functions) and (arrow-functions):
