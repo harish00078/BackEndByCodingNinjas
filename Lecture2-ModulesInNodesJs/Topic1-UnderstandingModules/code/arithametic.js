@@ -24,7 +24,9 @@
 // }
 
 // V.V.IMP: In commonjs modules method or syntax way we use (module.exports) keywords with (object) or without the (object) to (export) things:we use them according to how many of things we want to export:same thing we do with in the (ES6-module-syntax) as well:
+
 // V.V.IMP(NOTE):CommonJs basically uses a (object) to (export) things that's why it receives or have a (object) with in it:In which we assign our function,variables,or anything that we want to export from our file:
+
 // IMP(NOTE): And that's why its gonna be export them as (key-value) pairs or (Properties):same thing that we have with in the simple-objects:
 
 // => CommonJs Module:CommonJS is the (default) module-system in Node.js which uses the (require) function to import-modules and the (module.exports) object to export them:
