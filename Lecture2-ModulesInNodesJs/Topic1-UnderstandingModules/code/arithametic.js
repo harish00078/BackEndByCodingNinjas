@@ -58,7 +58,7 @@
 // V.IMP = here we are using it with the functions:And we also gonna see that how we can use it with both the function-types:
 // (simple-functions) and (arrow-functions):
 
-// [first-type]: Simple-Functions:means those functions:which has been created using the (function) keyword:
+// [first-type]: Simple-Functions:means those functions which has been created using the (function) keyword:
 // here we are using Commonjs Export-Syntax:with the (simple-function) directly without the (object)declaration:
 
 // V.V.IMP = we can also do it in two ways:
