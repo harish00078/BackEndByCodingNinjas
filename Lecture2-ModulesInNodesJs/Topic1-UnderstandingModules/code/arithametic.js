@@ -54,7 +54,7 @@
 // };
 
 // =>[second-way]:In the second-way:we do it without the (objects):we also have the multiple ways here to do it as well:
-//V.V.IMP(NOTE) = here we gonna see that how we can also use the (commonjs-modules) export syntax or method directly with the functions and others things as well:
+//V.V.IMP(NOTE) = here we gonna see that how we can use the (commonjs-modules) export syntax or method directly with the functions and others things as well:
 // V.IMP = here we are using it with the functions:And we also gonna see that how we can use it with both the function-types:
 // (simple-functions) and (arrow-functions):
 
