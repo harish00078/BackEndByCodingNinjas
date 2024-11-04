@@ -59,7 +59,7 @@
 // (simple-functions) and (arrow-functions):
 
 // [first-type]: Simple-Functions:means those functions which has been created using the (function) keyword:
-// here we are using Commonjs Export-Syntax:with the (simple-function) directly without the (object)declaration:
+// here we are using Commonjs Export-Syntax with the (simple-function) directly without the (object) declaration:
 
 // V.V.IMP = we can also do it in two ways:
 
