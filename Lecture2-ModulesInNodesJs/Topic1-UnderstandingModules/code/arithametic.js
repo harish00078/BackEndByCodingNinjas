@@ -12,7 +12,7 @@
 
 // ===> In this Topic-file we will specifically gonna be learn about (CommonJs Module syntax):
 
-// => first = here we see that how we can do that with the help of (commonjs) modules method:
+// => first = here we see that how we can do that with the help of (commonjs) modules syntax or method:
 // for that here we gonna create the two arithmetic functions:both of these arithmetic functions gonna get the same type of (argument) variables:
 
 // function sum(x, y) {
@@ -32,10 +32,10 @@
 // => CommonJs Module:CommonJS is the (default) module-system in Node.js which uses the (require) function to import-modules and the (module.exports) object to export them:
 // V.IMP-NOTE = here these functions gonna be exports as properties because of the (object) usage:and we have also already know that if we export (functions) as properties then those (functions) become's (methods):
 
-// V.IMP(NOTE)=> we can also use (module.exports) object or (commonjs-export) syntax in (three) and more ways:but the most common once are these three ways:
+// V.IMP(NOTE)=> we can also use (module.exports) or (commonjs-export) syntax in (three) and more ways:but the most common once are these three ways:
 // -> 1 => use (module.exports) keyword with the help of (objects):
 // -> 2 => use (module.exports) keywords without the help of (objects):
-// -> 3 => use only (exports) keywords with the help of (objects) and without (objects):
+// -> 3 => use only (exports) keyword with the help of (objects) and without (objects):
 
 // => [first-way]:Is with the help of (objects):with in this first-way:we also have the multiple ways do it as well:mainly its in two-ways:
 
