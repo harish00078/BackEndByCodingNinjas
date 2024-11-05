@@ -61,7 +61,7 @@
 // [first-type]: Simple-Functions:means those functions which has been created using the (function) keyword:
 // here we are using the Commonjs Export-Syntax with (simple-function) directly without even declaring the (object-first) with in it:
 
-// V.V.IMP = we can also do it in two ways:
+// V.V.IMP = we also have two ways to do it:
 
 // -> [first-way] => In first-way we create the function in the (simpler-way) using (function) keyword:and then simply pass that function to the (module.exports) keyword using the (equalTo) sign:
 
