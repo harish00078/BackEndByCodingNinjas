@@ -73,8 +73,8 @@
 
 // -> [Second-way] => In this way we gonna create the function in different way:why providing our (function-name) directly to the (module.exports) keywords with the help of (.) dot-keyword:and then create the function using (function) keyword:
 
-// V.V.IMP-[NOTE]:we have use this method in our (backend-codeial) project:we can also use the (async-await) methods with it:mostly we are gonna be use this way in our (backend) projects:
-// V.V.IMP-[NOTE]:-> we can also use this same-way:with the help of (arrow-functions) as well:
+// V.V.IMP-[NOTE]:we have use this method in our (backend-codeial) project:we can also use the (async-await) method with it:mostly we are gonna be use this way in our (backend) projects:
+// V.V.IMP-[NOTE]:-> we can also use this same-way:with the (arrow-functions) as well:
 
 // module.exports.sum = function (x, y) {
 //   return x + y;
