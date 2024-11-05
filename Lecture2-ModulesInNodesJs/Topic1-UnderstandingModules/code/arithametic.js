@@ -71,7 +71,7 @@
 //   return x + y;
 // }
 
-// -> [Second-way] => In this way we gonna create the function in different way:by providing our (function-name) directly to the (module.exports) keywords with the help of (.) dot-keyword:and then create the function using (function) keyword:and after that assign it through (equalTo) sign to the (module.exports) keywords with the (function-name):
+// -> [Second-way] => In this way we gonna create the function in different way:by providing our (function-name) directly to the (module.exports) keywords with the help of (.) dot-keyword:and then create the function using (function) keyword:and after that assign it through (equalTo) sign to the (module.exports) keywords with its (function-name):
 
 // V.V.IMP-[NOTE]:we have use this method in our (backend-codeial) project:we can also use the (async-await) method with it:mostly we are gonna be use this way in our (backend) projects:
 // V.V.IMP-[NOTE]:-> we can also use this same-way:with the (arrow-functions) as well:
