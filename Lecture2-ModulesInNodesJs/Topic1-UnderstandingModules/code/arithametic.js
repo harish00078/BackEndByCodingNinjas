@@ -83,7 +83,7 @@
 //   return x * y;
 // }
 
-// [Second-type]: Arrow-Functions:means those function which we are not created using the (function) keywords:they are created using the (arrow-functions):
+// [Second-type]: Arrow-Functions:means those function which we are not created using the (function) keywords:they are created using the (arrow-functions) method:
 // IMP = here we are using the (arrow-functions) directly:And we can declare (arrow-functions) by combining (equalTo(=)) and (greaterThan(>)) sign:
 
 // V.IMP-NOTE = here this function is also gonna be export as properties:
