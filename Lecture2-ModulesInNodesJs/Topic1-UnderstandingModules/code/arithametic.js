@@ -84,7 +84,8 @@
 // }
 
 // [Second-type]: Arrow-Functions:means those function which we are not created using the (function) keywords:they are created using the (arrow-functions) method:
-// IMP = here we are using the (arrow-functions) directly:And we can declare (arrow-functions) by combining (equalTo(=)) and (greaterThan(>)) sign:
+// IMP = here we gonna use the (arrow-functions) directly with the module.exports keyword by declaring its function-name with them as well:same thing we did with in the simple-function's second-way:
+// And we can declare (arrow-functions) by combining (equalTo(=)) and (greaterThan(>)) sign:
 
 // V.IMP-NOTE = here this function is also gonna be export as properties:
 
