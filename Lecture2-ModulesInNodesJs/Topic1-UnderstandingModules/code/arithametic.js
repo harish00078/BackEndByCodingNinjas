@@ -130,7 +130,8 @@
 
 // V.V.IMP[NOTE]:there one more-way to use (exports) keyword:and that is if we have already created the thing:which we want to be export:then we can use this way:
 // we can use this-way if did not want to use the (module.exports) keywords:then we can use the (exports)  keyword separately:
-exports.sum = sum;
+
+// exports.sum = sum;
 
 // (V.IMP-NOTE)-[Commonjs-Syntax] :- If we export something (like a function) and import it in another file:
 // V.V.IMP-[NOTE]: Then that entire file gets executed once from where we are exporting that some-thing:
