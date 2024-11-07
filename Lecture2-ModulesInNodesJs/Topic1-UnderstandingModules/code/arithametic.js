@@ -108,12 +108,11 @@
 // V.V.IMP = here we gonna see that: how we can use this particular method with both ways (objects) and (non-objects):
 
 // ->[first-way] => using-Object:we can not use this way with the objects:
-// exports = {
-//   sum: function (x, y) {
-//     return x + y;
-//   },
+//  exports = {
+//      sum
+//  }
 
-// V.IMP = we gonna use it with both the function-types:
+// V.IMP = we gonna use it with both the function-types:but without the objects declaration:
 // (simple-functions) and (arrow-functions):
 
 // => [simple-function]:
@@ -128,6 +127,8 @@
 // exports.sum=(x, y)=> {
 //   return x + y;
 // }
+
+// V.V.IMP[NOTE]:
 
 // (V.IMP-NOTE)-[Commonjs-Syntax] :- If we export something (like a function) and import it in another file:
 // V.V.IMP-[NOTE]: Then that entire file gets executed once from where we are exporting that some-thing:
