@@ -85,10 +85,18 @@
 
 // [Second-type]: Arrow-Functions:means those function which we are not created using the (function) keywords:they are created using the (arrow-functions) method:
 // IMP = here we gonna use the (arrow-functions) directly with the module.exports keyword by declaring its function-name with them as well:same thing we did with in the simple-function's second-way:
-// And we can declare (arrow-functions) by combining (equalTo(=)) and (greaterThan(>)) sign:
+// And we can declare (arrow-functions) method by combining (equalTo(=)) and (greaterThan(>)) sign:
 
 // V.IMP-NOTE = here these functions is also gonna be exported as properties:
-// V.V.IMP => we can also use (arrow-functions) with the help of (module.exports) keywords it in two-ways:same as the simple-functions:
+// V.V.IMP => we can also use (arrow-functions) directly with the (module.exports) keywords in two-ways:same as the simple-functions:
+
+// [first-way]: Is that we can create the simple (arrow-function):
+// IMP[NOTE] = but it is not the compatible way that's why we did not use it.because in this syntax we are gonna be able to (name) our (arrow-function):
+// module.exports = (x,y) =>{
+//     return x + y; 
+// }
+
+// [second-way]: Is that we can create the (arrow-function) with the help of (module.exports) keywords: by declaring its function-name with them as well: and then assign it to the (module.exports) keywords with the help of (equalTo) sign: same way we did with the (simple-functions):
 
 // module.exports.multiple = (x, y) => {
 //     return x * y;
@@ -97,7 +105,7 @@
 // -> [Third-way] => we can also do it only with the help of (exports) keyword:we did not have to use the (module) keyword:
 // V.V.IMP-[NOTE] => This method (specifically) export the functions or anything as properties:
 
-// V.V.IMP = here we gonna see that: how we can use this particular method with both ways (objects) and (non-objects) way:
+// V.V.IMP = here we gonna see that: how we can use this particular method with both ways (objects) and (non-objects):
 
 // ->[first-way] => using-Object:we can not use the
 
