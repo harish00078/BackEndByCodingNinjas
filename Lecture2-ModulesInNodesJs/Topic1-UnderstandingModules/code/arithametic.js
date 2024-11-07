@@ -93,7 +93,7 @@
 // [first-way]: Is that we can create the simple (arrow-function):
 // IMP[NOTE] = but it is not the compatible way that's why we did not use it.because in this syntax we are gonna be able to (name) our (arrow-function):
 // module.exports = (x,y) =>{
-//     return x + y; 
+//     return x + y;
 // }
 
 // [second-way]: Is that we can create the (arrow-function) with the help of (module.exports) keywords: by declaring its function-name with them as well: and then assign it to the (module.exports) keywords with the help of (equalTo) sign: same way we did with the (simple-functions):
@@ -107,7 +107,11 @@
 
 // V.V.IMP = here we gonna see that: how we can use this particular method with both ways (objects) and (non-objects):
 
-// ->[first-way] => using-Object:we can not use the
+// ->[first-way] => using-Object:we can not use this way with the objects:
+// exports = {
+//   sum: function (x, y) {
+//     return x + y;
+//   },
 
 // V.IMP = we gonna use it with both the function-types:
 // (simple-functions) and (arrow-functions):
