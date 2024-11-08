@@ -112,7 +112,7 @@
 //      sum
 //  }
 
-// V.IMP = we gonna use it with both the function-types:but without the objects declaration:
+// V.IMP = here we gonna use it with both the function-types:but without the objects declaration:
 // (simple-functions) and (arrow-functions):
 
 // => [simple-function]:
