@@ -109,7 +109,7 @@
 
 // ->[first-way] => using-Object:we can not use this way with the objects:
 //  exports = {
-//      sum
+//      sum,
 //  }
 
 // V.IMP = here we gonna use it with both the function-types:but without the objects declaration:
