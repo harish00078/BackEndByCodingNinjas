@@ -128,8 +128,8 @@
 //   return x + y;
 // }
 
-// V.V.IMP[NOTE]:there one more-way to use (exports) keyword:and that is if we have already created the thing:which we want to be export:then we can use this way:
-// we can use this way: if we are not using the (module.exports) keywords:then we can use the (exports)  keyword separately:
+// V.V.IMP[NOTE]:there one more-way to use (exports) keyword:and that we can use if we have already created the thing:which we want to be export:then we can use this way:
+// we can use this way: if we are not using the (module.exports) keywords:then we can use the (exports) keyword separately like this:
 
 // exports.sum = sum;
 
