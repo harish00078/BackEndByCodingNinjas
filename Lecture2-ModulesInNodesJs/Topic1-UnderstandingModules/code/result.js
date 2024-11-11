@@ -1,4 +1,4 @@
-// here we are gonna use those arithmetical functions modules:and get the result from them and print it on the terminal:
+// here we are gonna use those arithmetical-functions modules:and get the result from them and print it on the terminal:
 
 // ===> here we gonna learn about:how to use the (commonjs-modules) method exports:
 
