@@ -1,6 +1,6 @@
 // here we are gonna use those arithmetical-functions modules:and get the result from them and print it on the terminal:
 
-// ===> here we gonna learn about:how to use the (commonjs-modules) method exports:
+// ===> here we gonna learn about that:how to use the (commonjs-module) method exports by(Importing) them here:
 
 // V.V.IMP = here we do it with the help of (require) method:
 // IMP-NOTE: when we say that.we are importing the all modules at once:it basically means that we are only importing the modules which we have exported:and not importing any other modules:
