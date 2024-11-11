@@ -135,7 +135,7 @@
 
 // (V.IMP-NOTE)-[Commonjs-Syntax] :- If we export something (like a function) and import it in another file:then that function will be available in the importing file:
 // V.V.IMP-[NOTE]: And also first that entire file gets executed once from where we are exporting  some-thing:
-// V.V.IMP: later the imports use that already executed code. But only the specific parts that we import will be accessible in the importing file. This is little different in ES6 modules, which can eliminate unused code.because of its (tree-shaking) approach:
+// V.V.IMP: later the imports use that already executed code. But only the specific parts of  that we import will be accessible in the importing file. This is little different in ES6 modules, which can eliminate unused code.because of its (tree-shaking) approach:
 
 // we can see that with the help of (console) statement:
 console.log("executing the hole file");
