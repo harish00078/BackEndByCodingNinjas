@@ -23,7 +23,6 @@
 // => First-ways:To types to import modules:
 
 // [first-type]:
-
 // const arithmeticModules = require("./arithmetic");
 // [second-type]:
 // const { sum, multiple } = require("./arithmetic");
