@@ -2,8 +2,8 @@
 
 // Modules help us to do two and more things:
 // => first =  using modules we can share our code.or we can say that the particular section of our code-file from one-file to another-file:with the help of modules we can use something on the other files which we have created on the one particular file:
-// => Secondly = V.V.IMP(Note)= In Node.js, with the help of modules, we are able to connect our code or its multiple files:within one file and that one file is basically connected to our main app-file or server-file:We can also connect those files one by one with the main server-file. Instead of combining them first into one file:this is how we connect multiple files with in our Node.js or server application:same thing we do with the front-end section of our application as well:
-// => third = V.V.IMP(NOTE):modules syntax allows us to import built-in modules (like 'fs' for file system operations) and other libraries that we install into our application using Node.js environment. This enables us to access and use them in our application files:
+// => Secondly = V.V.IMP(Note)= In Node.js, with the help of modules, we are able to connect our code or its multiple files:within one file and that one file is basically connected to our main app-file or server-file:We can also connect those files one by one with the main server-file. Instead of combining them first into one file:this is how we connect multiple files with in our Node.js or server application:same thing we do with in the front-end section library (react)  application as well:
+// => third = V.V.IMP(NOTE):modules syntax allows us to import built-in modules (like 'fs' for file system operations) and other libraries that we can install into our application using Node.js environment. This enables us to access and use them in our application files:
 
 // IMP => we have two ways to do that:these are not types they are the ways that how we can have or create modules and access them after that:
 // V.V.IMP = we have two diff syntaxes to create modules in nodejs:
