@@ -88,6 +88,7 @@
 // And we can declare (arrow-functions) method by combining (equalTo(=)) and (greaterThan(>)) sign:
 
 // V.IMP-NOTE = here these functions is also gonna be exported as properties:
+
 // V.V.IMP => we can also use (arrow-functions) directly with the (module.exports) keywords in two-ways:same as the simple-functions:
 
 // [first-way]: Is that we can create the simple (arrow-function):
