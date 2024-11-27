@@ -12,7 +12,7 @@
 // -> [1-type]: first is that using the default export syntax of commonjs syntax:and that is (module.exports) object:
 // => 1 = if we are using the (module.exports) object:and assigning our functions as (key-value) pairs or (properties) to it:then we use the first-way here to import things: 
 // -> [2-type]:second is that simply using the (export) keyword:and that is (exports) object: 
-// And also if we are using the (exports) keyword directly:and assigning our functions as properties to it:then we also have to use the first-way here as well to import things:
+// with in this type:if we are using the (exports) keyword directly:and assigning our functions as properties to it:then we also have to use the first-way here as well to import things:
 
 
 // => 2 = and if we are using the module.exports object directly with the functions:and assigning them to it:then we use the second-way here to import things:
