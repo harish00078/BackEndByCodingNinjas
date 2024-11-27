@@ -8,10 +8,10 @@
 // => V.IMP = Here through (commonjs) syntax we can import the modules in two ways:It mostly depend on that how we are exporting things:
 // => IMP-NOTES:if we export some thing as (properties) or (key-value) pairs then we have to use the (first-way) here to import things:otherwise we need to use the (second-way):
 
-// -> [first-way]:(Explanation):In this way we basically (exports) in two ways:
-// -> [1]: first that using default export syntax of commonjs syntax:and that is (module.exports) object:
-// => 1 = if we are using the (module.exports) object:and assigning our functions as (key-value) pairs or (properties) to it:
-// then we use the first-way here to import things: 
+// -> [first-way]:(Explanation):In this way we basically (exports) in two types:
+// -> [1-type]: first is that using the default export syntax of commonjs syntax:and that is (module.exports) object:
+// => 1 = if we are using the (module.exports) object:and assigning our functions as (key-value) pairs or (properties) to it:then we use the first-way here to import things: 
+// -> [2-type]:second is that simply using the (export) keyword:and that is (exports) object: 
 // And also if we are using the (exports) keyword directly:and assigning our functions as properties to it:then we also have to use the first-way here as well to import things:
 
 
