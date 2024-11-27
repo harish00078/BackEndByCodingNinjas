@@ -3,12 +3,17 @@
 // ===>V.V.IMP: here we gonna learn about that:how be (Import) things in (commonjs) modules syntax: acc to its exports or exporting-ways:
 // V.V.IMP = Here In (commonjs):we (Import) things with the help of (require) method:
 // IMP-NOTE: when we say that.we are importing the all modules at once:it basically means that we are only importing the modules which we have exported:and not importing any other modules:
-// V.V.IMP(NOTE) = here we can see that: when we are calling or importing our module-functions they are representing there selfs as (properties):because of the module.exports object:because we are exporting those functions through the object:
+// V.V.IMP(NOTE) = here we can see that: when we are calling or (Importing) our (module-functions) they are representing there selfs as (properties):because of the module.exports object:because we are exporting those functions through the object:
 
-// we can also do it in two ways:
-// V.V.IMP = It mostly depend on that how we are exporting things:
-// => 1 = if we are using the (module.exports) object:and assigning our functions as (key-value) pairs or (properties) to it:then we use the first-way here to import things: and also if we are using the (exports) object directly:and assigning our functions as properties to it:then we also have to use the first-way here as well to import things:
-// V.IMP-NOTE = if we export some thing as (properties) or (key-value) pairs then we have to use the first-way here to import things:
+// => V.IMP = Here through (commonjs) syntax we can import the modules in two ways:It mostly depend on that how we are exporting things:
+// => IMP-NOTES:if we export some thing as (properties) or (key-value) pairs then we have to use the (first-way) here to import things:otherwise we need to use the (second-way):
+
+// -> [first-way]:(Explanation):In this way we basically (exports) in two ways:
+// -> [1]: first that using default export syntax of commonjs syntax:and that is (module.exports) object:
+// => 1 = if we are using the (module.exports) object:and assigning our functions as (key-value) pairs or (properties) to it:
+// then we use the first-way here to import things: 
+// And also if we are using the (exports) keyword directly:and assigning our functions as properties to it:then we also have to use the first-way here as well to import things:
+
 
 // => 2 = and if we are using the module.exports object directly with the functions:and assigning them to it:then we use the second-way here to import things:
 // V.IMP-NOTE = if we export some thing as (functions) then we have to use the second-way here to import things:
