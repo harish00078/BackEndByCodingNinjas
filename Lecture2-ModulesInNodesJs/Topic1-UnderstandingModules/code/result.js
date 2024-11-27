@@ -1,4 +1,4 @@
-// here we are gonna use those arithmetical-function modules which we have exported from the arithmetic-file using (commonjs) syntax :and gonna get the result from them and print it on the terminal:
+// here we are gonna use those arithmetical-function modules which we have exported from the arithmetic-file using (commonjs) exported-syntax :and gonna get the result from them and print it on the terminal:
 
 // ===>V.V.IMP: here we gonna learn about that:how be (Import) things in (commonjs) modules syntax: acc to its exports or exporting-ways:
 // V.V.IMP = Here In (commonjs):we (Import) things with the help of (require) method:
