@@ -6,16 +6,18 @@
 // V.V.IMP(NOTE) = here we can see that: when we are (calling) or (Importing) our (module-functions) which we have created:then they are representing there selfs as (properties):because of the module.exports object:because we are exporting those functions through the object:
 
 // => V.IMP = Here through (commonjs) syntax we can import the modules in two ways:It mostly depend on that how we are exporting things:
-// => IMP-NOTES:if we export some thing as (properties) or (key-value) pairs then we have to use the (first-way) here to import things:otherwise we need to use the (second-way):
+// => IMP-NOTES:if we export some thing using (object):and assigning them as (properties) or (key-value) pairs then we have to use the (first-way) to import things:and if we are directly using them with the (module.exports) or (exports) keyword then we have to use the (second-way) to import things:
 
-// => [first-way]:(Explanation):we use this way when we basically (exports) in two-types:
+// => [first-way]:(Explanation):In first way.we have one types to export the things:
 // -> [1-type]: first is that using the default export syntax of commonjs:and that is (module.exports) object:
 // -> if we are using the (module.exports) object:and assigning our functions as (key-value) pairs or (properties) to it:then we use the first-way here to import things: 
 // -> [2-type]:second is that simply using the (exports) keyword:and that is (exports) object: 
 // -> if we are using the (exports) keyword directly:and assigning our functions as properties to it:then we also have to use the first-way here as well to import things:
 
-// => [second-way]:(explanation):
-// => 2 = and if we are using the module.exports object directly with the functions:and assigning them to it:then we use the second-way here to import things:
+// => [second-way]:(explanation):In second way.we have two types to export the things:
+// -> [1-type]:assigning our functions or anything directly with the default (module.exports) keyword:
+// => 1 = In this type: if we are using the module.exports object directly with the functions:and assigning them to it:then we use the second-way here to import things:
+// =
 // V.IMP-NOTE = if we export some thing as (functions) then we have to use the second-way here to import things:
 
 // [first-way] = In first way.we have two types to import the things:
