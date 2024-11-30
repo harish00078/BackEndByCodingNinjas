@@ -6,7 +6,7 @@
 // V.V.IMP(NOTE) = when we (call) or (Import) our (module-functions) which we have created and exported:they represent there selfs as (properties):because of the module.exports object:because we are exporting those functions through the object:
 
 // => V.IMP = Here through (commonjs) syntax we can import the modules in two-ways:It mostly depend on that how we are exporting things:
-// => IMP-NOTES:mostly we have Three ways to export things:and how be gonna import them using those two ways of importing:
+// => IMP-NOTES:
 // NOTE:Two ways of importing works with three ways of exporting:like this:
 // => 1 = if we exporting things using (objects):then we use the (first-way) of importing things:
 // => 2 = if we exporting things directly with the exporting keyword:then we use the (second-way) of importing things:
