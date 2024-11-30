@@ -1,7 +1,7 @@
 // here we are gonna use those arithmetical-function modules which we have exported from the arithmetic-file using (commonjs) exported-syntax:and gonna get the result from them and print it on the terminal:
 
 // ===>V.V.IMP: here we gonna learn about that:how be (Import) things in (commonjs) modules syntax: acc to its exports or exporting-ways:
-// V.V.IMP = Here In (commonjs):we (Import) things with the help of (require) method:
+// V.V.IMP-NOTE = Here In (commonjs):we (Import) things with the help of (require) method:
 // IMP-NOTE: when we say that.we are importing the all modules at once:it basically means that we are only importing the modules which we have exported:and not importing any other modules:
 // V.V.IMP(NOTE) = when we (call) or (Import) our (module-functions) which we have created and exported:they represent there selfs as (properties):because of the module.exports object:because we are exporting those functions through the object:
 
