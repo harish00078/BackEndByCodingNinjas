@@ -3,25 +3,20 @@
 // ===>V.V.IMP: here we gonna learn about that:how be (Import) things in (commonjs) modules syntax: acc to its exports or exporting-ways:
 // V.V.IMP = Here In (commonjs):we (Import) things with the help of (require) method:
 // IMP-NOTE: when we say that.we are importing the all modules at once:it basically means that we are only importing the modules which we have exported:and not importing any other modules:
-// V.V.IMP(NOTE) = here we can see that: when we are (calling) or (Importing) our (module-functions) which we have created:then they are representing there selfs as (properties):because of the module.exports object:because we are exporting those functions through the object:
+// V.V.IMP(NOTE) = here we can see that: when we are (calling) or (Importing) our (module-functions) which we have created:they are representing there selfs as (properties):because of the module.exports object:because we are exporting those functions through the object:
 
-// => V.IMP = Here through (commonjs) syntax we can import the modules in two ways:It mostly depend on that how we are exporting things:
-// => IMP-NOTES:two ways to export things:and how be gonna import them:
-// [first-way] = if we export some thing using (object):and assigning them as (properties) or (key-value) pairs then we have to use the (first-way) to import things:
-// [second-way] = if we are directly using them with the (module.exports) or (exports) keyword then we have to use the (second-way) to import things:
+// => V.IMP = Here through (commonjs) syntax we can import the modules in two-ways:It mostly depend on that how we are exporting things:
+// => IMP-NOTES:mostly we have Three ways to export things:and how be gonna import them using those two ways of importing:
+// NOTE:Two ways of importing works with three ways of exporting:like this:
+// => 1 = if we exporting things using (objects):then we use the (first-way) of importing things:
+// => 2 = if we exporting things directly with the exporting keyword:then we use the (second-way) of importing things:
 
-// => [first-way]:(Explanation):In first way.we have one type to export the things:
-// -> [1-type]:And that is using the default export syntax of commonjs:and that is (module.exports) object:
-// -> if we are using the (module.exports) object:and assigning our functions as (key-value) pairs or (properties) to it:then we need to use the first-way here to import things: 
-// -> [2-type]:second is that simply using the (exports) keyword:and that is (exports) object: 
-// -> if we are using the (exports) keyword directly:and assigning our functions as properties to it:then we also have to use the first-way here as well to import things:
+// NOTE:These are the three ways of exporting things:
+// [first-way] = if we export some thing using (objects):means that assigning our exported things as (properties) or (key-value) to objects:then we have to use the (first-way) to import things:
+// [second-way] = if we are directly using them with the (module.exports) keyword then we have to use the (second-way) to import things:
+// [third-way] = if we are directly using them with the (exports) keyword then we have also have to use the (second-way) to import things:
 
-// => [second-way]:(explanation):In second way.we have two types to export the things:
-// -> [1-type]:assigning our functions or anything directly with the default (module.exports) keyword:
-// => In this type: if we are using the (module.exports) keyword or object directly with the functions or thing which we want to export:and assigning them to it:then we use the second-way here to import things:
-// -> [2-type]:assigning our functions or anything directly with the (exports) keyword:
-// => In this type: if we are using the (exports) keyword directly with the functions or thing which we want to export:and assigning them to it:then we also use the second-way here to import things:
-// V.IMP-NOTE = if we export some thing as (functions) then we have to use the second-way here to import things:
+
 
 // [first-way] = In first way.we have two types to import the things:
 // => 1 =  first is that we can import the hole-file:and store it in the variable:and from that variable-name we can access our module functions or other things those we have exported:and access them by using the dot (.) keyword on the variable-name:
