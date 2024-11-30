@@ -6,15 +6,19 @@
 // V.V.IMP(NOTE) = when we (call) or (Import) our (module-functions) which we have created and exported:they represent there selfs as (properties):because of the module.exports object:because we are exporting those functions through the object:
 
 // => V.IMP = Here through (commonjs) syntax we can import the modules in two-ways:It mostly depend on that how we are exporting things:
-// => IMP-NOTES:
-// NOTE:Two ways of importing works with three ways of exporting:like this:
-// => 1 = if we exporting things using (objects):then we use the (first-way) of importing things:
-// => 2 = if we exporting things directly with the exporting keyword:then we use the (second-way) of importing things:
+// => IMP-NOTES:basically we have two ways of importing things:and three ways to export things in commonjs syntax:so here we gonna learn about that:how we can use those two ways of (imports) with the three-ways of (exports):
+
 
 // NOTE:These are the three ways of exporting things:
 // [first-way] = if we export some thing using (objects):means that assigning our exported things as (properties) or (key-value) to objects:then we have to use the (first-way) to import things:
 // [second-way] = if we are directly using them with the (module.exports) keyword then we have to use the (second-way) to import things:
 // [third-way] = if we are directly using them with the (exports) keyword then we have also have to use the (second-way) to import things:
+
+// NOTE:It basically a simple distribution:To use two-ways of (imports) on those three-ways of (exports):
+// -> [first-way]-(exports) = if we are using (objects) to export things:or we can say assigning our things as (properties) or (Key-value) pairs to object:then we use the (first-way) of importing things:
+// => 1 = if we exporting things using (objects):then we use the (first-way) of importing things:
+// => 2 = if we exporting things directly with the exporting keyword:then we use the (second-way) of importing things:
+
 
 
 
