@@ -9,8 +9,11 @@
 // => IMP-NOTES:basically we have two ways of importing things:and three ways to export things in commonjs syntax:so here we gonna learn about that:how we can use those two ways of (imports) with the three-ways of (exports):
 
 // NOTE:These are the three ways of exporting things:
-// [first-way] = if we export some thing using (objects):means that assigning our exported things as (properties) or (key-value) to objects:then we have to use the (first-way) to import things:
+// [first-way] = if we export some thing using (objects)with the module.exports keyword:which means that if we are assigning our exported things as (properties) or (key-value) to the objects:then we have to use the (first-way) to import things:
 // [second-way] = if we are directly using them with the (module.exports) keyword then we have to use the (second-way) to import things:
+// IMP-NOTE:With in second way:we get two exports:
+// -> 1 = First its exports things like all other-ways:by simply exporting them as (properties) or (key-value) pairs:
+// (V.IMP) -> 2 = Second it exports thing as they are:[for-example]:if we are exporting the (function):then gonna be exported as (function):not as (properties) or (key-value) pairs like we have in in the other-ways:
 // [third-way] = if we are directly using them with the (exports) keyword then we have also have to use the (second-way) to import things:
 
 // NOTE:It basically a simple distribution:To use two-ways of (imports) on those three-ways of (exports):
