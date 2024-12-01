@@ -3,7 +3,7 @@
 // ===>V.V.IMP: here we gonna learn about that:how be (Import) things in (commonjs) modules syntax: acc to its exports or exporting-ways:
 // V.V.IMP-NOTE = Here In (commonjs):we (Import) things with the help of (require) method:
 // IMP-NOTE: when we say that:we are importing the all modules at once:it basically means that when we import be are importing the hole-file of our modules:but we are only gonna be able to access the modules from that file which we have exported:
-// V.V.IMP(NOTE) = when we (call) or (Import) our (module-functions) which we have created and exported:they represent there selfs as (properties):because of the module.exports object:because we are exporting those functions through the object:
+// V.V.IMP(NOTE) = when we (call) or (Import) our (module-functions) which we have created and exported:they are representing there selfs as (properties):because of the module.exports object:because we are exporting those functions through the object:
 
 // => V.IMP = Here through (commonjs) syntax we can import the modules in two-ways:It mostly depend on that how we are exporting things:
 // => IMP-NOTES:basically we have two ways of importing things:and three ways to export things in commonjs syntax:so here we gonna learn about that:how we can use those two ways of (imports) with the three-ways of (exports):
