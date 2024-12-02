@@ -17,11 +17,11 @@
 // [third-way] = if we are directly using them with the (exports) keyword then we also have to use the (second-way) to import things:
 
 // NOTE:It basically a simple distribution:To use two-ways of (imports) on those three-ways of (exports):
-// -> if we are using (objects) to export things:or we can say assigning our things as (properties) or (Key-value) pairs to object:then we use the (first-way) of importing things:
-// -> if we exporting things using (objects):then we use the (first-way) of importing things:
-// -> if we exporting things directly with the exporting keyword:then we use the (second-way) of importing things:
+// -> if we are using (objects) to export things:or we can say assigning our things as (properties) or (Key-value) pairs to object and then exporting them:In that case we have the (first-way) of importing things:
+// -> if we exporting things directly by using (module.exports) and (exports) keyword:then we have use the (second-way) of importing things:
+// IMP-NOTE:In case of second-way of importing things:we get two types of export-results:so we have check that if we can use the second-way of (import) on those two types of export-results or not:as we have learn that this case only occur when we are exporting things directly by using (module.exports) keyword:
 
-// Importing-Ways:
+// Learning About Importing-Ways:
 // [first-way] = In first way:we have two types to import the things:
 // => 1(first-type) = Is that we can import the hole-file:and store it in the variable:and from that variable-name we can access our module functions or other things those we have exported:and access them by using the dot (.) keyword on the variable-name:
 // => 2(second-type) = Is that we can only import those modules which we want to use from the  exported-file:for doing this basically we need to import the modules using (require) method:and put it in the (object) by using curly braces:
