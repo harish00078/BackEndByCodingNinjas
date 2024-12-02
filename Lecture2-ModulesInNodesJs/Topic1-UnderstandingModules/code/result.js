@@ -17,9 +17,9 @@
 // [third-way] = if we are directly using them with the (exports) keyword then we also have to use the (second-way) to import things:
 
 // NOTE:It basically a simple distribution:To use two-ways of (imports) on those three-ways of (exports):
-// -> [first-way]-(exports) = if we are using (objects) to export things:or we can say assigning our things as (properties) or (Key-value) pairs to object:then we use the (first-way) of importing things:
-// => 1 = if we exporting things using (objects):then we use the (first-way) of importing things:
-// => 2 = if we exporting things directly with the exporting keyword:then we use the (second-way) of importing things:
+// -> if we are using (objects) to export things:or we can say assigning our things as (properties) or (Key-value) pairs to object:then we use the (first-way) of importing things:
+// -> if we exporting things using (objects):then we use the (first-way) of importing things:
+// -> if we exporting things directly with the exporting keyword:then we use the (second-way) of importing things:
 
 // Importing-Ways:
 // [first-way] = In first way:we have two types to import the things:
