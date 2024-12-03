@@ -18,13 +18,13 @@
 // here we gonna use the (second-way) of importing things:and only with this type of (exports) we are gonna be able to use the (second-way) of importing things:
 // [third-way] = if we are directly using them with the (exports) keyword then we also have to use the (first-way) to import things:
 
-// [IMP-NOTE]:It basically a simple distribution:To use two-ways of (imports) on those three-ways of (exports):
-// -> if we are using (objects) to export things:or we can say assigning our things as (properties) or (Key-value) pairs to object and then exporting them:In that case we have the (first-way) of importing things:
-// -> if we exporting things directly by using (module.exports) and (exports) keyword:then we also use the (first-way) to import things:
-// IMP-NOTE:In second-way of importing things:we have two-type of export-results:so we have to check that if we can use the second-way of (import) on those two types of export-results or not:as we have learn that this case only occur when we are exporting things directly by using (module.exports) keyword:
+// [IMP-NOTE]:It basically a simple distribution:To use those two-ways of (imports) on those three-ways of (exports):
+// -> [first-way-export]: if we are using (objects) to export things:or we can say assigning our things as (properties) or (Key-value) pairs to object and then exporting them:In that case we have the (first-way) of importing things:
+// -> [second and third-way-export]: if we exporting things directly by using (module.exports) and (exports) keyword:then we also use the (first-way) to import things:
+// [IMP-NOTE]:because here we are only changing the syntax to export things:but they are gonna be exported through (objects) or as (properties):
+// [V.V.IMP-NOTE]:With in the second-way of exporting things:we have two-type of export-results:so the (second-way) of import things are only gonna be used with the (second-type) of (module.exports) exported-results:which means when we export thing as it is they are not gonna be exported as (properties):
 
 // Learning About Importing-Ways:
-
 // [first-way] = we use first way of importing things:when we are exporting things using (objects):we have two types to import the things:
 // => 1(first-type) = Is that we can import the hole-file:and store it in the variable:and from that variable-name we can access our module functions or other things those we have exported:and access them by using the dot (.) keyword on the variable-name:
 // const arithmeticModules = require("./arithmetic");
