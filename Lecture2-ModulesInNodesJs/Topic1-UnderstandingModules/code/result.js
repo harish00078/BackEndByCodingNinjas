@@ -22,9 +22,13 @@
 // IMP-NOTE:In second-way of importing things:we have two-type of export-results:so we have to check that if we can use the second-way of (import) on those two types of export-results or not:as we have learn that this case only occur when we are exporting things directly by using (module.exports) keyword:
 
 // Learning About Importing-Ways:
-// [first-way] = In first way:we have two types to import the things:
+// [first-way] = we use first way of importing things:when we are exporting things using (objects):we have two types to import the things:
 // => 1(first-type) = Is that we can import the hole-file:and store it in the variable:and from that variable-name we can access our module functions or other things those we have exported:and access them by using the dot (.) keyword on the variable-name:
+const arithmeticModules = require("./arithametic");
+console.log(arithmeticModules.add(5, 5));
 // => 2(second-type) = Is that we can only import those modules which we want to use from the  exported-file:for doing this basically we need to import the modules using (require) method:and put it in the (object) by using curly braces:
+const {Div} = require("./arithametic");
+console.log(Div(5,5));
 // [second-way] = second is that we can only import the modules directly that we want to use from the file:
 
 //(IMP-NOTE) = here we can see that:so when we are importing the same file again:then it did not work because of our module.exports object or method:because when we import our files with this method.then in its first time this file.it basically get stored in the (cache) Method.so that's why when we are importing it again it will not work:because system gonna be still have that same with in him or in its (cache) Method:
