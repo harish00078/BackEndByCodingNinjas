@@ -15,13 +15,13 @@
 // => first = here we see that how we can do that with the help of (commonjs) modules syntax or method:
 // for that here we gonna create the two arithmetic functions:both of these arithmetic functions gonna get the same type of (argument) variables:
 
-function sum(x, y) {
-  return x + y;
-}
+// function sum(x, y) {
+//   return x + y;
+// }
 
-function div(x, y) {
-  return x / y;
-}
+// function div(x, y) {
+//   return x / y;
+// }
 
 // V.V.IMP: In commonjs modules method or syntax way we use (module.exports) keywords with (object) or without the (object) to (export) things:we use them according to how many of things we want to export:same thing we do with in the (ES6-module-syntax) as well:
 
@@ -41,10 +41,10 @@ function div(x, y) {
 
 // -> [1-first] == is that we can do it as key-value pairs by providing (keys) to our functions:with in the module.exports object:
 
-module.exports = {
-  Add: sum,
-  Div: div,
-};
+// module.exports = {
+//   Add: sum,
+//   Div: div,
+// };
 
 // -> [2-second] = Is that we can simply provide our created-functions and other things as it is they are as keys or values we can say with in the module.exports object:and they will automatically becomes the (key-value) pairs by there self:
 
@@ -67,9 +67,9 @@ module.exports = {
 
 // V.V.IMP-[NOTE]:-> this is the only way we can export our own created function as (function) on nodejs with its (CommonJs) syntax:
 
-module.exports  = function sum(x, y) {
-  return x + y;
-}
+// module.exports  = function sum(x, y) {
+//   return x + y;
+// }
 
 // -> [Second-way] => In this way we gonna create the function in different way:by providing our (function-name) directly to the (module.exports) keywords with the help of (.) dot-keyword:and then create the function using (function) keyword:and after that assign it through (equalTo) sign to the (module.exports) keywords with its (function-name):
 
@@ -118,9 +118,9 @@ module.exports.multiple = function (x, y) {
 // => [simple-function]:
 // V.V.IMP-NOTE =  here it also gonna be export the simple-functions as properties:not as (function) which we have with the (module.exports) keywords:
 
-exports.subtraction = function(x, y) {
-  return x - y;
-}
+// exports.subtraction = function(x, y) {
+//   return x - y;
+// }
 
 // -> arrow function: here this arrow-function is also gonna be export as properties:
 

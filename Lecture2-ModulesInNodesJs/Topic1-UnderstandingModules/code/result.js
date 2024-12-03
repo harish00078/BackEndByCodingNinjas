@@ -41,15 +41,20 @@
 
 // => 1: Checking [first-way] import with [first-way] export:
 // -> [first-type-import]:
-const arithmeticModules = require("./arithmetic");
-console.log(arithmeticModules.add(5, 5));
+// const arithmeticModules = require("./arithmetic");
+// console.log(arithmeticModules.Add(5, 5));
 // -> [second-type-import]:
-const { add, Div } = require("./arithmetic");
-console.log(add(5, 5));
-console.log(Div(5, 5));
+// const { Add, Div } = require("./arithmetic");
+// console.log(Add(5, 5));
+// console.log(Div(5, 5));
 
 // => 2: Checking [first-way] import with [second-way] export:
-
+// -> [first-type-import]:
+const arithmeticModules = require("./arithmetic");
+console.log(arithmeticModules.multiple(5, 5));
+// -> [second-type-import]:
+const { multiple } = require("./arithmetic");
+console.log(multiple(5, 5));
 // => 3: Checking [first-way] import with [third-way] export:
 
 // [second-way] = In this way: we can only import the modules directly that we want to use from the file:And it also only works with the (second) or (third) way of exporting things:
