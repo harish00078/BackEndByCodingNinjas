@@ -79,9 +79,9 @@ module.exports = {
 // module.exports.sum = function (x, y) {
 //   return x + y;
 // }
-// module.exports.multiple = function (x, y) {
-//   return x * y;
-// }
+module.exports.multiple = function (x, y) {
+  return x * y;
+}
 
 // [Second-type]: Arrow-Functions:means those function which we are not created using the (function) keywords:they are created using the (arrow-functions) method:
 // IMP = here we gonna use the (arrow-functions) directly with the module.exports keyword by declaring its function-name with them as well:same thing we did with in the simple-function's second-way:
