@@ -42,7 +42,7 @@ function div(x, y) {
 // -> [1-first] == is that we can do it as key-value pairs by providing (keys) to our functions:with in the module.exports object:
 
 module.exports = {
-  add: sum,
+  Add: sum,
   Div: div,
 };
 
@@ -67,9 +67,9 @@ module.exports = {
 
 // V.V.IMP-[NOTE]:-> this is the only way we can export our own created function as (function) on nodejs with its (CommonJs) syntax:
 
-// module.exports  = function sum(x, y) {
-//   return x + y;
-// }
+module.exports  = function sum(x, y) {
+  return x + y;
+}
 
 // -> [Second-way] => In this way we gonna create the function in different way:by providing our (function-name) directly to the (module.exports) keywords with the help of (.) dot-keyword:and then create the function using (function) keyword:and after that assign it through (equalTo) sign to the (module.exports) keywords with its (function-name):
 
@@ -118,9 +118,9 @@ module.exports.multiple = function (x, y) {
 // => [simple-function]:
 // V.V.IMP-NOTE =  here it also gonna be export the simple-functions as properties:not as (function) which we have with the (module.exports) keywords:
 
-// exports.sum = function(x, y) {
-//   return x + y;
-// }
+exports.subtraction = function(x, y) {
+  return x - y;
+}
 
 // -> arrow function: here this arrow-function is also gonna be export as properties:
 
