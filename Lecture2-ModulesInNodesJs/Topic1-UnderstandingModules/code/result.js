@@ -19,7 +19,7 @@
 // NOTE:It basically a simple distribution:To use two-ways of (imports) on those three-ways of (exports):
 // -> if we are using (objects) to export things:or we can say assigning our things as (properties) or (Key-value) pairs to object and then exporting them:In that case we have the (first-way) of importing things:
 // -> if we exporting things directly by using (module.exports) and (exports) keyword:then we have use the (second-way) of importing things:
-// IMP-NOTE:In case of second-way of importing things:we get two types of export-results:so we have check that if we can use the second-way of (import) on those two types of export-results or not:as we have learn that this case only occur when we are exporting things directly by using (module.exports) keyword:
+// IMP-NOTE:In second-way of importing things:we have two-type of export-results:so we have to check that if we can use the second-way of (import) on those two types of export-results or not:as we have learn that this case only occur when we are exporting things directly by using (module.exports) keyword:
 
 // Learning About Importing-Ways:
 // [first-way] = In first way:we have two types to import the things:
