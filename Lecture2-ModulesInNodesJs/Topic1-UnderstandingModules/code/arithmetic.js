@@ -118,9 +118,9 @@
 // => [simple-function]:
 // V.V.IMP-NOTE =  here it also gonna be export the simple-functions as properties:not as (function) which we have with the (module.exports) keywords:
 
-// exports.subtraction = function(x, y) {
-//   return x - y;
-// }
+exports.subtraction = function(x, y) {
+  return x - y;
+}
 
 // -> arrow function: here this arrow-function is also gonna be export as properties:
 
