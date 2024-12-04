@@ -98,7 +98,7 @@
 
 // [second-way]: Is that we can create the (arrow-function) with the help of (module.exports) keywords: by declaring its function-name with them as well: and then assign it to the (module.exports) keywords with the help of (equalTo) sign: same way we did with the (simple-functions):
 
-// module.exports.exponent = (x, y) => {
+// module.exports.multiple = (x, y) => {
 //     return x * y;
 // };
 

@@ -57,6 +57,8 @@
 // console.log(multiple(5, 5));
 // => 3: Checking [first-way] import with [third-way] export:
 // -> [first-type-import]:
+const arithmeticModules = require("./arithmetic");
+console.log(arithmeticModules.exponent(5, 5));
 
 // [second-way] = In this way: we can only import the modules directly that we want to use from the file:And it also only works with the (second) or (third) way of exporting things:
 // IMP: which means that when we are exporting things directly by using (module.exports) and (exports) keyword:
