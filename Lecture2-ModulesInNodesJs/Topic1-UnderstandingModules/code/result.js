@@ -63,12 +63,10 @@
 // const { subtraction } = require("./arithmetic");
 // console.log(subtraction(125, 5));
 
-// [second-way] = In this way: we can only import the modules directly that we want to use from the file:And it also only works with the (second) or (third) way of exporting things:
-// IMP: which means that when we are exporting things directly by using (module.exports) and (exports) keyword:
+// [second-way] = Second-way of Importing things:Only works with the (second-type) exported-result of (module.exports) keywords:
+// That (second-type) exported-result of (module.exports) keywords are those things which we are exporting directly by using (module.exports) keyword:and have also created those things with there (simple-creating) forms:
+// IMP: for-example:if we are creating the function using simple (function) keyword or we can say that the way we create the function in simple-form:then we have to use the (second-way) of importing things:
 
-// [second-way]:
-// const sum = require("./arithmetic");
-// console.log(sum(3,5));
 
 //(IMP-NOTE) = here we can see that:so when we are importing the same file again:then it did not work because of our module.exports object or method:because when we import our files with this method.then in its first time this file.it basically get stored in the (cache) Method.so that's why when we are importing it again it will not work:because system gonna be still have that same with in him or in its (cache) Method:
 
