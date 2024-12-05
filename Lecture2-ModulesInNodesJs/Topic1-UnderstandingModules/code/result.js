@@ -66,7 +66,8 @@
 // [second-way] = Second-way of Importing things:Only works with the (second-type) exported-result of (module.exports) keywords:
 // That (second-type) exported-result of (module.exports) keywords are those things which we are exporting directly by using (module.exports) keyword:and have also created those things with there (simple-creating) forms:and they are not gonna be exported as (properties) or (key-value) pairs:they are exported in there own forms:
 // IMP: for-example:if we are creating the function using simple (function) keyword or we can say that the way we create the function in simple-form:then we have to use the (second-way) of importing things:
-// IMP-NOTE: through second-way of importing things;we basically use the (require) method:and put it in the (object) by using curly braces:
+
+// IMP-NOTE: In second-way of importing things:we basically use the (require) method:To import things:but here In second-way we basically import the things and (store) them in the variables:and use those (variables) directly to access those things:not with the help of (.) dot-keyword as we do in first-way of importing things:
 const add = require("./arithmetic");
 console.log(add(34,5));
 
