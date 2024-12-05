@@ -71,5 +71,5 @@
 const sum = require("./arithmetic");
 console.log(sum(34,5));
 
-//(IMP-NOTE) = here we can see that:so when we are basically importing the same file again:then it did not work because of our module.exports object or method:because when we import our files with this method.then in there first time imports these files basically get stored in the (cache) method:so that's why when we are importing it again it will not work:because system gonna be still have that same with in him or in its (cache) Method:
+//(IMP-NOTE) = here we can see that:so when we are basically importing the same file again:then it did not work because of nodejs (module-caching) mechanism: because when we import our files.then in there first time imports these files basically get stored with in the (cache) mechanism of nodejs:so that's why when we are importing it again it will not work:because system gonna be still have that same with in him or in its (caching) mechanism:
 
