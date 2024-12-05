@@ -67,9 +67,9 @@
 
 // V.V.IMP-[NOTE]:-> this is the only way we can export our own created function as (function) on nodejs with its (CommonJs) syntax:
 
-// module.exports  = function sum(x, y) {
-//   return x + y;
-// }
+module.exports  = function sum(x, y) {
+  return x + y;
+}
 
 // -> [Second-way] => In this way we gonna create the function in different way:by providing our (function-name) directly to the (module.exports) keywords with the help of (.) dot-keyword:and then create the function using (function) keyword:and after that assign it through (equalTo) sign to the (module.exports) keywords with its (function-name):
 
