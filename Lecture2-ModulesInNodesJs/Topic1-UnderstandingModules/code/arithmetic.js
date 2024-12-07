@@ -103,7 +103,7 @@ module.exports  = function sum(x, y) {
 // };
 
 // -> [Third-way] => we can also do it only with the help of (exports) keyword:we did not have to use the (module) keyword with it:
-// V.IMP-NOTE: The Exports method basically uses the (module.exports) keywords internally:but its different then (module.exports) method:because the(exports) method does not able to export the (classes) and (functions): It can only be able to export the (variables) and (objects) only:
+// V.IMP-NOTE: The Exports method basically uses the (module.exports) keywords internally:but its different then (module.exports) method:because the(exports) method does not able to export the (classes) and (functions): It can only be able to export the (variables) and (objects) and etc:
 // V.V.IMP-[NOTE] => This method (specifically) export the functions or anything as properties:
 
 // V.V.IMP = here we gonna see that: how we can use this particular method with both ways (objects) and (non-objects):
