@@ -1,4 +1,4 @@
-// ====> In this Topic-file we will  gonna be learn about (ES6 Module syntax):
+// ==> In this Topic-file we gonna be learn about (ES6 Module syntax):
 
 // => second =  here we see that how we can do that with the help of (ES6) modules:
 // V.IMP = In ES6 modules we use the (export) keyword:
