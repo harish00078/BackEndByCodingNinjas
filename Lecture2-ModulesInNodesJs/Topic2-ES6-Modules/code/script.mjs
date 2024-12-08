@@ -1,7 +1,6 @@
 // ==> In this Topic-file we gonna be learn about (ES6 Module syntax):
 
-// => second =  here we see that how we can do that with the help of (ES6) modules:
-// V.IMP = In ES6 modules we use the (export) keyword:
+// V.V.IMP = Here in ES6-modules we basically use the (export) keyword simply to export things or modules we can say from one file to another file:
 
 // => ES6 Module:The ES6 module syntax is a more modern approach that is supported by modern JavaScript environments, and it employs the "import" and "export" keywords:
 // V.IMP = For this approach we did not have to create the module.exports object:we can simply export our function or anything that we want to export as a module by using the (export) keyword in front of them or after them:
