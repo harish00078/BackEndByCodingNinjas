@@ -1,4 +1,4 @@
-// ==> Here In This:- Topic-file we are gonna be learn about (ES6 Module syntax):
+// ==> In This:- Topic-file we are gonna be learn about (ES6 Module syntax):
 
 // V.V.IMP = Here in ES6-modules syntax we basically use the (export) keyword simply to export things or modules we can say from one file to another file:
 
