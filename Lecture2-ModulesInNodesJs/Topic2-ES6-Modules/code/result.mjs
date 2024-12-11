@@ -1,8 +1,8 @@
-// => Here we are going to learn how to import things using the ES6 module syntax:
+// => Here we are going to learn that:how to import things using the ES6 module syntax:
 
 // IMP:Its very simple:To import things using the (ES6) module syntax:we only have to use the (import) keyword:
 
-// V.V.IMP(NOTE):
+
 // [first-note]:when we say that.we are importing the all modules at once:it basically means that we are only importing the modules which we have exported:and not importing any other modules:
 // [second-note]:so when we are using the (import) and (export) method:To use (Modules) from one file to another file:then we have to use the (mjs) extension in the file-name:instead of simple (js) extension:
 // [third-note]:(MOST-IMP):so when we are using the (ES6) module method.To use (Modules) from one file to another file:then we basically have the (function) module as (function-module) not as (property) module:that we are getting in the (commonjs) module method:
