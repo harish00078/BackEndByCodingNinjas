@@ -1,5 +1,6 @@
-// using the ES6 modules:that we have exported from the script-file:
-// for importing them:we simply need to use the (import) keyword:
+// => Here we gonna Learn to use:how we can import things in (ES6) module syntax:
+// IMP:Its very simple:To import things using the (ES6) module syntax:we only have to use the (import) keyword:
+
 // V.V.IMP(NOTE):
 // [first-note]:when we say that.we are importing the all modules at once:it basically means that we are only importing the modules which we have exported:and not importing any other modules:
 // [second-note]:so when we are using the (import) and (export) method:To use (Modules) from one file to another file:then we have to use the (mjs) extension in the file-name:instead of simple (js) extension:
