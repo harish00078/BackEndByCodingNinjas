@@ -14,7 +14,7 @@
 // for-example: if we are creating the (functions):
 // so there are multiple-way to create them and then export them:with the help of (ES6) module syntax:
 // [First-type]: Simple-Functions:means those functions which has been created using the (function) keyword:
-// IMP-NOTE:If we wanna export it:using (ES6) module syntax:then we have to use the (export) keyword in front of (function) or (thing) we can say which we wanna exported:
+// IMP-NOTE:If we wanna export it:using (ES6) module syntax:then we simply have to use the (export) keyword in front of (function) or (thing) which we wanna exported:
 export function multiple(x, y) {
   return x * y;
 }
