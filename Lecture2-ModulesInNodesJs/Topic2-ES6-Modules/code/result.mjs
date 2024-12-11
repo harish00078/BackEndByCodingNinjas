@@ -2,10 +2,10 @@
 
 // IMP:Its very simple:To import things using the (ES6) module syntax:we only have to use the (import) keyword:
 
-
+// IMP-NOTES:
 // [first-note]:when we say that.we are importing the all modules at once:it basically means that we are only importing the modules which we have exported:and not importing any other modules:
 // [second-note]:so when we are using the (import) and (export) method:To use (Modules) from one file to another file:then we have to use the (mjs) extension in the file-name:instead of simple (js) extension:
-// [third-note]:(MOST-IMP):so when we are using the (ES6) module method.To use (Modules) from one file to another file:then we basically have the (function) module as (function-module) not as (property) module:that we are getting in the (commonjs) module method:
+// [third-note]:(MOST-IMP):so when we are using the (ES6) module method.To use (Modules) from one file to another file:then we basically gonna be have the (function) module as (function-module) not as (property) module:which we are getting in the (commonjs) module syntax:
 
 // IMP => In (ES6) module method:we have three ways to import the things:
 // => 1 = first:- is that we can use the asterisk- keyword (*):To import all modules at once:and store them in the variable-name:and from that variable-name we can access our module functions or other things those we have exported:and access them by using the dot (.) keyword on the variable-name:
