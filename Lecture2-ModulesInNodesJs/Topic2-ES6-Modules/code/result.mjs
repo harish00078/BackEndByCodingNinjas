@@ -1,4 +1,4 @@
-// => Here we gonna Learn to use:how we can import things in (ES6) module syntax:
+// => Here we gonna Learn that:how we can import things in (ES6) module syntax:
 // IMP:Its very simple:To import things using the (ES6) module syntax:we only have to use the (import) keyword:
 
 // V.V.IMP(NOTE):
