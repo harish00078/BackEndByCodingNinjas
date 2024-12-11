@@ -4,7 +4,7 @@
 
 // => ES6 Module:The ES6 module syntax is a more modern approach that is supported by modern JavaScript environments or we can say by the (Libraries) and (Frameworks): and it uses the "import" and "export" keywords:
 // V.IMP = For this approach we did not have to create the module.exports object:we can simply export our function or anything that we want to export as a module by using the (export) keyword in (front) of them or (after) them:
-// V.IMP = we have use this (module) method or syntax.with in our (react) learnings:
+// V.IMP = we have use this (module) method or syntax with in our (react) learnings:
 
 // V.V.IMP(NOTE) = so when we are using the (ES6) module-syntax:To (import) and (export) Modules from one file to another file:Mostly when we are creating the application simply using (nodejs) environment or we can say without the help of any framework and library:then we have to use the (mjs) extension in the file-name:instead of using simple (js) extension:
 // because if we use the simple (js) extension:then our 
