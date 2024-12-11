@@ -28,4 +28,6 @@ export const sum = (x, y) => {
   return x + y;
 };
 
-// (IMP-NOTE) = When we export something (like a function) from one file and import it in another, the entire file with the export runs once when it’s imported. After that, any further imports use the already executed file. However, only the parts we specifically import are accessible in the importing file.In ES6 modules, this process is slightly different because of tree-shaking. Tree-shaking removes unused code, so only the parts that are actually used are included in the final output, making the code smaller and more efficient.
+// (IMP-NOTE) = When we export something (like a function) from one file and import it in another, the entire file with the export runs once when it’s imported. After that, any further imports use the already executed file:
+// However, only the parts we specifically import are accessible in the importing file.
+// IMP-NOTE: In ES6 modules, this process is slightly different because of tree-shaking approach. Tree-shaking removes unused code, so only the parts that are actually used are included in the final output, making the code smaller and more efficient.
