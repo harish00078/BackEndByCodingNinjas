@@ -20,8 +20,10 @@ export function multiple(x, y) {
 }
 
 // [Second-type]: Arrow-Functions:means those function which we are not created using the (function) keywords:they are created using the (arrow-functions) method:
-// IMP-NOTE: Same thing we have to do with it:if we want to export it:using (ES6) module syntax:then we simply have to use the (export) keyword in front of (function) or (thing) which we wanna exported:
-// V.IMP-NOTE:Here we have one thing also:if we are using the (arrow-functions) directly with the (export) keyword:here we have to create the arrow-function (variable-name) through the help of (variable-declaration) keyword:like (const) mostly which we use to declare the (variable):
+// IMP: Same thing we have to do with it:if we want to export it:using (ES6) module syntax:then we simply have to use the (export) keyword in front of (function) or (thing) which we wanna exported:
+// V.IMP-NOTE:Here we have one thing also:if we are using the (arrow-functions) directly with the (export) keyword:then we have to create the arrow-function (variable-name) through the help of (variable-declaration) keyword:like (const) mostly which we use to declare the (variable):
+// because here we did not use the dot (.) keyword to assign the (function) and (things) or we can say there (variable-name) to the (exported) keyword:like we did in the (commonjs) syntax:
+
 export const sum = (x, y) => {
   return x + y;
 };
