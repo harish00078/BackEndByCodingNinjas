@@ -9,6 +9,16 @@
 // V.V.IMP(NOTE) = so when we are using the (ES6) module-syntax:To (import) and (export) Modules from one file to another file:Mostly when we are creating the application simply using (nodejs) environment or we can say without the help of any (frameworks) and (libraries):then we have to use the (mjs) extension in the file-name:instead of using simple (js) extension:
 // because In this case:if we use the simple (js) extension:then our application code will not gonna get executed:
 
+// V.IMP: So when we are working with the (ES6) module syntax:then we can also create the things in multiple-ways:And also we can also export them in multiple-ways:
+
+// for-example: if we are creating the (functions):
+// so there are multiple-way to create them and then export them:with the help of (ES6) module syntax:
+// [First-type]: Simple-Functions:means those functions which has been created using the (function) keyword:
+// IMP-NOTE:If we wanna export it:using (ES6) module syntax:then we have to use the (export) keyword in front of (function) or (thing) we can say which we wanna exported:
+export function multiple(x, y) {
+  return x * y;
+}
+
 // IMP = we can create its functions in two ways:
 // -> 1 =  create function using simple-function keyword:
 export function multiple(x, y) {
