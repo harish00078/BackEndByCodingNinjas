@@ -4,10 +4,10 @@
 
 // IMP-NOTES:
 // [first-note]:when we say that.we are importing the all modules at once:it basically means that we are only importing the modules which we have exported:and not importing any other modules:
-// [second-note]:so when we are using the (import) and (export) method:To use (Modules) from one file to another file:then we have to use the (mjs) extension in the file-name:instead of simple (js) extension:
-// [third-note]:(MOST-IMP):so when we are using the (ES6) module method.To use (Modules) from one file to another file:then we basically gonna be have the (function) module as (function-module) not as (property) module:which we are getting in the (commonjs) module syntax:
+// [second-note]:so when we are use (ES6) module-syntax:then we have to use the (mjs) extension in our file-name:instead of simple (js) extension:as we have learn that otherwise our application code will not gonna get executed:
+// [third-note]:(MOST-IMP):When using ES6 modules, we import modules as functions, classes, or objects, rather than as properties of a single exported object (as is typical with CommonJS). Unlike CommonJS, where all exports are properties of a module object, ES6 modules use named or default exports for better tree-shaking and static analysis:
 
-// IMP => In (ES6) module method:we have three ways to import the things:
+// => IMP = In (ES6) module method:we have three ways to import the things:
 // => 1 = first:- is that we can use the asterisk- keyword (*):To import all modules at once:and store them in the variable-name:and from that variable-name we can access our module functions or other things those we have exported:and access them by using the dot (.) keyword on the variable-name:
 // V.IMP = all things are gonna we store with in the variable-name (object):
 // V.V.IMP-[NOTE]= [Tree shaking] is a term used in JavaScript for dead code elimination. It's a process that removes unused code from your final bundle, resulting in smaller and faster applications. Tree shaking relies heavily on the static structure of ES6 modules (import and export statements). This allows bundlers to analyze your code and determine which parts are actually used.
