@@ -5,7 +5,7 @@
 // IMP-NOTES:
 // [first-note]:when we say that.we are importing the all modules at once:it basically means that we are only importing the modules which we have exported:and not importing any other modules:
 // [second-note]:so when we are use (ES6) module-syntax:then we have to use the (mjs) extension in our file-name:instead of simple (js) extension:as we have learn that otherwise our application code will not gonna get executed:
-// [third-note]:(MOST-IMP):When using ES6 modules, we import modules as functions, classes, or objects, rather than as properties of a single exported object (as is typical with CommonJS). Unlike CommonJS, where all exports are properties of a module object, ES6 modules use (named) or (default) exports for better tree-shaking and static analysis:
+// [third-note]:(MOST-IMP):When using ES6 modules, we import modules as functions, classes, or objects, rather than as properties of a single exported object (as is typical with CommonJS). Unlike CommonJS, where all exports are properties of a module object, ES6 modules use (named) or (default) exports for better (tree-shaking) and (static-analysis):
 
 
 // => V.IMP: In (ES6) module method:we have three ways to import the things:
