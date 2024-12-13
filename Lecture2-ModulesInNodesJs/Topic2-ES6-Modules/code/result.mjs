@@ -10,9 +10,9 @@
 
 // => V.IMP: In (ES6) module syntax:we basically have three ways to import the things:
 
-// => 1 = first:- is that we can use the asterisk- keyword (*):To import all modules at once:and store them in the variable-name:and from that variable-name we can access our module functions or other things those we have exported:and access them by using the dot (.) keyword on the variable-name:
+// [First-way]: Is that we can use the asterisk- keyword (*):To import all modules at once:and store them in the variable-name:and from that variable-name we can access our module functions or other things those we have exported:and access them by using the dot (.) keyword on the variable-name:
 // V.IMP = all things are gonna we store with in the variable-name (object):
-// V.V.IMP-[NOTE]= [Tree shaking] is a term used in JavaScript for dead code elimination. It's a process that removes unused code from your final bundle, resulting in smaller and faster applications. Tree shaking relies heavily on the static structure of ES6 modules (import and export statements). This allows bundlers to analyze your code and determine which parts are actually used:
+
 
 import * as arithmeticModules from "./script.mjs";
 console.log(arithmeticModules.multiple(5, 6));
