@@ -8,7 +8,7 @@
 // [third-note]:(MOST-IMP):When using ES6 modules, we import modules as functions, classes, or objects, rather than as properties of a single exported object (as is typical with CommonJS). Unlike CommonJS, where all exports are properties of a module object, ES6 modules use (named) or (default) exports for better (tree-shaking) and (static-analysis):
 
 
-// => V.IMP: In (ES6) module method:we have three ways to import the things:
+// => V.IMP: In (ES6) module syntax:we basically have three ways to import the things:
 
 // => 1 = first:- is that we can use the asterisk- keyword (*):To import all modules at once:and store them in the variable-name:and from that variable-name we can access our module functions or other things those we have exported:and access them by using the dot (.) keyword on the variable-name:
 // V.IMP = all things are gonna we store with in the variable-name (object):
