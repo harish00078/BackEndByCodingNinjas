@@ -12,7 +12,7 @@
 // [First-way] = Is that we can import the all modules at once:
 // [Second-way] = Is that we can only import those modules which we want to use from the exported-file: 
 
-// [First-way]: We use the asterisk- keyword (*):To import all modules at once:and store them in the (variable-name):and from that variable-name we can access our module functions or other things those we have exported:and we can access them from (variable-name) through the help of dot (.) keyword:
+// [First-way]: We use the asterisk-keyword (*) to import all modules at once:and store them in the (variable-name):and from that variable-name we can access our module functions or other things those we have exported:and we can access them from (variable-name) through the help of dot (.) keyword:
 
 // V.IMP = all things are gonna we store with in the variable-name (object):
 
