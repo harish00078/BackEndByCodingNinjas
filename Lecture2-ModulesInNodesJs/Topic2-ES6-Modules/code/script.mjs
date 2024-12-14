@@ -27,6 +27,9 @@ export function multiple(x, y) {
 export const sum = (x, y) => {
   return x + y;
 };
+export const div= (x, y) => {
+  return x / y;
+};
 
 // (IMP-NOTE) = When we export something (like a function) from one file and import it in another, the entire file with the export runs once when it’s imported. After that, any further imports use the already executed file:
 // However, only the parts we specifically import are accessible in the importing file:which we are basically exporting from one file to another file:
