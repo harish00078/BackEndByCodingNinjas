@@ -7,15 +7,13 @@
 // [second-note]:so when we are use (ES6) module-syntax:then we have to use the (mjs) extension in our file-name:instead of simple (js) extension:as we have learn that otherwise our application code will not gonna get executed:
 // [third-note]:(MOST-IMP):When using ES6 modules, we import modules as functions, classes, or objects, rather than as properties of a single exported object (as is typical with CommonJS). Unlike CommonJS, where all exports are properties of a module object, ES6 modules use (named) or (default) exports for better (tree-shaking) and (static-analysis):
 
-
 // => V.IMP: In (ES6) module syntax:we basically have two ways to import the things:
 // [First-way] = Is that we can import the all modules at once:
-// [Second-way] = Is that we can only import those modules which we want to use from the exported-file: 
+// [Second-way] = Is that we can only import those modules which we want to use from the exported-file:
 
 // [First-way]: We use the asterisk-keyword (*) to import all modules at once:and store them in the (variable-name) with the help of (as) keyword:and from that variable-name we can access our module functions or other things those we have exported:and we can access them from (variable-name) through the help of dot (.) keyword:
 // V.IMP: know here everything means that we are only gonna be able to access the modules from that file which we have exported:
 // V.IMP = all things are gonna we store with in the variable-name (object):the variable-name which we have created  basically to use with in the (import) method:
-
 
 import * as arithmeticModules from "./script.mjs";
 console.log(arithmeticModules.multiple(5, 6));
