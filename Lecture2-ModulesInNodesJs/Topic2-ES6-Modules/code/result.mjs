@@ -18,7 +18,7 @@
 import * as arithmeticModules from "./script.mjs";
 console.log(arithmeticModules.multiple(5, 6));
 
-// [Second-way]: Here we also use the (import) keyword to import things:but if we only want to import the particular thing from the exported-file:then we have to use the (curly-brackets) or (object) instead of (*) and (as) keywords:and with in those curly-brackets or (object) we basically have to import our things:
+// [Second-way]: Here we also use the (import) keyword to import things:but if we only want to import the particular thing from the exported-file:then we have to use the (curly-brackets) or (object) instead of (*) and (as) keywords:and with in those curly-brackets or (object) we basically import our things:
 // V.IMP-NOTE:Here we have to take care of one-thing as well:which is that the (thing) we are importing:that should have the (same-name) as the (name) on which we have exported it:
 
 import { sum } from "./script.mjs";
