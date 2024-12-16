@@ -1,1 +1,1 @@
-// here gonna learn about the types of modules:
+// Learning about Types fo Modules:
