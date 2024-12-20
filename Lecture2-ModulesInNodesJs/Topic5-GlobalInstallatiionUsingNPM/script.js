@@ -1,1 +1,1 @@
-console.log("Learn:About Global Installation using NPM:")
+console.log("Learn:About Global Installation using NPM:");
