@@ -1,10 +1,1 @@
-const http = require("http");
-
-const server = http.createServer((req, res) => {
-    res.end("Learn: About Global Installation of NodeJS:");
-});
-
-const PORT = 8000;
- server.listen(PORT, () => {
-     console.log(`Server listening on Port ${PORT}`);
- })
+console.log("Learn:About Global Installation using NPM:")
