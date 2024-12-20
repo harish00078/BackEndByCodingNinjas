@@ -1,0 +1,15 @@
+{
+  "name": "topic6-understandingpackage.jsonfiles",
+  "version": "1.0.0",
+  "description": "revising node",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node script.js"
+  },
+  "author": "harish",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
