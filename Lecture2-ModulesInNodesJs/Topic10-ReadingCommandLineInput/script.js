@@ -9,10 +9,11 @@ const readline = require("readline");
 
 // => Step 2: Create an (Interface) using readline-module:and then configure that interface to read the data from the console or terminal:
 // IMP: for creating (interface):we have to use (createInterface) function of (readline) module:
+// IMP-NOTE:this createInterface function is gonna return an object:which is gonna represent the interface:so we have to store that object or interface-object in a variable:
 // Know we have two ways to configure an interface:
 // -> first-way: Is that we can directly use simple-functions to configure it:
 // -> second-way: Is that we can use the (options) object functions to configure it:
-readline.createInterface({
+const interface = readline.createInterface({
   // V.IMP-NOTE: here (process) refers to the process of the Node.js:Its basically manage by our operating system:and its a global object in Node.js:
   // IMP: (input) property which we create in this object: Is used to read the data from the console or terminal:Its gonna do that with the help of (process.stdin) object:
   // where (process) is a global object in Node.js and (stdin) is a property of that object:which is used to read the data from the console or terminal:or we can say tell node.js to read the (input-data) from the console or terminal:
@@ -21,7 +22,7 @@ readline.createInterface({
   // IMP: (output) property is used to write the data to the console or terminal:Its gonna do that with the help of (process.stdout) object:
   // where (process) is a global object in Node.js and (stdout) is a property of that object:which is used to write the data to the console or terminal:
   output: process.stdout
-  
+
 
 
 
