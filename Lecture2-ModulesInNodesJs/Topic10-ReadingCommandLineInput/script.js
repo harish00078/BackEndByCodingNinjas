@@ -17,6 +17,7 @@ readline.createInterface({
   // IMP: (input) property which we create in this object: Is used to read the data from the console or terminal:Its gonna do that with the help of (process.stdin) object:
   // where (process) is a global object in Node.js and (stdin) is a property of that object:which is used to read the data from the console or terminal:or we can say tell node.js to read the (input-data) from the console or terminal:
   input: process.stdin,
+  // same thing we do here as well:but here we are gonna write the data to the console or terminal:
   // IMP: (output) property is used to write the data to the console or terminal:Its gonna do that with the help of (process.stdout) object:
   // where (process) is a global object in Node.js and (stdout) is a property of that object:which is used to write the data to the console or terminal:
   output: process.stdout,
