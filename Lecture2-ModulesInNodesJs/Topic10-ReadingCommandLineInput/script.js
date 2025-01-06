@@ -4,5 +4,6 @@ console.log("Reading command line input AND reading Data from Console or Termina
 
 // => Step 1: Importing the 'readline' module from Node.js:
 const readline = require('readline');
-// => Step 2: Creating an (Interface) for reading data from the console or terminal:
-// IMP = we have to create an interface for reading data from the console or terminal.after creating it we also have to configure it.so that it can get the data from the console or terminal:
+
+// => Step 2: Create an (Interface) using readline-module:and then configure it to read the data from the console or terminal:
+
