@@ -34,7 +34,7 @@ const interface = readline.createInterface({
 // => Step-3: know that interface-object:we get from the (createInterface) function:this interface-object has functions with in it: through which we can read and write the data to the console or terminal:
 // because we have configured that object to get the input or output data from the console or terminal:with the help of it we can read and write the data to the console or terminal:which has been written by the user:
 
-// IMP: so here first we have to (read) the data from the console or terminal:or which has been provided by the user:
+// IMP: So here first we have to (read) the data from the console or terminal:or which has been provided by the user:
 // IMP-NOTE: we gonna do that with the help of (question) function of the interface-object:
 // V.IMP-NOTE:the (question) function basically help us to (reads) and (writes) the data to the console or terminal:with the help of the (interface-object)'s (input) and (output) properties:
 // => this function is gonna take three arguments:
