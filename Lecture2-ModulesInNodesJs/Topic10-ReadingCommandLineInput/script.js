@@ -31,7 +31,7 @@ const interface = readline.createInterface({
 });
 
 
-// => Step-3: know that interface-object:we get from the (createInterface) function:we can use that object to read and write the data to the console or terminal:
+// => Step-3: know that interface-object:we get from the (createInterface) function:this interface-object has functions with in it: through which we can read and write the data to the console or terminal:
 // because we have configured that object to get the input or output data from the console or terminal:with the help of it we can read and write the data to the console or terminal:which has been written by the user:
 
 // IMP: so here first we have to (read) the data from the console or terminal:or which has been provided by the user:
