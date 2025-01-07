@@ -37,9 +37,18 @@ const interface = readline.createInterface({
 // IMP: So here first we have to (read) the data from the console or terminal:or which has been provided by the user:
 // IMP-NOTE: we gonna do that with the help of (question) function of the interface-object:
 // V.IMP-NOTE:the (question) function basically help us to (reads) the data:through the help of (interface-object)'s (input) property:which is gonna get the data from the console or terminal:
-// => this function is gonna take three arguments:
 
-interface.question()
+// => this function takes three arguments:
+// => first-argument: is the (question) which we want to ask the user:or which we want to display to the users:So acc to that they can gave us there inputs:
+// IMP: we display the (question) to the (user):In the form of (string):so first argument is a string:
+
+// => second-argument: Is the (callback-function):which is gonna get executed or triggered when the user provide the (input) or (response-back) to the question:because we it:we are gonna be able to access the (user) input through the argument which we gave to the (callback-function):as we have learned it in the (js):
+// IMP: with the help of this (callback-function):we can get the (input) or (response-back) from the user:which they provide to the question:
+
+
+interface.question("Enter First Number:",(firstNumber)=>{
+
+});
 
 
 
