@@ -48,6 +48,7 @@ const interface = readline.createInterface({
 interface.question("Enter First Number:", (firstNumber) => {
   // IMP:callback function chaining:To get the second-input from the (user):
   interface.question("Enter Second Number:", (secondNumber) => {
-
+    // Here we have the access to firstNumber and secondNumber:
+    // IMP:As we have learned in the (js):we are able to do the function-chaining in the (js):because of the (closures):
   });
 });
