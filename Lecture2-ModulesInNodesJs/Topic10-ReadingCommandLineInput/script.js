@@ -10,7 +10,7 @@ const readline = require("readline");
 // => Step-2: Create an (Interface) using readline-module:and then configure that interface to input and output the data from the console or terminal:
 // IMP: for creating (interface):we have to use (createInterface) function of (readline) module:
 // IMP-NOTE:this createInterface function is gonna return an object:which is gonna represent the interface:so we have to store that object or interface-object in a variable:
-// V.IMP-NOTE:the (createInterface) function help us to connect with the (console or terminal) and fetch or response the data to the console or terminal:
+// V.IMP-NOTE:the (createInterface) function help us to connect with the (console or terminal):it basically help us to fetch or response back the data to the console or terminal:
 // Know we have two ways to configure an interface:
 // -> first-way: Is that we can directly use simple-functions to configure it:
 // -> second-way: Is that we can use the (options) object functions to configure it:
