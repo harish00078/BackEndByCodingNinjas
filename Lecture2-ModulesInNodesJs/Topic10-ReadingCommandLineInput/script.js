@@ -23,13 +23,8 @@ const interface = readline.createInterface({
   // same thing we do here as well:but here we are gonna write the data to the console or terminal:
   // IMP: (output) property is used to write the data to the console or terminal:Its gonna do that with the help of (process.stdout) object:
   // where (process) is a global object in Node.js and (stdout) is a property of that object:which is used to write the data to the console or terminal:
-  output: process.stdout
-
-
-
-
+  output: process.stdout,
 });
-
 
 // => Step-3: know that interface-object:we get from the (createInterface) function:this interface-object has functions with in it: through which we can read and write the data to the console or terminal:
 // because we have configured that object to get the input or output data from the console or terminal:with the help of it we can read and write the data to the console or terminal:which has been written by the user:
@@ -46,13 +41,13 @@ const interface = readline.createInterface({
 // IMP: with the help of this (callback-function):we can get the (input) or (response-back) from the user:which they provide to the question:
 
 // V.V.IMP-NOTE:so after receiving (firstNumber):through callback:we can ask the secondNumber to the user:by doing the same thing again:which we call as (chaining) or (callback-functions or functions) chaining in Node.js or JavaScript:
+// V.IMP:While asking the second-question of input:we again have to use the (interface-object):which has been provided by the (createInterface) function:and then we have to use the (question) function of that object:to ask the second-question to the user:
 // -> Write the another (string) or (question) to the (user)with in that (firstNumber's) callback-function:
 // -> And this (secondNumber) also gonna have its own callback-function To store the number or input into its(argument):and after that we can perform the operations on them:
 
-
-interface.question("Enter First Number:",(firstNumber)=>{
-  // IMP:
+interface.question("Enter First Number:", (firstNumber) => {
+  // IMP:callback function chaining:To get the second-input from the (user):
+  interface.question("Enter Second Number:", (secondNumber) => {
+    
+  });
 });
-
-
-
