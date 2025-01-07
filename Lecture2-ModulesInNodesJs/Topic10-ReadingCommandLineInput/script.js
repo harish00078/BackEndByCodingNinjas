@@ -12,8 +12,9 @@ const readline = require("readline");
 // IMP-NOTE:this createInterface function is gonna return an object:which is gonna represent the interface:so we have to store that object or interface-object in a variable:
 // V.IMP-NOTE:the (createInterface) function help us to connect with the (console or terminal):it basically help us to fetch or response back the data to the console or terminal:
 // Know we have two ways to configure an interface:
-// -> first-way: Is that we can directly use simple-functions to configure it:
-// -> second-way: Is that we can use the (options) object functions to configure it:
+// -> first-way: Is that we can directly use simple-functions of (createInterface) function to configure it:
+// -> second-way: Is that we can use the (options) object-functions of (createInterface) function to configure it:
+// IMP: Using the second-way:
 const interface = readline.createInterface({
   // V.IMP-NOTE: here (process) refers to the process of the Node.js:Its basically manage by our operating system:and its a global object in Node.js:
   // IMP: (input) property which we create in this object: Is used to read the data from the console or terminal:Its gonna do that with the help of (process.stdin) object:
