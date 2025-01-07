@@ -41,13 +41,13 @@ const interface = readline.createInterface({
 // IMP: with the help of this (callback-function):we can get the (input) or (response-back) from the user:which they provide to the question:
 
 // V.V.IMP-NOTE:so after receiving (firstNumber):through callback:we can ask the secondNumber to the user:by doing the same thing again:which we call as (chaining) or (callback-functions or functions) chaining in Node.js or JavaScript:
-// V.IMP:While asking the second-question of input:we again have to use the (interface-object):which has been provided by the (createInterface) function:and then we have to use the (question) function of that object:to ask the second-question to the user:
+// V.IMP:While asking the second-question of input:we again have to use the (interface-object):which has been provided by the (createInterface) function:so that we can use the (question) function of that object:to ask the second-question to the user:
 // -> Write the another (string) or (question) to the (user)with in that (firstNumber's) callback-function:
 // -> And this (secondNumber) also gonna have its own callback-function To store the number or input into its(argument):and after that we can perform the operations on them:
 
 interface.question("Enter First Number:", (firstNumber) => {
   // IMP:callback function chaining:To get the second-input from the (user):
   interface.question("Enter Second Number:", (secondNumber) => {
-    
+
   });
 });
