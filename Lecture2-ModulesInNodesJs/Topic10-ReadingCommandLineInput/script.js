@@ -51,7 +51,7 @@ interface.question("Enter First Number:", (firstNumber) => {
   interface.question("Enter Second Number:", (secondNumber) => {
     // Here we have the access to firstNumber and secondNumber:
     // IMP:As we have learned in the (js):we are able to do the function-chaining in the (js):because of the (closures):
-    const sum = parseInt(firstNumber) + parseInt(secondNumber);
+    const sum = Number(firstNumber) + Number(secondNumber);
     console.log(`The sum of two numbers is: ${sum}`);
   });
 });
