@@ -2,6 +2,7 @@ console.log(
   "Reading command line input AND reading Data from Console or Terminal in Node.js"
 );
 
+const { parse } = require("path");
 // Steps we have to Follow:so that we can read command line input or terminal-input in Node.js:
 
 // => Step-1: Importing the 'readline' module from Node.js:
@@ -50,7 +51,7 @@ interface.question("Enter First Number:", (firstNumber) => {
   interface.question("Enter Second Number:", (secondNumber) => {
     // Here we have the access to firstNumber and secondNumber:
     // IMP:As we have learned in the (js):we are able to do the function-chaining in the (js):because of the (closures):
-    const sum = firstNumber + secondNumber;
+    const sum = parseInt(firstNumber) + parseInt(secondNumber);
     console.log(`The sum of two numbers is: ${sum}`);
   });
 });
