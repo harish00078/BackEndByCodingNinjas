@@ -52,5 +52,8 @@ interface.question("Enter First Number:", (firstNumber) => {
     // IMP:As we have learned in the (js):we are able to do the function-chaining in the (js):because of the (closures):
     const sum = Number(firstNumber) + Number(secondNumber);
     console.log(`The sum of two numbers is: ${sum}`);
+    // IMP: After performing the operations:we have to close the interface:so that we can close the connection with the console or terminal:and the program can be terminated automatically:
+    // IMP: we can close the interface with the help of (close) function of the interface-object:
+    interface.close();
   });
 });
