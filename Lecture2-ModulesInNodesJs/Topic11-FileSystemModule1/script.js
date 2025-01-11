@@ -27,7 +27,7 @@ const fs = require("fs");
 // const data = fs.readFileSync('./data.txt', 'utf8');
 // -> second way:
 // const data = fs.readFileSync('./data.txt').toString();
-// -> third way:
+// -> third way:used by the tutor:
 const data = fs.readFileSync('./data.txt');
 const dataString = data.toString();
 console.log(dataString);
