@@ -22,7 +22,7 @@ const fs = require("fs");
 // -> 2 = the encoding of the file:It is optional and defaults to 'utf8':
 // V.IMP-NOTE: The (readFileSync) method of (fs) module returns a (buffer) object or buffer-data by default:and we need to work with string data:so for that we have to convert the buffer-data into string-data:
 // So that why we need to provide the (encoding-parameter) to the (readFileSync) method:which is basically the (utf8) encoding-parameter:it gonna convert the buffer data into string data:
-// V.IMP-NOTE: So instead of providing the (utf8) encoding-parameter to the (readFileSync) method: we can also use the (toString) method to convert the buffer-data into string-data:
+// V.IMP-NOTE:There is another way to do that:Instead of providing the (utf8) encoding-parameter to the (readFileSync) method: we can also use the (toString) method to convert the buffer-data into string-data:
 
 // -> first way:this is the way we gonna use:
 const data = fs.readFileSync('./data.txt', 'utf8');
