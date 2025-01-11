@@ -14,6 +14,7 @@ console.log("here we are learning about file-system-module in node js");
 
 // 1 = Importing the (fs) module:
 const fs = require("fs");
+// => Read-Operation:
 // 2 = Reading the file:with the help of fs-module's synchronous-methods:
 // (readFileSync) method is used to read the file:
 // V.IMP:It takes two parameters:
