@@ -4,7 +4,7 @@ console.log("here we are learning about file-system-module in node js");
 // V.IMP-NOTE:Working with file-system is basically a (input-output) operation:because (fs) is also managed by the other system which is the operating system: so it is an input-output operation:because it has to interact with the operating system to perform the operations:
 // IMP-NOTE: It is a core module in node js, so we don't need to install it separately:
 
-// we have two-ways to use (fs) module in (nodejs):
+// we have two-types of (fs-module) methods in (nodejs):
 // -> 1 = synchronous-way:
 // -> 2 = asynchronous-way:
 // Synchronous:It means that the code will be executed in a sequence, one after the other:It is blocking code, which means that the code will be executed in a sequential manner:
