@@ -32,6 +32,8 @@ const data = fs.readFileSync('./data.txt', 'utf8');
 // const data = fs.readFileSync('./data.txt');
 // const dataString = data.toString();
 // console.log(dataString);
+// -> fourth way:used on the CN-notes:
+// const data = fs.readFileSync(path,{encoding :'utf8'});
 console.log("File is read successfully",data);
 
 // -> 2 = Fs-Module with Asynchronous-way:(CURD-Operations):
