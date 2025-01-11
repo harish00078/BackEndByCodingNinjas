@@ -12,7 +12,18 @@ console.log("here we are learning about file-system-module in node js");
 
 // -> 1 = Fs-Module with Synchronous-way:(CURD-Operations):
 
+// 1 = Importing the (fs) module:
+const fs = require("fs");
+// 2 = Reading the file:with the help of fs-module's synchronous-methods:
+// (readFileSync) method is used to read the file:
+// V.IMP:It takes two parameters:
+// -> 1 = the path of the file:
+// -> 2 = the encoding of the file:It is optional and defaults to 'utf8':
+// V.IMP-NOTE: The (readFileSync) method of (fs) module returns a (buffer) object by default:and we need to work with string data:so for that we have to convert the buffer-data into string-data:
+// So that why we need to provide the (encoding-parameter) to the (readFileSync) method:which is basically the (utf8) encoding-parameter:it gonna convert the buffer data into string data:
 
+const data = fs.readFileSync('./data.txt', 'utf8');
+console.log(data);
 
 
 
