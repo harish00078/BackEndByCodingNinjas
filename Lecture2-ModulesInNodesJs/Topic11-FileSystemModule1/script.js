@@ -24,13 +24,13 @@ const fs = require("fs");
 // V.IMP-NOTE: So instead of providing the (utf8) encoding-parameter to the (readFileSync) method: we can also use the (toString) method to convert the buffer-data into string-data:
 
 // -> first way:this is the way we gonna use:
-// const data = fs.readFileSync('./data.txt', 'utf8');
+const data = fs.readFileSync('./data.txt', 'utf8');
 // -> second way:
 // const data = fs.readFileSync('./data.txt').toString();
 // -> third way:used by the tutor:
-const data = fs.readFileSync('./data.txt');
-const dataString = data.toString();
-console.log(dataString);
-
+// const data = fs.readFileSync('./data.txt');
+// const dataString = data.toString();
+// console.log(dataString);
+console.log("File is read successfully",data);
 
 // -> 2 = Fs-Module with Asynchronous-way:(CURD-Operations):
