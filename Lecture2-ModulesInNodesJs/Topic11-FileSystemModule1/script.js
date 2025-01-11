@@ -8,4 +8,4 @@ console.log("here we are learning about file-system-module in node js");
 // -> 1 = synchronous-way:
 // -> 2 = asynchronous-way:
 // Synchronous:It means that the code will be executed in a sequence, one after the other:It is blocking code, which means that the code will be executed in a sequential manner:
-// Asynchronous:It means that the code will be executed in a non-sequential manner;It is non-blocking code, which means that the code will be executed in a non-sequential manner:
+// Asynchronous:It means that the code will be executed in a non-sequential manner:It is non-blocking code, which means that the code will be executed in a non-sequential manner:
