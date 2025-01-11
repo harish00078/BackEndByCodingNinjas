@@ -5,12 +5,12 @@ console.log("here we are learning about file-system-module in node js");
 // IMP-NOTE: It is a core module in node js, so we don't need to install it separately:
 
 // we have two-types of (fs-module) methods in (nodejs):
-// -> 1 = synchronous-way:
-// -> 2 = asynchronous-way:
+// -> 1 = synchronous-methods:
+// -> 2 = asynchronous-methods:
 // Synchronous:It means that the code will be executed in a sequence, one after the other:It is blocking code, which means that the code will be executed in a sequential manner:
 // Asynchronous:It means that the code will be executed in a non-sequential manner:It is non-blocking code, which means that the code will be executed in a non-sequential manner:
 
-// -> 1 = Fs-Module with Synchronous-way:(CURD-Operations):
+// -> 1 = Synchronous-methods of Fs-Module:(CURD-Operations):
 
 // 1 = Importing the (fs) module:
 const fs = require("fs");
@@ -36,4 +36,4 @@ const data = fs.readFileSync('./data.txt', 'utf8');
 // const data = fs.readFileSync(path,{encoding :'utf8'});
 console.log("File is read successfully",data);
 
-// -> 2 = Fs-Module with Asynchronous-way:(CURD-Operations):
+// -> 2 = Asynchronous-methods of Fs-Module:(CURD-Operations):
