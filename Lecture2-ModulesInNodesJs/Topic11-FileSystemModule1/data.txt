@@ -1,2 +1,6 @@
 # We have created a file named data.txt:
 # through which we are gonna be learn about that how we can read and write data or perform other operations:In a file using the file system module of node js:
+
+name: harish kumar
+dept: cse
+position: software developer

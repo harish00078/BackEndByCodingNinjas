@@ -9,3 +9,11 @@ console.log("here we are learning about file-system-module in node js");
 // -> 2 = asynchronous-way:
 // Synchronous:It means that the code will be executed in a sequence, one after the other:It is blocking code, which means that the code will be executed in a sequential manner:
 // Asynchronous:It means that the code will be executed in a non-sequential manner:It is non-blocking code, which means that the code will be executed in a non-sequential manner:
+
+// -> 1 = Fs-Module with Synchronous-way:(CURD-Operations):
+
+
+
+
+
+// -> 2 = Fs-Module with Asynchronous-way:(CURD-Operations):
