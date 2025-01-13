@@ -24,3 +24,6 @@ const fs = require("fs");
 // Reading the data from the file:with the help of the (readFileSync) method:
 const readData = fs.readFileSync("data.txt", "utf-8");
 console.log(readData);
+
+
+// -> 3 = Updating-file or updating-data in the file:
