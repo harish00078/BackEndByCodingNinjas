@@ -1,2 +1,0 @@
-name:John Doe,age:25,city:New York
-Name:david Doe,age:30,city:Los Angeles

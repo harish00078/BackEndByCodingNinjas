@@ -37,3 +37,15 @@ const readFile2 = fs.readFileSync("data.txt", "utf-8");
 console.log(readFile2);
 
 // -> 4 = Deleting a file:
+// using the (unlinkSync) method:which is used to (delete) a file:it is a synchronous method:
+// IMP:It only takes 1 argument/parameter:
+// -> 1 =  the (path) of the file:which we want to delete:
+// IMP-NOTE:so some time when we try to delete the file:then it will give us the error:because we may not have the permission to delete the file on user's computer or may have another error condition while deleting the file:so that where to avoid that error we can use the (try-catch) block method:
+try{
+   const deleteFile = fs.unlinkSync("data.txt");
+}catch(error){
+    console.log(error,"Error Occurred");
+}
+
+const readFile3 = fs.readFileSync("data.txt", "utf-8");
+console.log(readFile3);
