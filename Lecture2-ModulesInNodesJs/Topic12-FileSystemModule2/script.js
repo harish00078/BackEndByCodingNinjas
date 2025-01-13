@@ -3,7 +3,7 @@ console.log("Learning About File-System Module");
 
 // here we are learning about the (synchronous) methods of the file system module:
 // -> 2 = Creating a file:
-// using the (writeFileSync) method:which is used to (create) a file and (write) data to it:it is a synchronous method:
+// using the (writeFileSync) method:which is used to (create) a file and (write) data to it:or also it basically overwrites an existing one:it is a synchronous method:
 // IMP:It takes 2 arguments/parameters:
 // -> 1 =  the (path) of the file:if it exits then it will overwrite the file:if doesn't exist then it will create a new-file:
 // -> 2 =  the (data) that we want to write to the file:
