@@ -35,3 +35,5 @@ const updateFile = fs.appendFileSync("data.txt","\nName:david Doe,age:30,city:Lo
 
 const readFile2 = fs.readFileSync("data.txt", "utf-8");
 console.log(readFile2);
+
+// -> 4 = Deleting a file:
