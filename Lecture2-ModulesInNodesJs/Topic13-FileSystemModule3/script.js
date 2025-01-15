@@ -36,7 +36,12 @@ const fs = require("fs");
 // -> 1 = the first argument is an (error-object):
 // -> 2 = the second argument is the result of the operation:
 
+// -> first-way:with the help of (arrow-function):
+// const readingFile = fs.readFile("data.txt","utf-8",(err,data)=>{});
+// -> second-way:with the help of (normal-function):
+const readingFile = fs.readFile("./data.txt","utf-8",function(err,data){
 
+});
 
 
 
