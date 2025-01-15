@@ -25,7 +25,7 @@ const fs = require("fs");
 
 
 
-// -> then we can use its methods to perform CRUD operations on a file:
+// -> using Asynchronous-methods of Fs-module to perform CRUD-operations on a file:
 // 1. Reading a file:
 // using fs-module's  asynchronous-method: which is (readFile) method:It is used to read the data from a file:
 // IMP-NOTE: The (readFile) method takes three arguments:
