@@ -40,7 +40,13 @@ const fs = require("fs");
 // const readingFile = fs.readFile("data.txt","utf-8",(err,data)=>{});
 // -> second-way:with the help of (normal-function):
 const readingFile = fs.readFile("./data.txt","utf-8",function(err,data){
-
+    // here first check if an error occurred or not:
+    if(err){
+        console.log('error while reading the file:',err);
+    }else{
+        // if no error occurred then print the data:
+        console.log('data from the file:',data);
+    }
 });
 
 
