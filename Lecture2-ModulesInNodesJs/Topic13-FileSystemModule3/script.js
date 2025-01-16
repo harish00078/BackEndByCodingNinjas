@@ -51,5 +51,5 @@ const readingFile = fs.readFile("./data.txt","utf-8",function(err,data){
 });
 
 
-
-
+// 2. Create or Write in a file:
+// we have the (writeFile) method:It is used to write the data into a file:or create a new file if it does not exist:
