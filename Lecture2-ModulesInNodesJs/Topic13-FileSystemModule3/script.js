@@ -65,3 +65,13 @@ const creatingFile = fs.writeFile("./data2.txt","name:harish,age:24,",function(e
         console.log('error while creating the file:',err);
     }
 })
+
+const readingFile2 = fs.readFile("./data2.txt","utf-8",function(err,data){
+    // here first check if an error occurred or not:
+    if(err){
+        console.log('error while reading the file:',err);    
+    }else{
+        // if no error occurred then print the data:
+        console.log('data from data2-file:',data);
+    }
+})
