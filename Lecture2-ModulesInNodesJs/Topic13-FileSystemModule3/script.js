@@ -88,5 +88,23 @@ const updatingFile = fs.appendFile("./data2.txt","position:software developer",f
     // CHECKING-ERROR:
     if(err){
         console.log('error while updating the file:',err);
+    }else{
+        console.log('file updated successfully');
     }
 });
+
+// 4. Delete a file:
+// we have the (unlink) method:It is used to delete a file:
+// IMP-NOTE: The (unlink) method mostly takes two arguments:
+// -> 1 = the (path) of the file:which we want to delete:   
+// -> 2 = the (callback-function):which is called when the operation is completed:
+// -> the callback-function has one arguments/parameter:
+// -> 1 = the argument is an (error) or (error-object):if an error occurred, the argument will contain an (error-object), otherwise, the argument will be null:
+const deletingFile = fs.unlink("./data2.txt",function(err){
+    // CHECKING-ERROR:
+    if(err){
+        console.log('error while deleting the file:',err);
+    }else{
+        console.log('file deleted successfully');
+    }
+})
