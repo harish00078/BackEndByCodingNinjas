@@ -75,3 +75,18 @@ const readingFile2 = fs.readFile("./data2.txt","utf-8",function(err,data){
         console.log('data from data2-file:',data);
     }
 })
+
+// 3. Update a file:
+// we have the (appendFile) method:It is used to append or update the data into a file:
+// IMP-NOTE: The (appendFile) method mostly takes three arguments:
+// -> 1 = the (path) of the file:which we want to update:
+// -> 2 = the (data) that we want to append to the file:
+// -> 3 = the (callback-function):which is called when the operation is completed:
+// -> the callback-function has one arguments/parameter:
+// -> 1 = the argument is an (error) or (error-object):if an error occurred, the argument will contain an (error-object), otherwise, the argument will be null:
+const updatingFile = fs.appendFile("./data2.txt","position:software developer",function(err){
+    // CHECKING-ERROR:
+    if(err){
+        console.log('error while updating the file:',err);
+    }
+});
