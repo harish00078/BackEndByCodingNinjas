@@ -53,3 +53,15 @@ const readingFile = fs.readFile("./data.txt","utf-8",function(err,data){
 
 // 2. Create a file:
 // we have the (writeFile) method:It is used to write the data into a file:or create a new file if it does not exist:
+// IMP-NOTE: The (writeFile) method mostly takes three arguments:
+// -> 1 = the (path) of the file:which we want to create:
+// -> 2 = the (data) that we want to write to the file:
+// -> 3 = the (callback-function):which is called when the operation is completed:
+// -> the callback-function has one arguments/parameter:
+// -> 1 = the argument is an (error) or (error-object):if an error occurred, the argument will contain an (error-object), otherwise, the argument will be null:
+const creatingFile = fs.writeFile("./data2.txt","name:harish,age:24,",function(err){
+    // CHECKING-ERROR:
+    if(err){
+        console.log('error while creating the file:',err);
+    }
+})
