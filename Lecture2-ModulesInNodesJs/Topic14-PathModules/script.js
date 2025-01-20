@@ -45,11 +45,11 @@ const readingFile = fs.readFile('./src/database/data.txt','utf-8',(err,data)=>{
 // -> and for creating difference between those path-parts we are going to use the (,) comma-symbol:
 
 
-const filePath = path.join('src','database','data.txt');
+const joinPath = path.join('src','database','data.txt');
 
 // -> IMP-3:after creating path:we simply have to pass that path to the (fs) to define the path with in the file-system:which we have stored with in the (variable):
 
-const readFileData = fs.readFile(filePath,'utf-8',function(err,data){
+const readFileData = fs.readFile(joinPath,'utf-8',function(err,data){
     if(err){
         console.log('error while reading the file:',err);
     }else{
@@ -57,3 +57,7 @@ const readFileData = fs.readFile(filePath,'utf-8',function(err,data){
     }
 })
 
+
+// Learn To Use (Resolve) method:
+const resolvePath = path.resolve('src','database','data.txt');
+console.log('resolve path',resolvePath);
