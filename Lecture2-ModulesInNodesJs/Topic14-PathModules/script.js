@@ -18,7 +18,7 @@ const readingFile = fs.readFile('./src/database/data.txt','utf-8',(err,data)=>{
     if(err){
         console.log('error while reading the file:',err);
     }else{
-        console.log('data from the file:',data);
+        console.log('data from simple-path method:',data);
     }
 });
 
@@ -38,6 +38,6 @@ const readFileData = fs.readFile(filePath,'utf-8',function(err,data){
     if(err){
         console.log('error while reading the file:',err);
     }else{
-        console.log('data from the file:',data);
+        console.log('data from path-module methods:',data);
     }
 })
