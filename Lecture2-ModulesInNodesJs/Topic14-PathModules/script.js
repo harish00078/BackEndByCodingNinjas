@@ -58,7 +58,7 @@ const readFileData = fs.readFile(joinPath,'utf-8',function(err,data){
 })
 
 
-// Learn To Use (Resolve) method:It also work in the same way as the (join) method:it also implement as the (join) method:but only the difference is that it provide the path in the different form:
+// Learn To Use (Resolve) method:It also work in the same way as the (join) method:it also implement in the same-way as the (join) method:but only the difference is that it provide us the path in the different form:
 const resolvePath = path.resolve('src','database','data.txt');
 console.log('resolve path',resolvePath);
 
