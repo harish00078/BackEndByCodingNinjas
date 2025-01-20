@@ -12,5 +12,5 @@ const fs = require("fs");
 const path = require("path");
 
 // we can understand with the help of example:like we want to read some file from the another folder:
-// -> first:we check the simple-way of doing it:
+// -> first:we gonna check the simple-way of defining path to the file-system:
 
