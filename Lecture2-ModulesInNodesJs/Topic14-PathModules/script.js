@@ -21,3 +21,5 @@ const readingFile = fs.readFile('./src/database/data.txt','utf-8',(err,data)=>{
         console.log('data from the file:',data);
     }
 });
+
+// -> second:we gonna check about that how we can define the (path) to the file-system with the help of (path-module):
