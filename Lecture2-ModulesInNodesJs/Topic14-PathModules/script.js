@@ -12,5 +12,12 @@ const fs = require("fs");
 const path = require("path");
 
 // we can understand with the help of example:like we want to read some file from the another folder:
-// -> first:we gonna check the simple-way of defining path to the file-system:
+// -> first:we gonna check the simple-way of defining path to the file-system:why simply defining the (directory-path) to the file-system:
 
+const readingFile = fs.readFile('./src/database/data.txt','utf-8',(err,data)=>{
+    if(err){
+        console.log('error while reading the file:',err);
+    }else{
+        console.log('data from the file:',data);
+    }
+});
