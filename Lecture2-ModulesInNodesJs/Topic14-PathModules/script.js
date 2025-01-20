@@ -46,18 +46,26 @@ const readingFile = fs.readFile('./src/database/data.txt','utf-8',(err,data)=>{
 
 
 const joinPath = path.join('src','database','data.txt');
-
+console.log('join path',joinPath);
 // -> IMP-3:after creating path:we simply have to pass that path to the (fs) to define the path with in the file-system:which we have stored with in the (variable):
 
 const readFileData = fs.readFile(joinPath,'utf-8',function(err,data){
     if(err){
         console.log('error while reading the file:',err);
     }else{
-        console.log('data from path-module methods:',data);
+        console.log('data from path-module methods1:',data);
     }
 })
 
 
-// Learn To Use (Resolve) method:
+// Learn To Use (Resolve) method:It also work in the same way as the (join) method:it also implement as the (join) method:but only the difference is that it provide the path in the different form:
 const resolvePath = path.resolve('src','database','data.txt');
 console.log('resolve path',resolvePath);
+
+const readFileData1 = fs.readFile(resolvePath,'utf-8',function(err,data){
+    if(err){
+        console.log('error while reading the file:',err);
+    }else{
+        console.log('data from path-module methods2:',data);
+    }
+})
