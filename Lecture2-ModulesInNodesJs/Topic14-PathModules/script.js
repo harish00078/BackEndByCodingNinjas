@@ -39,7 +39,7 @@ const readingFile = fs.readFile('./src/database/data.txt','utf-8',(err,data)=>{
 
 const filePath = path.join('src','database','data.txt');
 
-// -> IMP-3:after creating path:we simply have to pass that path to the (fs) to define the path in the file-system:which we have stored with in the (variable):
+// -> IMP-3:after creating path:we simply have to pass that path to the (fs) to define the path with in the file-system:which we have stored with in the (variable):
 
 const readFileData = fs.readFile(filePath,'utf-8',function(err,data){
     if(err){
