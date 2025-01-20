@@ -32,13 +32,15 @@ const readingFile = fs.readFile('./src/database/data.txt','utf-8',(err,data)=>{
 // -> so for creating path using (path-module):we have its (join) method:which is used to join the (path) of the file-system:
 
 // -> V.IMP-NOTE:how does join-method works:Joining-paths in a file system means putting different parts of a (file) or (folder) path together to make one (complete-path):
-// -> so When we use a path-joining function, it automatically uses the [correct-symbol] for the (file-path) acc to the operating-system:
-// -> so for creating difference between those path-parts we are going to use the (,) comma-symbol:
-// and we can define those diff-parts of the path through or with the help of (string):
+// -> V.IMP-NOTE:what join-method does is that:When we use a path-joining function:it automatically uses the [correct-symbol] for the (file-path) acc to the operating-system:
+// -> we can create those diff-parts of the path through or with the help of (string):
+// -> and for creating difference between those path-parts we are going to use the (,) comma-symbol:
+
 
 const filePath = path.join('src','database','data.txt');
 
-// -> IMP-3:For creating path using (path-module) method:we simply have to pass that path to the (fs) to define the path in the file-system:which we have stored with in the (variable):
+// -> IMP-3:after creating path:we simply have to pass that path to the (fs) to define the path in the file-system:which we have stored with in the (variable):
+
 const readFileData = fs.readFile(filePath,'utf-8',function(err,data){
     if(err){
         console.log('error while reading the file:',err);
