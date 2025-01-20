@@ -30,7 +30,7 @@ const readingFile = fs.readFile('./src/database/data.txt','utf-8',(err,data)=>{
 // -> 4 = (basename) method:It is used to get the (base-path) of the file-system:
 // -> 5 = (extname) method:It is used to get the (extension-path) of the file-system:
 
-// => Learning To Use (Join) method:
+// => 1 =  Learning To Use (Join) method:
 
 // Steps To Follow:
 // IMP-1: so for defining-path to the (fs) with the help of (path-module):first we have to define the path separately:because we can't directly define the path to the (fs) with the help of (path-module): and path-module does not work that way because for creating path using (path-module) we need to use (methods) of (path-module):
@@ -60,7 +60,8 @@ const readFileData = fs.readFile(joinPath,'utf-8',function(err,data){
 })
 
 
-// Learn To Use (Resolve) method:It also work in the same way as the (join) method:it also implement in the same-way as the (join) method:but only the difference is that it provide us the path in the different form:
+// => 2 = Learn To Use (Resolve) method:
+// It also work in the same way as the (join) method:it also implement in the same-way as the (join) method:but only the difference is that it provide us the path in the different form:
 // V.IMP-NOTE:the (resolve) method basically provide,create or return we can say the (hole) path of the file-system:acc to the (path) that we have provided to it:
 // -> It basically return the (path) from the (root) directory to till which we have provide to it of the operating-system or machine:
 // IMP-NOTE:And this path is known as (absolute-path):
