@@ -31,9 +31,10 @@ const readingFile = fs.readFile('./src/database/data.txt','utf-8',(err,data)=>{
 // -> so for creating path using (path-module):we have its (join) method:which is used to join the (path) of the file-system:
 // -> IMP:what does that mean (join) the path of file-system:Joining-paths in a file system means putting different parts of a file or folder path together to make one (complete-path):so When you use a path-joining function, it automatically uses the correct-symbol for the (file-path) acc to the operating system:
 
-const filePath = path.join()
+const filePath = path.join('src','database','data.txt');
 
-const readFileData = fs.readFile(,'utf-8',function(err,data){
+// -> IMP-3:after creating path using (path-module) method:we simple have to pass that method to the (fs) to define the path to the file-system:which we have stored with in the (variable):
+const readFileData = fs.readFile(filePath,'utf-8',function(err,data){
     if(err){
         console.log('error while reading the file:',err);
     }else{
