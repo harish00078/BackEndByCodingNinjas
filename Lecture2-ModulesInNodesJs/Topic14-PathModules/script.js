@@ -90,5 +90,7 @@ const directoryName = path.dirname(resolvePath);
 console.log('directory name',directoryName);
 
 
-// => 5[V.IMP-Topic] = (__dirname) is a global-variable it is not a method in Node.js: It returns the path of the current working directory:
-// V.V.IMP-NOTE:(__dirname) is a global variable that represents the directory-name of the current-module or path (the file being executed). It provides the absolute-path of the directory which containing the one or more script files and modules we can say:
+// => 5[V.IMP-Topic] = (__dirname) is a global-variable it is not a method: In Node.js it returns the path of the current-working-directory:
+// V.V.IMP-NOTE:(__dirname) is a global variable that returns the directory-name of the current-module or file:where we are using it:
+// It provides the absolute-path of the directory which containing the one or more script-files and modules we can say:
+// V.IMP-NOTE:which means with the help of it:we can easily access the all other files:while working on a one-particular file:we did not have to define the (file-path) or anything:we can simply use it and through that we gonna be able to access the directory-path or folder of this (files): and know from where we can easily access all other files:
