@@ -28,7 +28,7 @@ const readingFile = fs.readFile('./src/database/data.txt','utf-8',(err,data)=>{
 // -> 2 = (resolve) method:It is used to resolve the (path) of the file-system:
 // -> 3 = (dirname) method:It is used to get the (directory-path) of the file-system:
 // -> 4 = (basename) method:It is used to get the (base-path) of the file-system:
-// -> 5 = (extname) method:It is used to get the (extension-path) of the file-system:
+// -> 5 = (extname) method:It is used to get the (extension) of the (path) of the file-system:
 
 // => 1 =  Learning To Use (Join) method:
 
@@ -76,3 +76,9 @@ const readFileData1 = fs.readFile(resolvePath,'utf-8',function(err,data){
         console.log('data from path-module methods2:',data);
     }
 })
+
+
+// => 3 = (extname) method:It is used to get the (extension) of the (path) of the file-system:
+// It method help us in finding the (extension) of the (path) of the file-system:like we if we have (txt) extension in the last of the (path) of the file-system:then we can use this (extname) method:To get extension-name:
+const extensionName = path.extname(resolvePath);
+console.log('extension name',extensionName);
