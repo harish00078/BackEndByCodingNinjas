@@ -25,11 +25,13 @@ const readingFile = fs.readFile('./src/database/data.txt','utf-8',(err,data)=>{
 // -> second:we gonna check about that how we can define the (path) to the file-system with the help of (path-module):
 // Steps To Follow:
 // IMP-1: so for defining-path to the (fs) with the help of (path-module):first we have to define the path separately:because we can't directly define the path to the (fs) with the help of (path-module) and path-module does not work that way:because for creating path using (path-module) we need to use (methods) of (path-module):
-// that's why we have to define the path separately:we gonna define the path separately with in the const-variable:and with in that variable we are gonna define the path through the help of (methods) of (path-module):and then we can use that (path-variable) to define the path into the file-system:
+// that's why we have to define the path separately:we gonna define the path separately with in the const-variable:and then we can use that (path-variable) to define the path into the file-system:
 
 // IMP-2:these methods of path-module:basically define the (path) in such-way that they can be easily understand by the any operating-system or machine's file-system:and this is but we want to achieve and but (path) module does:
 // -> so for creating path using (path-module):we have its (join) method:which is used to join the (path) of the file-system:
-// -> IMP:what does that mean (join) the path of file-system:Joining-paths in a file system means putting different parts of a file or folder path together to make one (complete-path):so When you use a path-joining function, it automatically uses the correct-symbol for the (file-path) acc to the operating system:
+
+// -> V.IMP-NOTE:what does that mean (join) the path of file-system:Joining-paths in a file system means putting different parts of a file or folder path together to make one (complete-path):so When you use a path-joining function, it automatically uses the [correct-symbol] for the (file-path) acc to the operating-system:
+// and we can define those diff parts of the path through or with in (string):
 
 const filePath = path.join('src','database','data.txt');
 
