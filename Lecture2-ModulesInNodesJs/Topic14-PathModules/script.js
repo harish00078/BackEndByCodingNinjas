@@ -23,6 +23,10 @@ const readingFile = fs.readFile('./src/database/data.txt','utf-8',(err,data)=>{
 });
 
 // -> second:we gonna check about that how we can define the (path) to the file-system with the help of (path-module):
+// Steps To Follow:
+// IMP-1: so for defining-path to the (fs) with the help of (path-module):first we need to define the path separately:because we can't directly define the path to the (fs) with the help of (path-module) and path-module does not work that way:
+// with in the path-module:we have to define the path separately:we gonna define the path separately with in the const-variable:and with in that variable we are gonna define the path through the help of (methods) of (path-module):and then we can use that (path-variable) to define the path into the file-system:
+const filePath:
 
 const readFileData = fs.readFile(,'utf-8',function(err,data){
     if(err){

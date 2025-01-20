@@ -1,3 +1,11 @@
 name:"harish"
 age:25
 salary:50000
+
+name:"john"
+age:30
+salary:60000
+
+name:"alice"
+age:28
+salary:55000
