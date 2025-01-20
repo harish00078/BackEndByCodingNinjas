@@ -29,6 +29,7 @@ const readingFile = fs.readFile('./src/database/data.txt','utf-8',(err,data)=>{
 // -> 3 = (dirname) method:It is used to get the (directory-path) of the file-system:
 // -> 4 = (basename) method:It is used to get the (base-path) of the file-system:
 // -> 5 = (extname) method:It is used to get the (extension) of the (path) of the file-system:
+// -> 6 = (__dirname) is a global-variable not a (method): in Node.js that returns the path of the current working directory.
 
 // => 1 =  Learning To Use (Join) method:
 
@@ -87,3 +88,7 @@ console.log('extension name',extensionName);
 // The dirname method in the path module is used to get the directory-part of a file path. It extracts the part of the path that points to the folder-containing the file, leaving out the file name itself.
 const directoryName = path.dirname(resolvePath);
 console.log('directory name',directoryName);
+
+
+// => 5[V.IMP-Topic] = (__dirname) is a global-variable it is not a method in Node.js: It returns the path of the current working directory:
+// V.V.IMP-NOTE:(__dirname) is a global variable that represents the directory-name of the current-module or path (the file being executed). It provides the absolute-path of the directory which containing the one or more script files and modules we can say:
