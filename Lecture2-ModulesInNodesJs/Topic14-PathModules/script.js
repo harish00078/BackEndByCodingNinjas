@@ -42,6 +42,7 @@ const readingFile = fs.readFile('./src/database/data.txt','utf-8',(err,data)=>{
 // -> V.IMP-NOTE:how does join-method works:Joining-paths in a file system means putting different parts of a (file) or (folder) path together to make one (complete-path):
 // -> V.IMP-NOTE:the (join) method only provide,create or return the (path):acc to which number of path-parts we have provided to it:
 // -> V.IMP-NOTE:what join-method does is that:When we use a path-joining function:it automatically uses the [correct-symbol] for the (file-path) acc to the operating-system:
+// Creating Path Using Join-Method:
 // -> we can create those diff-parts of the path through or with the help of (string):
 // -> and for creating difference between those path-parts we are going to use the (,) comma-symbol:
 
@@ -62,6 +63,7 @@ const readFileData = fs.readFile(joinPath,'utf-8',function(err,data){
 // Learn To Use (Resolve) method:It also work in the same way as the (join) method:it also implement in the same-way as the (join) method:but only the difference is that it provide us the path in the different form:
 // V.IMP-NOTE:the (resolve) method basically provide,create or return we can say the (hole) path of the file-system:acc to the (path) that we have provided to it:
 // -> It basically return the (path) from the (root) directory to till which we have provide to it of the operating-system or machine:
+// IMP-NOTE:And this path is known as (absolute-path):
 
 const resolvePath = path.resolve('src','database','data.txt');
 console.log('resolve path',resolvePath);
