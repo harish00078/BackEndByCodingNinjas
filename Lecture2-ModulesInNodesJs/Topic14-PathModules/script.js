@@ -30,8 +30,8 @@ const readingFile = fs.readFile('./src/database/data.txt','utf-8',(err,data)=>{
 // IMP-2:these methods of path-module:basically define the (path) in such-way that they can be easily understand by the any operating-system or machine's file-system:and this is but we want to achieve and but (path) module does:
 // -> so for creating path using (path-module):we have its (join) method:which is used to join the (path) of the file-system:
 
-// -> V.IMP-NOTE:what does that mean (join) the path of file-system:Joining-paths in a file system means putting different parts of a file or folder path together to make one (complete-path):so When you use a path-joining function, it automatically uses the [correct-symbol] for the (file-path) acc to the operating-system:
-// and we can define those diff parts of the path through or with in (string):
+// -> V.IMP-NOTE:how does join-method works:Joining-paths in a file system means putting different parts of a (file) or (folder) path together to make one (complete-path):so When you use a path-joining function, it automatically uses the [correct-symbol] for the (file-path) acc to the operating-system:
+// and we can define those diff-parts of the path through or with the (string):
 
 const filePath = path.join('src','database','data.txt');
 
