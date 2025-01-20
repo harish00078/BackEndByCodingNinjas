@@ -23,6 +23,14 @@ const readingFile = fs.readFile('./src/database/data.txt','utf-8',(err,data)=>{
 });
 
 // -> second:we gonna check about that how we can define the (path) of the file-system with the help of (path-module):
+// IMP:there are different method available in the (path-module):
+// -> 1 = (join) method:It is used to join the (path) of the file-system:
+// -> 2 = (resolve) method:It is used to resolve the (path) of the file-system:
+// -> 3 = (dirname) method:It is used to get the (directory-path) of the file-system:
+// -> 4 = (basename) method:It is used to get the (base-path) of the file-system:
+// -> 5 = (extname) method:It is used to get the (extension-path) of the file-system:
+
+// => Learning To Use (Join) method:
 
 // Steps To Follow:
 // IMP-1: so for defining-path to the (fs) with the help of (path-module):first we have to define the path separately:because we can't directly define the path to the (fs) with the help of (path-module): and path-module does not work that way because for creating path using (path-module) we need to use (methods) of (path-module):
@@ -48,3 +56,4 @@ const readFileData = fs.readFile(filePath,'utf-8',function(err,data){
         console.log('data from path-module methods:',data);
     }
 })
+
