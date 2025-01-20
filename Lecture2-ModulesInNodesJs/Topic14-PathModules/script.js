@@ -82,3 +82,8 @@ const readFileData1 = fs.readFile(resolvePath,'utf-8',function(err,data){
 // It method help us in finding the (extension) of the (path) of the file-system:like we if we have (txt) extension in the last of the (path) of the file-system:then we can use this (extname) method:To get extension-name:
 const extensionName = path.extname(resolvePath);
 console.log('extension name',extensionName);
+
+// => 4 = (dirname) method:It is used to get the (directory-path) of the file-system:
+// The dirname method in the path module is used to get the directory-part of a file path. It extracts the part of the path that points to the folder-containing the file, leaving out the file name itself.
+const directoryName = path.dirname(resolvePath);
+console.log('directory name',directoryName);
