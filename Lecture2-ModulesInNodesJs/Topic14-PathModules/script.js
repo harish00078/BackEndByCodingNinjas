@@ -88,9 +88,13 @@ console.log('extension name',extensionName);
 // The dirname method in the path module is used to get the directory-part of a file path. It extracts the part of the path that points to the folder-containing the file, leaving out the file name itself.
 const directoryName = path.dirname(resolvePath);
 console.log('directory name',directoryName);
+// => 5 = (basename) method:It is used to get the (base-path) of the file-system:
+// The basename method in the path module is used to get the base name of a file path. It extracts the file name from the path, leaving out the directory part. This method is useful when you want to get the name of the file without the directory path. It returns the file name with the extension.
+const baseName = path.basename(resolvePath);
+console.log('base name',baseName);
 
 
-// => 5[V.IMP-Topic] = (__dirname) is a global-variable it is not a method: In Node.js it returns the path of the current-working-directory:
+// => 6 = [V.IMP-Topic] = (__dirname) is a global-variable it is not a method: In Node.js it returns the path of the current-working-directory:
 // Important Notes:
 // __dirname is a global variable that gives you the directory name of the current file or module:
 // It provides the full path to the directory where your script-file or module is located:
