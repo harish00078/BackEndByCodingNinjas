@@ -91,6 +91,8 @@ console.log('directory name',directoryName);
 
 
 // => 5[V.IMP-Topic] = (__dirname) is a global-variable it is not a method: In Node.js it returns the path of the current-working-directory:
-// V.V.IMP-NOTE:(__dirname) is a global variable that returns the directory-name of the current-module or file:where we are using it:
-// It provides the absolute-path of the directory which containing the one or more script-files and modules we can say:
-// V.IMP-NOTE:which means with the help of it:we can easily access the all other files:while working on a one-particular file:we did not have to define the (file-path) or anything:we can simply use it and through that we gonna be able to access the directory-path or folder of this (files): and know from where we can easily access all other-files without defining the (file-path):
+// Important Notes:
+// __dirname is a global variable that gives you the directory name of the current file or module.
+// It provides the full path to the directory where your script or module is located.
+// This means you can use __dirname to easily access other files and folders in the same directory without needing to specify their paths manually.
+// With __dirname, you don’t have to define the file path every time; it helps you access the directory and its contents directly.
