@@ -6,12 +6,13 @@ function calculateTotal(products) {
   products.forEach((product) => {
     total += product.quality * product.quantity;
   });
+  return total;
 }
 const products = [
-  { name: "laptop", quality: 1000, quantity: 2 },
-  { name: "mobile", quality: 500, quantity: 3 },
-  { name: "charger", quality: 50, quantity: 5 },
+  { name: "laptop", quality: 50, quantity: 2 },
+  { name: "mobile", quality: 25, quantity: 1 },
+  { name: "charger", quality: 30, quantity: 2 },
 ];
-// expected output: 6500
+// expected output: 185
 const grandTotal = calculateTotal(products);
 console.log('grand Total:',grandTotal);
