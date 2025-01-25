@@ -2,7 +2,7 @@
 function calculateTotal(products) {
     let total = 0;
     products.forEach((product) => {
-      total += product.price * product.quantity;
+      total += product.quantity* product.quantity;
     });
     return total;
   }
