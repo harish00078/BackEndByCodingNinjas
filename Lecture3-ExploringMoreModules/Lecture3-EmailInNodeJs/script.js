@@ -13,7 +13,7 @@ const nodemailer = require('nodemailer');
 async function sendEmail(){
 
     // 1:To create a (transporter):we need to call the (createTransport)-method:which is available in the (nodemailer-module):
-    // -> this (createTransport)-method is gonna be taking an object:which is gonna be containing the (service):which we are gonna be using to send the email:
+    // -> this (createTransport)-method is gonna be taking an object:which is gonna be containing the (email) and its (email-service) server:which we are gonna be used to send the emails to the (user):
     // -> this (service) basically gonna be the (email-server):which we are gonna be using to send the emails to the (user):
     // -> we gonna be using the (gmail) service to send the emails to the (user):
 
