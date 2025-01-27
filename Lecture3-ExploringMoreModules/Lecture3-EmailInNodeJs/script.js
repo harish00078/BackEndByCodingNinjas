@@ -13,9 +13,11 @@ const nodemailer = require('nodemailer');
 async function sendEmail(){
 
     // 1:To create a (transporter):we need to call the (createTransport)-method:which is available in the (nodemailer-module):
-    // -> this (createTransport)-method is gonna be taking an object:which is gonna be containing the (email) and its (email-service) server:which we are gonna be used to send the emails to the (user):
-    // -> this (service) basically gonna be the (email-server):which we are gonna be using to send the emails to the (user):
-    // -> we gonna be using the (gmail) service to send the emails to the (user):
+    // -> this (createTransport)-method is gonna be taking an object:which is gonna be containing the configuration of (email) and its (email-service) server:which we are gonna be used to send the emails to the (user):
+    // V.IMP: (createTransport)-method basically takes the (object) as an argument where we have basically configuring the (email) and its (email-service) server:and after that it is going to be returning the (transporter-object) to us:
+    const transporter = nodemailer.createTransport({
+
+    })
 
 
 }
