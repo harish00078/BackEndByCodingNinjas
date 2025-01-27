@@ -8,10 +8,11 @@ const nodemailer = require("nodemailer");
 // We'll use async-await syntax to handle the email-sending process.
 
 // -> Important Note:
-// for configuring the (email) and its (emailer-service) provider or server through which we are gonna be able to send-emails to the (userS):
-// we are gonna be using the (transporter) or (transporter-object):which is basically gonna help us to send the emails to the (email-server) or service-provider:and then that (email-server) is gonna be sending those emails to the (users):
+// for configuring the (email) and its (emailer-service) provider or server through which we are gonna be able to send-emails to the (users):
+// V.IMP: we are gonna be use the (transporter) or (transporter-object):which is basically help us to send the emails to the (email-server) or service-provider:and then that (email-server) is gonna be sending those emails to the (users):
 
 async function sendEmail() {
+
   // -> Creating the Transporter:
   // To create a transporter, we use the createTransport method provided by the Nodemailer module. This method takes an object as an argument:
   // The object contains the configuration details for the email account and its service provider, such as the host , authentication details, and other necessary settings.
