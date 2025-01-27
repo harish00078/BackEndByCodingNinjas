@@ -4,13 +4,14 @@ const nodemailer = require("nodemailer");
 // 2: How to Configure and Use Nodemailer to Send Emails:
 
 // -> 1 = first we have to Configure Email and its Email-Service Provider or server:which basically gonna be able to help us to send-emails to the users:
-// for that We need to create an asynchronous function for this purpose. By adding the async keyword in front of the function-declaration, we convert it into an async function.
-// We'll use async-await syntax to handle the email-sending process.
 
 // -> Important Note:
 // for configuring the (email) and its (emailer-service) provider or server through which we are gonna be able to send-emails to the (users):
 // V.IMP: we are gonna be use the (transporter) or (transporter-object):which is basically help us to send the emails to the (email-server) or service-provider:and then that (email-server) is gonna be sending those emails to the (users):
 
+// for this We need to create an asynchronous function for this purpose. By adding the async keyword in front of the function-declaration, we convert it into an async function.
+// We'll use async-await syntax to handle the email-sending process.
+// IMP: The async function will be responsible for sending the email to the user. It will use the transporter object:which we have created with in it: To send the email to the email server, which will then deliver the email to the user:
 async function sendEmail() {
 
   // -> Creating the Transporter:
