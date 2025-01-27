@@ -1,13 +1,13 @@
 // 1: Import nodemailer-module:
 const nodemailer = require('nodemailer');
 
-// IMP: here we are gonna be configure our (nodemailer) to send an emails:
-// 2: configure the (email) and (emailer-service) to send emails:
-// its gonna be the async-function:so for converting a function to async-function we just need to add the async-keyword in front of the function-keyword:
+// IMP: here we are gonna be use or configure our (nodemailer) to send an emails:
+
+// 2: for that first:we have to configure the (email) and (emailer-service) to send emails:
+// -> we have to create the function for that:its gonna be the async-function:so for converting a function to async-function we just need to add the async-keyword in front of the function-keyword:
 // IMP: we are gonna be using the async-await syntax to send an email:
 
 
-// => how we configure or use the nodemailer to send-emails:
 // 1: first we have to configure the (email) or (email-service):through which we are basically gonna be sending the emails to the (user):this (email) basically first connect to the (email-server):and then send the email to the (user):
 // -> for doing that:we need to create a (transporter):which is basically gonna help us to send the email to the (email-server):and then the (email-server) is gonna be sending the email to the (user):
 
