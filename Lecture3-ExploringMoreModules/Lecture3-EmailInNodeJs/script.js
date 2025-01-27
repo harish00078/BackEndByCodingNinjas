@@ -3,7 +3,7 @@ const nodemailer = require("nodemailer");
 
 // 2: How to Configure and Use Nodemailer to Send Emails:
 
-// -> 1 = first we have to Configuring Email and its Email-Service Provider or server:
+// -> 1 = first we have to Configuring Email and its Email-Service Provider or server:which basically gonna be able to help us to send-emails to the users:
 // V.IMP:To send emails using Nodemailer, the first step is to configure the email-account and its corresponding email-service-provider (or server). This configuration will enable us to send emails to users.
 
 // We need to create an asynchronous function for this purpose. By adding the async keyword in front of the function declaration, we convert it into an async function.
@@ -30,7 +30,7 @@ async function sendEmail() {
   // -> 3: Other settings, depending on the email service provider's requirements.
 
   const transporter = nodemailer.createTransport({
-    
+
     // -> 2 =  Understanding SMTP (Simple Mail Transfer Protocol):
     // SMTP is a protocol used for email transmission over the internet. It is responsible for sending emails from the sender to the receiver. SMTP ensures that emails are delivered efficiently and securely.
     // Just like HTTP/HTTPS is used to establish connections with web servers, SMTP is the protocol used to send emails over the internet.
