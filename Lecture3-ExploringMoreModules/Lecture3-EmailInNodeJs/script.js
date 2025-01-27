@@ -31,5 +31,7 @@ async function sendEmail() {
     // SMTP is a protocol used for email transmission over the internet. It is responsible for sending emails from the sender to the receiver. SMTP ensures that emails are delivered efficiently and securely.
     // Just like HTTP/HTTPS is used to establish connections with web servers, SMTP is the protocol used to send emails over the internet.
     // SMTP ensures smooth and efficient email delivery by acting as a bridge between the application (e.g., our Node.js app) and the email server.
+    
+
   });
 }
