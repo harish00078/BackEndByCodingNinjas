@@ -23,9 +23,9 @@ async function sendEmail(){
 
     const transporter = nodemailer.createTransport({
 
-        // => 2:know there another thing:through which basically we connects to the (servers) and those are the protocols:the same user does when they connect with our server:through the (http) or (https) protocol:
-        // -> so here we are gonna be using the (smtp) protocol:which is basically the (standard) protocol for sending-emails:
-        // IMP: (smtp) stands for (simple-mail-transfer-protocol):
+       // => 2 = When communicating with servers, users typically rely on protocols like HTTP or HTTPS to establish a connection.
+       // -> Similarly, when it comes to sending emails, we use specific protocols designed for this purpose. One such protocol is SMTP, which stands for Simple Mail Transfer Protocol. 
+       // -> SMTP is the standard protocol for sending emails over the internet. It acts as the bridge between our email-sending application, such as a Node.js app, and the email server, ensuring that emails are delivered smoothly and efficiently. By leveraging SMTP, we can connect to email servers and handle email transmissions reliably.
         
 
     })
