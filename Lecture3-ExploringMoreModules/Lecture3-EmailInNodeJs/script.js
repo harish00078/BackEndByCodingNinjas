@@ -34,6 +34,8 @@ async function sendEmail() {
   // In this approach, you rely on external email service providers like Gmail, Outlook, or SendGrid, which handle the email delivery process for you.
   // -> 2: Using an SMTP protocol by creating your own email server:
   // This approach is typically used for larger or more complex projects where you need complete control over the email-sending process. It allows you to set up your own email server to handle email transmissions independently.
+
+  
   const transporter = nodemailer.createTransport({
     // -> 2 =  Understanding SMTP (Simple Mail Transfer Protocol):
     // SMTP is a protocol used for email transmission over the internet. It is responsible for sending emails from the sender to the receiver. SMTP ensures that emails are delivered efficiently and securely.
