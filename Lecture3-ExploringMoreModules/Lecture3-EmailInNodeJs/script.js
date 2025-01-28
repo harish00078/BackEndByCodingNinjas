@@ -58,7 +58,7 @@ async function sendEmail() {
 
   });
 
-  // -> 4 = Sending the Email:know we can send the email to the user:with the help of the (transporter-object) which we have created above:
+  // -> 4 = Configuring the Email:which want to send to the user:
   // -> 4.1 = Configuring the Email Details or content:
   // before sending email to the user:we have to configure the email details:like (to),(from),(subject) and (text):
   // -> 4.2 = details or content of the email:will also with in the object:
@@ -69,5 +69,10 @@ async function sendEmail() {
     subject:"welcome to Nodejs App",
     text:"this is an email from Nodejs App:congratulations you have successfully signed up for the Nodejs App"
   }
+
+  // -> 5 = Sending the Email:know we can send the email to the user:the email which we have configured or created:with the help of the (transporter-object) which we have created above:
+  // -> 5.1 = Sending the Email:
+  // -> 5.2 = Sending the Email:with the help of the (transporter-object) which we have created above:
+  // -> V.IMP: 5.3 = for sending the email to the user:we have to call the (sendMail) method of the (transporter-object):and pass the (mailOptions) object as an argument to the (sendMail) method:
 
 }
