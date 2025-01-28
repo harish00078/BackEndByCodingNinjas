@@ -86,3 +86,8 @@ async function sendEmail() {
   }
 
 }
+
+
+// V.IMP-NOTE:know we have created our nodemailer configuration:with in the function or async-function:now we have to call this function to send the email to the user:
+// we have not created it directly on the file:because we have or want to use the (async-and-await) syntax:to handle the email-sending process:for the better readability and error-handling:
+sendEmail();
