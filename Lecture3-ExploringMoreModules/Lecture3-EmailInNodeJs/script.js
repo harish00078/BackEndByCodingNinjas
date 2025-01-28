@@ -74,7 +74,7 @@ async function sendEmail() {
   // -> 5.1 = Sending the Email:
   // -> 5.2 = Sending the Email:with the help of the (transporter-object) which we have created above:
   // -> V.IMP: 5.3 = for sending the email to the user:we have to call the (sendMail) method of the (transporter-object):and pass the (mailOptions) object as an argument to the (sendMail) method:
-  // V.IMP:As we know that we basically use the (try-catch) block to handle the errors in the asynchronous-code:
+  // V.IMP:As we know that we basically use the (try-catch) block to handle the errors in the asynchronous-code or we can say in the (async-and-await) block:
   // because we did not want our application to crash:if there is any error in the asynchronous-code:
   try{
     transporter.sendMail(mailOptions);
