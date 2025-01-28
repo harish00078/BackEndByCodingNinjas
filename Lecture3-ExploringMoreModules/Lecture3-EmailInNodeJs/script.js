@@ -59,6 +59,15 @@ async function sendEmail() {
   });
 
   // -> 4 = Sending the Email:know we can send the email to the user:with the help of the (transporter-object) which we have created above:
-  // -> 4.1 = Configuring the Email Details:before sending email to the user:we have to configure the email details:like (to),(from),(subject) and (text):
+  // -> 4.1 = Configuring the Email Details or content:
+  // before sending email to the user:we have to configure the email details:like (to),(from),(subject) and (text):
+  // -> 4.2 = details or content of the email:will also with in the object:
+  // we call this object as (mailOptions):
+  const mailOptions ={
+    from:"",
+    to:"",
+    subject:"",
+    text:""
+  }
 
 }
