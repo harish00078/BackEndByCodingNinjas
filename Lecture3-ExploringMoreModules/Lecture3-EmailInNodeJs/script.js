@@ -46,9 +46,15 @@ async function sendEmail() {
      
     // -> 3 =  Configuring the Transporter Object:
     // -> 3.1 = Configuring the Host or service-Provider:
-    // -> 3.2 = Configuring the Authentication Details:
+    // -> 3.2 = Configuring the Authentication Details:through which we are gonna be able to verify the (sender's identity):and send emails to the (users):
     // -> 3.3 = Configuring Other Settings:
-
+    service:"gmail",
+    auth:{
+      user:"harishpathania150@gmail.com",
+      // -> V.IMP: we have to use the (app-password) instead of the (gmail-password):because the (gmail-password) is not gonna be work with the (nodemailer) module:
+      // this is security feature of the (gmail):which is not gonna be allow the (third-party-apps) to access the (gmail-account) with the (gmail-password):we have to use the (app-password) instead of the (gmail-password) to access the (gmail-account) with the (third-party-apps):
+      pass:""
+    }
 
 
 
