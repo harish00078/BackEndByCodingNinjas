@@ -11,7 +11,7 @@ const nodemailer = require("nodemailer");
 
 // -> We need to create an asynchronous function for this purpose. By adding the async keyword in front of the function-declaration, we convert it into an async function.
 // We'll use async-await syntax to handle the email-sending process.
-// V.IMP: The async function will be responsible for sending the email to the user. It will use the transporter object which we have created with in it: To send the email to the email-server, which will then deliver the email to the user:
+// V.IMP: The async function will be responsible for sending the email to the user. It will use the transporter-object which we have created with in it: To send the email to the email-server, which will then deliver the email to the user:
 async function sendEmail() {
   // -> Creating the Transporter:
   // To create a transporter, we use the createTransport method provided by the Nodemailer module. This method takes an object as an argument:
