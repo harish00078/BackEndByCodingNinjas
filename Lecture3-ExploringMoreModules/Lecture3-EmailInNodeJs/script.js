@@ -77,6 +77,8 @@ async function sendEmail() {
   // V.IMP:As we know that we basically use the (try-catch) block to handle the errors in the asynchronous-code or we can say in the (async-and-await) block:
   // because we did not want our application to crash:if there is any error in the asynchronous-code:
   try{
+    // know here (sendMail) method also returns a (promise) to us:so we have to use the (await) keyword with the (sendMail) method to handle that promise:
+    // IMP:we can also use the (then and catch) block:but using the (await) keyword:is more easy and readable:because of it we did not have to get into the (then and catch) block chain:
     transporter.sendMail(mailOptions);
   }catch(error){
     console.log(error);
