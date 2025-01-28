@@ -22,7 +22,7 @@ async function sendEmail() {
 
   // => Within the createTransport method, we must specify the following:
   // -> 1: The host of the email service server (e.g., Gmail, Outlook, etc.).
-  // -> 2: The authentication details, such as the user and password, to verify the sender's identity.
+  // -> 2: The authentication details, such as the user and password, to verify the (sender's identity).
   // -> 3: Other settings, depending on the email service provider's requirements.
 
   // V.IMP-NOTE:
