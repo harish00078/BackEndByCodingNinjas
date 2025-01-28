@@ -53,7 +53,7 @@ async function sendEmail() {
       user:"harishpathania150@gmail.com",
       // -> V.IMP: we have to use the (app-password) instead of the (gmail-password):because the (gmail-password) is not gonna be work with the (nodemailer) module:
       // this is security feature of the (gmail):which is not gonna be allow the (third-party-apps) to access the (gmail-account) with the (gmail-password):we have to use the (app-password) instead of the (gmail-password) to access the (gmail-account) with the (third-party-apps):
-      pass:""
+      pass:"ydokpxiljdbhkpyw"
     }
 
 
