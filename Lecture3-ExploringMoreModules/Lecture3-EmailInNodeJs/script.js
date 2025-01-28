@@ -64,10 +64,10 @@ async function sendEmail() {
   // -> 4.2 = details or content of the email:will also with in the object:
   // we call this object as (mailOptions):
   const mailOptions ={
-    from:"",
-    to:"",
-    subject:"",
-    text:""
+    from:"harishpathania150@gmail.com",
+    to:"harishkunar987@gmail.com",  
+    subject:"welcome to Nodejs App",
+    text:"this is an email from Nodejs App:congratulations you have successfully signed up for the Nodejs App"
   }
 
 }
