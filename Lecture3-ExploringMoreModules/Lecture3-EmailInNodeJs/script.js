@@ -67,7 +67,7 @@ async function sendEmail() {
     from:"harishpathania150@gmail.com",
     to:"harishkunar987@gmail.com",  
     subject:"welcome to Nodejs App",
-    text:"this is an email from Nodejs App:congratulations you have successfully signed up for the Nodejs App"
+    text:"this is an email from Nodejs App:congratulations you have signed up successfully for the Nodejs App"
   }
 
   // -> 5 = Sending the Email:know we can send the email to the user:the email which we have configured or created:with the help of the (transporter-object) which we have created above:
