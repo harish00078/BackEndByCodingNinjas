@@ -27,7 +27,7 @@ async function sendEmail() {
 
   // V.IMP-NOTE:
   // The creation of the transporter (or transporter object) depends on the SMTP protocol. SMTP (Simple Mail Transfer Protocol) is the standard protocol used for sending emails over the internet:
-  // V.V.IMP-NOTE:because the things which we have to specify with in the (createTransport) method or (transporter-object) are basically depends on the (SMTP-protocol):they are basically the requirements or options of the (SMTP-protocol) to create the (transporter) or (transporter-object) to send the emails to the (users) over the internet:
+  // V.V.IMP-NOTE:because the things which we have to specify with in the (createTransport) method or (transporter-object) are basically depends on the (SMTP-protocol):so these are basically the requirements or options of the (SMTP-protocol): acc to which we have to create the (transporter) or (transporter-object) to send the emails to the (users) over the internet:
 
   // There are two main ways to use the SMTP protocol for sending emails:
   // -> 1: Using an SMTP protocol with a third-party email service provider:
@@ -38,6 +38,7 @@ async function sendEmail() {
 
 
   const transporter = nodemailer.createTransport({
+    
     // -> 2 =  Understanding SMTP (Simple Mail Transfer Protocol):
     // SMTP is a protocol used for email transmission over the internet. It is responsible for sending emails from the sender to the receiver. SMTP ensures that emails are delivered efficiently and securely.
     // Just like HTTP/HTTPS is used to establish connections with web-servers, SMTP is the protocol used to send emails over the internet.
