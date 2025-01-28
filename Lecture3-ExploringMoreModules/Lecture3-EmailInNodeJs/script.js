@@ -56,8 +56,9 @@ async function sendEmail() {
       pass:"ydokpxiljdbhkpyw"
     }
 
-
-
-
   });
+
+  // -> 4 = Sending the Email:know we can send the email to the user:with the help of the (transporter-object) which we have created above:
+  // -> 4.1 = Configuring the Email Details:before sending email to the user:we have to configure the email details:like (to),(from),(subject) and (text):
+
 }
