@@ -30,15 +30,17 @@ console.log("Learn about events in Node.js");
 
 // ************************************************************/
 // => First: Here we gonna be learn about that we can handle:(http-requests) in nodejs using events or event-driven architecture:
-// -> for that in nodejs:we have build-in (events) same as we have in browser-javascript:
-// -> but they are different acc to their working or different environment:because in nodejs we have to handle (http-requests) using events:
-// V.IMP:basically the use of events or we can say how we can define which event we have to use for the particular (http-request) in nodejs:
-// -> it depends on the (http-method) which are getting with in the request:
+// IMP: Most importantly, we will focus on how to handle HTTP-requests that contain-data.
+// -> for that in nodejs:we have some build-in (events) same as we have in browser-javascript:
+// -> but they are different to (js):acc to their working or different environment:because in nodejs we have to handle (http-requests) using events:
+// V.IMP:basically the use of events: it depends on the (http-method) which are getting with in the request:
 
-// most-common nodejs built-in events are:
-// -> 1 = request: this event is used to handle (http-requests) in nodejs:
-// -> 2 = response: this event is used to handle (http-responses) in nodejs:            
-// -> 8 = data: this event is used to handle (http-data) in nodejs:
+// most-common build-in event in nodejs to handle things:which we are getting with in the (http-requests):
+         
+// -> 1 = data: this event is used to handle (http-data) in nodejs:
+// -> 2 = end: this event is used to handle (http-end) in nodejs:
+// -> 3 = close: this event is used to handle (http-close) in nodejs:
+// -> 4 = error: this event is used to handle (http-error) in nodejs:
 
 
 
