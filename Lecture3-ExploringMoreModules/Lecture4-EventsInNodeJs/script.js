@@ -10,9 +10,9 @@ console.log("Learn about events in Node.js");
 
 // -> 2 =  Events & HTTP Requests:
 // In Node.js, events primarily refer to HTTP requests.
-// Using the event-driven approach, we can listen for different aspects of an HTTP request and execute actions accordingly.
-// This is similar to how JavaScript handles events in the browser using event handlers.
-// These event handlers are essentially callback functions that execute when an event is triggered.
+// Using the event-driven approach, we can listen for different parts of an HTTP request and execute actions accordingly.
+// This is similar to how JavaScript handles events in the browser using event-handlers.
+// These event handlers are essentially callback-functions that execute when an event is triggered.
 
 // -> 3 = V.IMP: Non-Blocking HTTP Handling:
 // The biggest advantage of the event-driven architecture in Node.js is that it allows us to handle HTTP requests asynchronously (non-blocking way).
