@@ -15,8 +15,9 @@ console.log("Learn about events in Node.js");
 // These event handlers are essentially callback-functions that execute when an event is triggered.
 
 // -> 3 = V.IMP: Non-Blocking HTTP Handling:
-// The biggest advantage of the event-driven architecture in Node.js is that it allows us to handle HTTP requests asynchronously (non-blocking way).
-// This improves performance and scalability, making Node.js an excellent choice for handling a large number of concurrent requests efficiently.
+// The biggest advantage of the event-driven architecture in Node.js is that it allows us to handle HTTP-Requests asynchronously (non-blocking way).
+// This improves performance and scalability, making Node.js an excellent choice for handling a large number of simultaneous requests efficiently.
+// V.IMP: We are able to handle HTTP-Requests asynchronously:because we handle event with help of (callback-functions) which are non-blocking in nature:
 
 // ************************************************************/
 // V.IMP-NOTE2: In this architecture we can create own events and listen to them in nodejs:
