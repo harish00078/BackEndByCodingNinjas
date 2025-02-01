@@ -32,7 +32,7 @@ console.log("Learn about events in Node.js");
 // -> (EventEmitter) class is a core module in nodejs:so we don't need to install it separately:we can directly use it by importing it.
 
 // ************************************************************/
-// => First: learn about that how we can handle HTTP (POST-Requests) or we can say that the request which (contain-data) with in them.
+// => First: learn about that how we can handle HTTP (POST-Requests) or we can say that the request which (contain-data) with in them.using events or event-driven architecture in nodejs:
 // -> for that we have some build-in (events) in nodejs:same as we have for the other things:
 // -> but they are different to (js-events):because of their working and different environment:
 // V.IMP:basically the use of the events: it depends on the (http-method) which are getting with in the http-request:
@@ -43,5 +43,9 @@ console.log("Learn about events in Node.js");
 // -> 3 = close: this event is used to handle (http-close) in nodejs:
 // -> 4 = error: this event is used to handle (http-error) in nodejs:
 
-
-
+// ************************************************************/
+// => Here we are creating a simple server that listens for incoming HTTP-requests and handles them using the event-driven architecture.
+// -> In this example,we are listening for the (post-request) and handling it using the (data),(end) and other-events.
+// -> We are also listening for the (data) event, which is triggered when the server receives data from the client.
+// -> We are also listening for the 'end' event, which is triggered when the entire HTTP request has been received.
+// -> We are also listening for the 'close' event, which is triggered when the connection to the client is closed.
