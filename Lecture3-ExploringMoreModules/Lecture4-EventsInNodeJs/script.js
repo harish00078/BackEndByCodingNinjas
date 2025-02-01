@@ -37,7 +37,7 @@ console.log("Learn about events in Node.js");
 // -> but they are different to (js-events):because of their working and different environment:
 // V.IMP:basically the use of the events: it depends on the (http-method) which are getting with in the http-request:
 
-// most-common build-in event in nodejs to handle-request which we are basically getting some-data with in them:
+// most-common build-in event in nodejs to handle-request  or post-requests:which are basically getting some-data with in them:
 // -> 1 = data: this event is used to handle (http-data) in nodejs:
 // -> 2 = end: this event is used to handle (http-end) in nodejs:
 // -> 3 = close: this event is used to handle (http-close) in nodejs:
