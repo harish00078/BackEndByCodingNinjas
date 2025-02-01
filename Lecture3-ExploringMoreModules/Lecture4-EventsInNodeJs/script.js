@@ -32,12 +32,12 @@ console.log("Learn about events in Node.js");
 // -> (EventEmitter) class is a core module in nodejs:so we don't need to install it separately:we can directly use it by importing it.
 
 // ************************************************************/
-// => First: learn about that how we can handle HTTP-requests that (contain-data).
-// -> for that we have some build-in (events) in nodejs:
-// -> but they are different to (js):acc to their working or different environment:because in nodejs we have to handle (http-requests) using events:
-// V.IMP:basically the use of events: it depends on the (http-method) which are getting with in the request:
+// => First: learn about that how we can handle HTTP (POST-Requests) or we can say that the request which (contain-data) with in them.
+// -> for that we have some build-in (events) in nodejs:same as we have for the other things:
+// -> but they are different to (js-events):because of their working and different environment:
+// V.IMP:basically the use of the events: it depends on the (http-method) which are getting with in the http-request:
 
-// most-common build-in event in nodejs to handle-things which we are getting with in the (http-requests):
+// most-common build-in event in nodejs to handle-request which we are basically getting some-data with in them:
 // -> 1 = data: this event is used to handle (http-data) in nodejs:
 // -> 2 = end: this event is used to handle (http-end) in nodejs:
 // -> 3 = close: this event is used to handle (http-close) in nodejs:
