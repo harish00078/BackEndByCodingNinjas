@@ -46,6 +46,9 @@ console.log("Learn about events in Node.js");
 // ************************************************************/
 // => Here we are creating a simple server that listens for incoming HTTP-requests and handles them using the event-driven architecture.
 // -> In this example,we are listening for the (post-request) and handling it using the (data),(end) and other-events.
+
+// => Events To Handle HTTP-Requests or HTTP-POST-Requests:
 // -> We are also listening for the (data) event, which is triggered when the server receives data from the client.
-// -> We are also listening for the 'end' event, which is triggered when the entire HTTP request has been received.
-// -> We are also listening for the 'close' event, which is triggered when the connection to the client is closed.
+// -> We are also listening for the 'end' event, which is triggered when the entire HTTP-request or we can say if we are (getting-data) with in it:we have received that (hole-data) or (request).
+// IMP-NOTE:we have to listen for the (end-event) after the (data-event):because we have to wait for the (hole-data) before we can process it:
+// It happens because:when receiving data from a request (such as an HTTP request or a stream), the data does not arrive all at once. Instead, it arrives in small chunks (pieces of data) asynchronously. To handle these chunks properly, we use the Buffer-object.
