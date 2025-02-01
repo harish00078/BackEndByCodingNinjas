@@ -5,6 +5,7 @@ console.log("Learn about events in Node.js");
 
 // -> 1 = Event-Driven Architecture:(Most Popular):
 // Node.js is built around an event-driven architecture, meaning much of its functionality is based on events. In Node.js, actions or things are triggered by events and event-listeners or functions basically help us to handle those actions and things.
+// Node.js follows an event-driven architecture, meaning that various actions (such as user interactions, HTTP requests, or system events) occur as events. These events are detected by event listeners, which then execute the appropriate callback functions to handle them.
 // ->IMP:This is why Node.js is commonly referred to as an event-driven architecture.
 
 // Important: Some common events in Node.js include:
@@ -26,7 +27,7 @@ console.log("Learn about events in Node.js");
 // V.IMP: We are able to handle HTTP-Requests asynchronously:because we handle event with help of (callback-functions) which are non-blocking in nature:
 
 // ************************************************************/
-// V.IMP-NOTE2: In this architecture we can create own events and listen to them in nodejs:
+// V.IMP-NOTE2: In this architecture we can create own-events and listen to them in nodejs:
 // -> In this architecture we have (EventEmitter) class which is basically used to emit-events and then we can listen to those events and perform some action:
 // -> (EventEmitter) class is a core module in nodejs:so we don't need to install it separately:we can directly use it by importing it.
 
