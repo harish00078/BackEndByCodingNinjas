@@ -28,7 +28,7 @@ console.log("Learn about events in Node.js");
 // V.IMP: We are able to handle HTTP-Requests asynchronously:because we handle event with help of (callback-functions) which are non-blocking in nature:
 
 // ************************************************************/
-// V.IMP-NOTE2: In this architecture we can create own-events and listen to them in nodejs:
+// V.IMP-NOTE2: In this architecture we can also create our own-events and listen to them in nodejs:
 // -> In this architecture we have (EventEmitter) class which is basically used to emit-events and then we can listen to those events and perform some action:
 // -> (EventEmitter) class is a core module in nodejs:so we don't need to install it separately:we can directly use it by importing it.
 
