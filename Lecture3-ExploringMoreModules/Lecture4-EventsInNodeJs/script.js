@@ -4,7 +4,7 @@ console.log("Learn about events in Node.js");
 // like:(any-action),(http-request),(file-read-write),(file-upload-download),(database-operations),(etc):
 
 // -> 1 = Event-Driven Architecture:(Most Popular):
-// Node.js is built around an event-driven architecture, meaning much of its functionality is based on events. In Node.js, actions or things are triggered by events and event-listeners or functions basically help us to handle those actions and things.
+// Node.js is built around an event-driven architecture, meaning much of its functionality is based on events. In Node.js, actions or things are triggered by events and event-listeners or functions which basically help us to handle those actions and things.
 // Node.js follows an event-driven architecture, meaning that various actions (such as user interactions, HTTP requests, or system events) occur as events. These events are detected by event listeners, which then execute the appropriate callback functions to handle them.
 // ->IMP:This is why Node.js is commonly referred to as an event-driven architecture.
 
