@@ -52,6 +52,7 @@ console.log("Learn about events in Node.js");
 // -> We are listening for the (data) event, which is triggered when the server receives data from the client in request.
 // -> We are also listening for the 'end' event, which is triggered when the entire HTTP-request or we can say if we are (getting-data) with in it:we have received that (hole-data) or (request).
 // IMP-NOTE:we have to listen for the (end-event) after the (data-event):because we have to wait for the (hole-data) before we can process it:
+// ->V.IMP: And also as we have learned that we use (end) method of (response-object) to send the (response-back) to the client and (end) the request:
 // It happens because:when receiving data from a request (such as an HTTP request or a stream), the data does not arrive all at once. Instead, it arrives in small chunks (pieces of data) asynchronously. To handle these chunks properly, we use the Buffer-object.
 
 // Import the 'http' module to create an HTTP server:
