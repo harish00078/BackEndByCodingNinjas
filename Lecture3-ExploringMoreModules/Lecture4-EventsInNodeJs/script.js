@@ -36,7 +36,7 @@ console.log("Learn about events in Node.js");
 // => First: learn about that how we can handle HTTP (POST-Requests) or we can say that the request which (contain-data) with in them.using events or event-driven architecture in nodejs:
 // -> for that we have some build-in (events) in nodejs:same as we have for the other things:
 // -> but they are different to (js-events):because of their working and different environment:
-// V.IMP:basically the use of the events: it depends on the (http-method) which are getting with in the http-request:
+// V.IMP-NOTE:basically the use of the events: it depends on the (http-method) which we are getting with in the http-request:
 
 // most-common build-in event in nodejs to handle-request  or post-requests:which are basically getting some-data with in them:
 // -> 1 = data: this event is used to handle (http-data) in nodejs:
@@ -49,7 +49,7 @@ console.log("Learn about events in Node.js");
 // -> In this example,we are listening for the (post-request) and handling it using the (data),(end) and other-events.
 
 // => Events To Handle HTTP-Requests or HTTP-POST-Requests:
-// -> We are also listening for the (data) event, which is triggered when the server receives data from the client.
+// -> We are listening for the (data) event, which is triggered when the server receives data from the client in request.
 // -> We are also listening for the 'end' event, which is triggered when the entire HTTP-request or we can say if we are (getting-data) with in it:we have received that (hole-data) or (request).
 // IMP-NOTE:we have to listen for the (end-event) after the (data-event):because we have to wait for the (hole-data) before we can process it:
 // It happens because:when receiving data from a request (such as an HTTP request or a stream), the data does not arrive all at once. Instead, it arrives in small chunks (pieces of data) asynchronously. To handle these chunks properly, we use the Buffer-object.
