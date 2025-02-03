@@ -49,19 +49,19 @@ console.log("Learn about events in Node.js");
 // -> In this example,we are listening for the (post-request) and handling it using the (data),(end) and other-events.
 
 // => Events To Handle HTTP-Requests or HTTP-POST-Requests:
-// -> We are listening for the (data) event, which is triggered when the server receives data from the client in request.
-// -> We are also listening for the 'end' event, which is triggered when the entire HTTP-request or we can say if we are (getting-data) with in it:we have received that (hole-data) or (request).
-// IMP-NOTE:we have to listen for the (end-event) after the (data-event):because we have to wait for the (hole-data) before we can process it:
-// ->V.IMP: And also as we have learned that we use (end) method of (response-object) to send the (response-back) to the client and (end) the request:
-// It happens because:when receiving data from a request (such as an HTTP request or a stream), the data does not arrive all at once. Instead, it arrives in small chunks (pieces of data) asynchronously. To handle these chunks properly, we use the Buffer-object.
+// -> We listen for the "data" event, which is triggered when the server receives chunks of data from the client in a request.
+// -> We also listen for the "end" event, which is triggered when the entire HTTP request (or all incoming data) has been received.Or when we wanna response-back to the client and end this request:
+// -> Important: The "end" event must be handled after the "data" event because we need to ensure that all data has arrived before processing it.
+// -> Very-Important: As we have learned, we use the end() method of the response-object to send the response back to the client and complete the request.
+// -> This is necessary because when receiving data from a request (such as an HTTP request or a stream), the data arrives in small chunks asynchronously, rather than all at once. To handle these chunks efficiently, we use the Buffer object.
+// V.IMP-NOTE:that's why first we handle request-data through the (data) event and then we handle the response-back or completion of the request through (end) event:
 
 // Import the 'http' module to create an HTTP server:
 const http = require('http');
 
 // Create an HTTP server:
 const server = http.createServer((req,res)=>{
-    res.writeHead(200, {'Content-Type': 'text/html'});
-  res.end('Hello World!');
+    
 })
 
 // Create an PORT or unique-address for server:
