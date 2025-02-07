@@ -49,7 +49,7 @@ console.log("Learn about events in Node.js");
 // -> In this example,we are listening for the (post-request) and handling it using the (data),(end) and other-events.
 
 // => Events To Handle HTTP-Requests or HTTP-POST-Requests:
-// -> We listen for the "data" event, which is triggered when the server receives chunks of data from the client in a request.
+// -> We add the "data" event, which is triggered when the server receives chunks of data from the client in a request.
 // -> We also listen for the "end" event, which is triggered when the entire HTTP request (or all incoming data) has been received.Or when we wanna response-back to the client and end this request:
 // -> Important: The "end" event must be handled after the "data" event because we need to ensure that all data has arrived before processing it.
 // -> Very-Important: As we have learned, we use the end() method of the response-object to send the response back to the client and complete the request.
