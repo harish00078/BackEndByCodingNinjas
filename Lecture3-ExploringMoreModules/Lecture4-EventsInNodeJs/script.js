@@ -47,7 +47,7 @@ console.log("Learn about events in Node.js");
 // ************************************************************/
 // => Here we are creating a simple server that listens for incoming HTTP-requests and handles them using the event-driven architecture.
 // -> In this example,we are listening for the (post-request) and handling it using the (data),(end) and other-events.
-// V.IMP-NOTE: how we add the (events) on the things or we can say on the (requests) in nodejs:we did that with the help of (on) method of the (req-object):
+// V.IMP-NOTE: how did we add the (events) on the things or we can say on the (requests) in nodejs:we did that with the help of (on) method of the (req-object):
 
 // => Events To Handle HTTP-Requests or HTTP-POST-Requests:
 // -> We add the "data" event, which is triggered when the server receives chunks of data from the client in a request.
