@@ -50,7 +50,7 @@ console.log("Learn about events in Node.js");
 
 // => Events To Handle HTTP-Requests or HTTP-POST-Requests:
 // -> We add the "data" event, which is triggered when the server receives chunks of data from the client in a request.
-// -> We also listen for the "end" event, which is triggered when the entire HTTP request (or all incoming data) has been received.Or when we wanna response-back to the client and end this request:
+// -> We also listen for the "end" event, which is triggered when the entire HTTP request (or all incoming data) has been received:
 // -> Important: The "end" event must be handled after the "data" event because we need to ensure that all data has arrived before processing it.
 // -> Very-Important: As we have learned, we use the end() method of the response-object to send the response back to the client and complete the request.
 // -> This is necessary because when receiving data from a request (such as an HTTP request or a stream), the data arrives in small chunks asynchronously, rather than all at once. To handle these chunks efficiently, we use the Buffer object.
@@ -61,7 +61,7 @@ const http = require('http');
 
 // Create an HTTP server:
 const server = http.createServer((req,res)=>{
-    
+    res.end('hey there');
 })
 
 // Create an PORT or unique-address for server:
