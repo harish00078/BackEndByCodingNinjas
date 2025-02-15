@@ -52,7 +52,7 @@ console.log("Learn about events in Node.js");
 // -> We add the "data" event, which is triggered when the server receives chunks of data from the client in a request.
 // -> We also listen for the "end" event, which is triggered when the entire HTTP request (or all incoming data) has been received:
 // -> Important: The "end" event must be handled after the "data" event because we need to ensure that all data has arrived before processing it.
-// -> Very-Important: As we have learned, we use the end() method of the response-object to send the response back to the client and complete the request.
+// -> after that we have to response back to the (client):As we have learned that, we use the end() method of the response-object to send the response-back to the client and complete or end the request.
 // -> This is necessary because when receiving data from a request (such as an HTTP request or a stream), the data arrives in small chunks asynchronously, rather than all at once. To handle these chunks efficiently, we use the Buffer object.
 // V.IMP-NOTE:that's why first we handle request-data through the (data) event and then we handle the response-back or completion of the request through (end) event:
 
