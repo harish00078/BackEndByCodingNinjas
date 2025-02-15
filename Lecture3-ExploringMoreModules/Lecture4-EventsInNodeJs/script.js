@@ -65,7 +65,7 @@ const server = http.createServer((req,res)=>{
     // for checking the method of the request:the (request-object) have the (method-property) in it:
     if(req.method == 'POST'){
         // body variable to store data-chunks:
-        body = [];
+        let body = [];
         // V.IMP:adding event on request or req-object with the help of (on) method:
         // -> 1: Using (data) event:to get the data:
         req.on("data",(chunks)=>{
