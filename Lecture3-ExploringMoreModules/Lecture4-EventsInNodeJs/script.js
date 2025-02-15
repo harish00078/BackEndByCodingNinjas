@@ -61,11 +61,14 @@ const http = require('http');
 
 // Create an HTTP server:
 const server = http.createServer((req,res)=>{
-    res.end('hey there');
+    // for checking the method of the request:the (request-object) have the (method-property) in it:
+    if(req.method === 'POST'){
+        
+    }
 })
 
 // Create an PORT or unique-address for server:
-const PORT = 8100;
+const PORT = 8000;
  
 // Start Listening for Request on server:with the help of (listen) method:which provided to us by the (createServer) method's (server-object):
 server.listen(PORT,(()=>{
