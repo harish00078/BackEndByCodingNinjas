@@ -64,8 +64,15 @@ const http = require('http');
 const server = http.createServer((req,res)=>{
     // for checking the method of the request:the (request-object) have the (method-property) in it:
     if(req.method == 'POST'){
+        // body variable to store data-chunks:
+        body = [];
         // V.IMP:adding event on request or req-object with the help of (on) method:
-        req.on
+        // -> 1: Using (data) event:to get the data:
+        req.on("data",(chunks)=>{
+            body += chunks
+        })
+        // -> 2: Using (end) event:to know that we have get the hole-data of the request or request is completed:
+        req.on('end')
     }
 })
 
