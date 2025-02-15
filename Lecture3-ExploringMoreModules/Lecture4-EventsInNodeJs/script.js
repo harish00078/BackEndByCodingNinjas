@@ -47,6 +47,7 @@ console.log("Learn about events in Node.js");
 // ************************************************************/
 // => Here we are creating a simple server that listens for incoming HTTP-requests and handles them using the event-driven architecture.
 // -> In this example,we are listening for the (post-request) and handling it using the (data),(end) and other-events.
+// V.IMP-NOTE: how we add the (events) on the things or we can say on the (requests) in nodejs:we did that with the help of (on) method of the (req-object):
 
 // => Events To Handle HTTP-Requests or HTTP-POST-Requests:
 // -> We add the "data" event, which is triggered when the server receives chunks of data from the client in a request.
@@ -62,8 +63,9 @@ const http = require('http');
 // Create an HTTP server:
 const server = http.createServer((req,res)=>{
     // for checking the method of the request:the (request-object) have the (method-property) in it:
-    if(req.method === 'POST'){
-        
+    if(req.method == 'POST'){
+        // V.IMP:adding event on request or req-object with the help of (on) method:
+        req.on
     }
 })
 
