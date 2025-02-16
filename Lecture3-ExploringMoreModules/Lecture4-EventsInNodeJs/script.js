@@ -77,9 +77,12 @@ const server = http.createServer((req,res)=>{
             console.log(body);
             // after receiving the hole-data:we have to response back to the client:
             // we gonna do that with the help of response-objects (end) method:which help us in responding back to the clients and (stop) that particular request:
+            
             res.end('Data is received successfully');
         })
     }
+   
+    
 })
 
 // Create an PORT or unique-address for server:
