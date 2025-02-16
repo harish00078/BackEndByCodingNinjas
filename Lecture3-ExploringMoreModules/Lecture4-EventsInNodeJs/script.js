@@ -47,6 +47,7 @@ console.log("Learn about events in Node.js");
 // ************************************************************/
 // => Here we are creating a simple server that listens for incoming HTTP-requests and handles them using the event-driven architecture.
 // -> In this example,we are listening for the (post-request) and handling it using the (data),(end) and other-events.
+
 // V.IMP-NOTE: how did we add the (events) on the things or we can say on the (requests) in nodejs:we can did that with the help of (on) method:
 // (on)-method:The .on() method in Node.js is used to attach an event listener to an event emitter. It allows you to listen for specific events and execute a callback function whenever the event occurs.
 
