@@ -68,7 +68,7 @@ const server = http.createServer((req,res)=>{
     if(req.method == 'POST'){
         // IMP: her we are checking:if get the (data) with in the (req-body):then why we are not able to access or how much be access it directly:when we are simply working with http-server:without any (framework):
 
-        console.log(req.body)
+        console.log('body-data(before-chunk)',req.body)
         // body variable to store data-chunks:
         let body = '';
         
@@ -80,14 +80,15 @@ const server = http.createServer((req,res)=>{
         // -> 2: Using (end) event:to know that we have get the hole-data of the request or request is completed:
         req.on('end',()=>{
             // To see the data:
-            console.log(body);
+            console.log('body-data(after-chunk)',body);
             // after receiving the hole-data:we have to response back to the client:
             // we gonna do that with the help of response-objects (end) method:which help us in responding back to the clients and (stop) that particular request:
             
             res.end('Data is received successfully');
         })
     }
-   
+    // IMP:we also or can create the another global-response:for the application instead of acc to the request-methods:
+   res.end('hey there its me:welcome to the nodejs');
     
 })
 
