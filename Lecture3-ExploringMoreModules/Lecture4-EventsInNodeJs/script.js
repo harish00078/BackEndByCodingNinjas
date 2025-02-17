@@ -66,6 +66,9 @@ const http = require('http');
 const server = http.createServer((req,res)=>{
     // for checking the method of the request:the (request-object) have the (method-property) in it:
     if(req.method == 'POST'){
+        // IMP: her we are checking:if get the (data) with in the (req-body):then why we are not able to access or how much be access it directly:when we are simply working with http-server:without any (framework):
+
+        console.log(req.body)
         // body variable to store data-chunks:
         let body = [];
         // V.IMP:adding event on request or req-object with the help of (on) method:
