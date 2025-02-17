@@ -70,7 +70,8 @@ const server = http.createServer((req,res)=>{
 
         console.log(req.body)
         // body variable to store data-chunks:
-        let body = [];
+        let body = '';
+        
         // V.IMP:adding event on request or req-object with the help of (on) method:
         // -> 1: Using (data) event:to get the data:
         req.on("data",(chunks)=>{
