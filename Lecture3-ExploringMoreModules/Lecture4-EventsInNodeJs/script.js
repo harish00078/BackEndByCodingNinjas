@@ -60,43 +60,41 @@ console.log("Learn about events in Node.js");
 // V.IMP-NOTE:that's why first we handle request-data through the (data) event and then we handle the response-back or completion of the request through (end) event:
 
 // Import the 'http' module to create an HTTP server:
-const http = require('http');
+const http = require("http");
 
 // Create an HTTP server:
-const server = http.createServer((req,res)=>{
-    // for checking the method of the request:the (request-object) have the (method-property) in it:
-    if(req.method == 'POST'){
-        // IMP: her we are checking:if get the (data) with in the (req-body):then why we are not able to access or how much be access it directly:when we are simply working with http-server:without any (framework):
+const server = http.createServer((req, res) => {
+  // for checking the method of the request:the (request-object) have the (method-property) in it:
+  if (req.method == "POST") {
+    // IMP: her we are checking:if get the (data) with in the (req-body):then why we are not able to access or how much be access it directly:when we are simply working with http-server:without any (framework):
 
-        console.log('body-data(before-chunk)',req.body)
-        // body variable to store data-chunks:
-        let body = '';
-        
-        // V.IMP:adding event on request or req-object with the help of (on) method:
-        // -> 1: Using (data) event:to get the data:
-        req.on("data",(chunks)=>{
-            body += chunks.toString()
-        })
-        // -> 2: Using (end) event:to know that we have get the hole-data of the request or request is completed:
-        req.on('end',()=>{
-            // To see the data:
-            console.log('body-data(after-chunk)',body);
-            // after receiving the hole-data:we have to response back to the client:
-            // we gonna do that with the help of response-objects (end) method:which help us in responding back to the clients and (stop) that particular request:
-            
-            res.end('Data is received successfully');
-        })
-    }
-    // IMP:we also or can create the another global-response:for the application instead of acc to the request-methods:
-   res.end('hey there its me:welcome to the nodejs');
-    
-})
+    console.log("body-data(before-chunk)", req.body);
+    // body variable to store data-chunks:
+    let body = "";
+
+    // V.IMP:adding event on request or req-object with the help of (on) method:
+    // -> 1: Using (data) event:to get the data:
+    req.on("data", (chunks) => {
+      body += chunks.toString();
+    });
+    // -> 2: Using (end) event:to know that we have get the hole-data of the request or request is completed:
+    req.on("end", () => {
+      // To see the data:
+      console.log("body-data(after-chunk)", body);
+    });
+    // after receiving the hole-data:we have to response back to the client:
+    // we gonna do that with the help of response-objects (end) method:which help us in responding back to the clients and (stop) that particular request:
+
+    res.end("Data is received successfully");
+  }
+  // IMP:we also or can create the another global-response:for the application instead of acc to the request-methods:
+  res.end("hey there its me:welcome to the nodejs");
+});
 
 // Create an PORT or unique-address for server:
 const PORT = 8000;
- 
-// Start Listening for Request on server:with the help of (listen) method:which provided to us by the (createServer) method's (server-object):
-server.listen(PORT,(()=>{
-    console.log(`Server is up and running:${PORT}`)
-}))
 
+// Start Listening for Request on server:with the help of (listen) method:which provided to us by the (createServer) method's (server-object):
+server.listen(PORT, () => {
+  console.log(`Server is up and running:${PORT}`);
+});
