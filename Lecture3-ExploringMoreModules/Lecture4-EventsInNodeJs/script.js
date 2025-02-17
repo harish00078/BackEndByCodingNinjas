@@ -86,9 +86,10 @@ const server = http.createServer((req, res) => {
     // we gonna do that with the help of response-objects (end) method:which help us in responding back to the clients and (stop) that particular request:
 
     res.end("Data is received successfully");
+  } else {
+    // IMP:we also or can create the another global-response:for the application instead of acc to the request-methods:
+    res.end("hey there its me:welcome to the nodejs");
   }
-  // IMP:we also or can create the another global-response:for the application instead of acc to the request-methods:
-  res.end("hey there its me:welcome to the nodejs");
 });
 
 // Create an PORT or unique-address for server:
