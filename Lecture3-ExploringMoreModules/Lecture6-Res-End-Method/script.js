@@ -11,7 +11,8 @@ const server = http.createServer((req, res) => {
 
   // response if we have some particular (request-url):
   // IMP:always use (/) forward-slash while defining the urls:
-  // 
+  // when we are using the (end) method with in of any statement or any thing which has its own-scope:then we also have to use the (return) method with in it to stop the further execution of the code:
+  // so that our system does not give the error of (ERR_HTTP_HEADERS_SENT) error.which means that our request it ended but we are still trying to use it further.
   if (req.url =="/first") {
     res.end("this is first response");
   }
