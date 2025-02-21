@@ -7,7 +7,7 @@ const http = require("http");
 
 const server = http.createServer((req, res) => {
   // And as we have already learn that we can also return the response to the request with the help of (write) method:but it only returns the response did not stop or end the request to be used further.
-  res.write("this is coming from write method:  ");
+  res.write("this is coming from write method: ");
 
   // response if we have some particular (request-url):
   // IMP:always the use (/) forward-slash while defining the urls:
