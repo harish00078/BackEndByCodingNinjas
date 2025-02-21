@@ -10,7 +10,8 @@ const server = http.createServer((req, res) => {
   res.write("this is coming from write method: ");
 
   // response if we have some particular (request-url):
-  // IMP:always the use (/) forward-slash while defining the urls:
+  // IMP:always use (/) forward-slash while defining the urls:
+  // 
   if (req.url =="/first") {
     res.end("this is first response");
   }
