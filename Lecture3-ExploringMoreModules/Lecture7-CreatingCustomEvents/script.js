@@ -23,9 +23,11 @@ const Events = require("events");
 // IMP-NOTE-1:Acc to example we are getting the post the (user):but here we did not have any interaction-point with the user:
 // so for representing the (user):we can create the (user) Class:and through that we can pass the (post) as it is from the (user):
 // IMP:we gonna do that by using (User-class):we can create the (user-object):and with in that (user-object) we can pass the (post):
+
 class User{
-    // IMP:for creating the (post) with in the (user): we have to create the (createPost) property with the help of function or method:
-    // which is gonna help us to create the (post) with in the (user):
+
+    // IMP:for creating the (post) with in the (user-class): we have to create the (createPost) property with the help of function or method:
+    // which is gonna help us to create the (post) with in the (user-class):
     createPost(content){
         console.log("User Created Post:",content);
     }
