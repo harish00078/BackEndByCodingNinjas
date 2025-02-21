@@ -1,5 +1,15 @@
 console.log("Learning About Creating-Custom-Events Or Event-Driven-Architecture");
 
+// IMP-NOTE-2:Know after getting the post from the user:we have to handle it through the (events) or (event-driven-architecture):
+// -> for that we need to create the (custom-events) :and through that (custom-events) we can handle the (post) from the (user):
+// -> so for creating the (custom-events):we have to use the (build-in) or (core-module) of the nodejs:and which is the (events) module:
+
+// first:Import the (event) module:
+const Events = require("events");
+
+
+
+
 // IMP-NOTE:Understand it through an example:
 // -> we are getting the (post) from the (user):and we wanna handle through the (events) or (event-driven-architecture):
 // -> so,we can create the (custom-events) for that:and through that (custom-events) we can handle the (post) from the (user):
