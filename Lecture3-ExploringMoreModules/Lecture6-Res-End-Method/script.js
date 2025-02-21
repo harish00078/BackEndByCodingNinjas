@@ -13,7 +13,7 @@ const server = http.createServer((req, res) => {
   // IMP:always use (/) forward-slash while defining the urls:
   // V.IMP NOTE: When using the .end() method within any statement or block that has its own scope, we must also include the return statement to prevent further execution of the code or request.
   // -> This ensures that our system does not encounter the ERR_HTTP_HEADERS_SENT error:
-  // -> which occurs when a request has already been ended but where we are handling it that statement or block does not stopped:because of that (function) which executes the request or statement and block is not terminated or stop.and that why its gonna jump another endpoint or method unintentionally.
+  // -> which occurs when a request has already been ended but where we are handling it that statement or block does not stopped:because of that (function) which executes the request or statement and block is not terminated or stop.and that why its gonna jump on another endpoint or method unintentionally.for doing the further execution of the code:
  
   if (req.url == "/first") {
     return res.end("this is first response");
