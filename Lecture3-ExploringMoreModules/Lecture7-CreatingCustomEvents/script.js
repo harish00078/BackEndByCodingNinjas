@@ -13,5 +13,9 @@ console.log("Learning About Creating-Custom-Events Or Event-Driven-Architecture"
 // so for representing the (user):we can create the (user) Class:and through that we can pass the (post) as it is from the (user):
 // IMP:we gonna do that by using (User-class):we can create the (user-object):and with in that (user-object) we can pass the (post):
 class User{
-
+    // IMP:for creating the (post) with in the (user): we have to create the (createPost) property with the help of function or method:
+    // which is gonna help us to create the (post) with in the (user):
+    createPost(content){
+        console.log("User Created Post:",content);
+    }
 }
