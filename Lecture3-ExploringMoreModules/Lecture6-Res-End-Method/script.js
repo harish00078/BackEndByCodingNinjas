@@ -10,12 +10,12 @@ const server = http.createServer((req, res) => {
   res.write("this is coming from write method:  ");
 
   // response if we have some particular-thing in the request-url:
-  if (req.url === "first") {
+  if (req.url =="first") {
     res.end("this is first response");
   }
 
   // default response to default-request:
-  res.end("Hello World");
+  res.end("Hello World:Its default response");
 });
 
 const PORT = 8000;
