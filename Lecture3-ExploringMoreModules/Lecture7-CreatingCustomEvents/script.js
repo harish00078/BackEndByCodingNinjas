@@ -7,4 +7,5 @@ console.log("Learning About Creating-Custom-Events Or Event-Driven-Architecture"
 // V.IMP:It help us to handle the (post) from the (user) in a (modular-way) or in a (asynchronous-way):that what event-driven-architecture is all about or help us do:To handle things in a modular-way or in a asynchronous-way:
 
 
-// 1. Creating the Custom-Event:
+// Implementing the Event-Driven-Architecture:
+// IMP-NOTE:Acc to example we are getting the post the (user):but here we did not have any interaction-point with the user:
