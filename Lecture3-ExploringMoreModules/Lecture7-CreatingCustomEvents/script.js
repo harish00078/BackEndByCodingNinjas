@@ -13,7 +13,11 @@ console.log("Learning About Creating-Custom-Events Or Event-Driven-Architecture"
 // -> so for creating the (custom-events):we have to use the (build-in) or (core-module) of the nodejs:and which is the (events) module:
 
 // first:Import the (event) module:
-const Events = require("events");
+// const Events = require("events");
+
+// V.IMP:we have to use the (EventEmitter-class) of the (events-module):which is gonna help us to create the (custom-events) or (event-driven-architecture):so instead of first importing or using event:we can directly import the (EventEmitter-class) from the (events-module):
+
+const EventEmitter = require("events");
 
 
 
@@ -24,11 +28,47 @@ const Events = require("events");
 // so for representing the (user):we can create the (user) Class:and through that we can pass the (post) as it is from the (user):
 // IMP:we gonna do that by using (User-class):we can create the (user-object):and with in that (user-object) we can pass the (post):
 
-class User{
+// IMP-NOTE-3:So has to emit or trigger the (custom-event) from the (user):so for that we have to extend the (User-class) with the (Events-class):
+// 
 
-    // IMP:for creating the (post) with in the (user-class): we have to create the (createPost) property with the help of function or method:
-    // which is gonna help us to create the (post) with in the (user-class):
+// class User{
+
+//     // IMP:for creating the (post) with in the (user-class): we have to create the (createPost) property with the help of function or method:
+//     // which is gonna help us to create the (post) with in the (user-class):
+//     createPost(content){
+//         console.log("User Created Post:",content);
+//     }
+// }
+
+
+// so user has to emit or trigger the (post) event:so that server can handle that post through the (events) or (event-driven-architecture):
+
+// IMP-NOTE-4:So for that we have to extends,(inherit) or connect the (User-class) with the (events-module):which basically gave us the (EventEmitter) class:so that we can emit or trigger the (post) event from the (user):with the help of  properties of the (events-module):
+class User extends EventEmitter{
     createPost(content){
         console.log("User Created Post:",content);
     }
 }
+
+
+// chatgpt explanation on code:
+const Events = require("events");
+
+// User class extends EventEmitter
+class User extends Events {
+    createPost(content) {
+        console.log("User Created Post:", content);
+        this.emit("postCreated", content); // Emitting an event
+    }
+}
+
+// Create a user instance
+const user1 = new User();
+
+// Listen for the "postCreated" event
+user1.on("postCreated", (content) => {
+    console.log("Event Received! Processing Post:", content);
+});
+
+// Create a post
+user1.createPost("Hello, this is my first post!");
