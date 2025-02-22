@@ -34,7 +34,9 @@ const EventEmitter = require("events");
 // IMP:So for emitting the Post as an event:we have to use the (emit) method of the (EventEmitter-class):which is gonna help us to emit the (post) as an (event):
 // -> and for using the (emit) method of the (EventEmitter-class) with in our (user-class):we have to extend the (EventEmitter-class) with in our (user-class):
 
-class User extends EventEmitter{
+// IMP-NOTE-4:we have to export it so that we can use it in the (script.js) file of the server or server-side code:
+
+export class User extends EventEmitter{
 
     // IMP:for creating the (post) with in the (user-class): we have to create the (createPost) property with the help of function or method:
     // which is gonna help us to create the (post) with in the (user-class):
