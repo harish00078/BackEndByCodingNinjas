@@ -29,7 +29,8 @@ const EventEmitter = require("events");
 
 
 
-// IMP-NOTE-3:So after creating or having the post:
+// IMP-NOTE-3:So after creating or having the post from the user:we have to emit or send that (post) as an (event):
+// so that we can handle that (post) as an (event) or(event-driven-architecture):
 
 
 class User{
