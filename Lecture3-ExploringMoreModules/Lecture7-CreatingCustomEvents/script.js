@@ -43,6 +43,8 @@ class User extends EventEmitter{
         console.log("User Created Post:",content);
         // for using the (emit) method of the (EventEmitter-class):we have to use the (this.emit) method:
         // -> which is gonna help us to emit the (post) as an (event):
+        // V.IMP: (this.emit) method takes the (event-name) as the first argument:and the (content) as the second argument:
+        this.emit
     }
 }
 
