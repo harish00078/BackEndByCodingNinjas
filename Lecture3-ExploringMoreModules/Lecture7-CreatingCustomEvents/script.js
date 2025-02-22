@@ -31,24 +31,24 @@ const EventEmitter = require("events");
 // IMP-NOTE-3:So has to emit or trigger the (custom-event) from the (user):so for that we have to extend the (User-class) with the (Events-class):
 // 
 
-// class User{
+class User{
 
-//     // IMP:for creating the (post) with in the (user-class): we have to create the (createPost) property with the help of function or method:
-//     // which is gonna help us to create the (post) with in the (user-class):
-//     createPost(content){
-//         console.log("User Created Post:",content);
-//     }
-// }
-
-
-// so user has to emit or trigger the (post) event:so that server can handle that post through the (events) or (event-driven-architecture):
-
-// IMP-NOTE-4:So for that we have to extends,(inherit) or connect the (User-class) with the (events-module):which basically gave us the (EventEmitter) class:so that we can emit or trigger the (post) event from the (user):with the help of  properties of the (events-module):
-class User extends EventEmitter{
+    // IMP:for creating the (post) with in the (user-class): we have to create the (createPost) property with the help of function or method:
+    // which is gonna help us to create the (post) with in the (user-class):
     createPost(content){
         console.log("User Created Post:",content);
     }
 }
+
+
+// // so user has to emit or trigger the (post) event:so that server can handle that post through the (events) or (event-driven-architecture):
+
+// // IMP-NOTE-4:So for that we have to extends,(inherit) or connect the (User-class) with the (events-module):which basically gave us the (EventEmitter) class:so that we can emit or trigger the (post) event from the (user):with the help of  properties of the (events-module):
+// class User extends EventEmitter{
+//     createPost(content){
+//         console.log("User Created Post:",content);
+//     }
+// }
 
 
 // chatgpt explanation on code:
