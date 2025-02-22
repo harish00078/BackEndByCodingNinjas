@@ -32,15 +32,17 @@ const EventEmitter = require("events");
 // IMP-NOTE-3:So after creating or having the post from the user:we have to emit or send that (post) as an (event):
 // so that we can handle that (post) as an (event) or through(event-driven-architecture):
 // IMP:So for emitting the Post as an event:we have to use the (emit) method of the (EventEmitter-class):which is gonna help us to emit the (post) as an (event):
-// -> and for using the (emit) method of the (EventEmitter-class):with in our (user-class):we have to extend the (EventEmitter-class) with in our (user-class):
+// -> and for using the (emit) method of the (EventEmitter-class) with in our (user-class):we have to extend the (EventEmitter-class) with in our (user-class):
 
 class User extends EventEmitter{
 
     // IMP:for creating the (post) with in the (user-class): we have to create the (createPost) property with the help of function or method:
     // which is gonna help us to create the (post) with in the (user-class):
-    
+
     createPost(content){
         console.log("User Created Post:",content);
+        // for using the (emit) method of the (EventEmitter-class):we have to use the (this.emit) method:
+        // -> which is gonna help us to emit the (post) as an (event):
     }
 }
 
