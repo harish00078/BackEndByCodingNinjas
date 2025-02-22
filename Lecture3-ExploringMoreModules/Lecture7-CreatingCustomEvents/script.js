@@ -26,7 +26,7 @@ const EventEmitter = require("events");
 
 // IMP-NOTE-1:Acc to example we are getting the post the (user):but here we did not have any interaction-point with the user:
 // so for representing the (user):we can create the (user) Class:and through that we can pass the (post) as it is from the (user):
-// IMP:we gonna do that by using (User-class):we can create the (user-object):and with in that (user-object) we can pass the (post):
+// IMP:we gonna do that by using (User-class):we can create the (user) or (user-object):and with in that (user-object) we can create the (post) with the help of (user-class) property:
 
 // IMP-NOTE-3:So has to emit or trigger the (custom-event) from the (user):so for that we have to extend the (User-class) with the (Events-class):
 // 
