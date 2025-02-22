@@ -1,10 +1,10 @@
 console.log("Learning About Creating-Custom-Events Or Event-Driven-Architecture");
 
 // IMP-NOTE:Understand it through an example:
-// -> we are getting the (post) from the (user):and we wanna handle through the (events) or (event-driven-architecture):
+// -> we are getting the (post) from the (user):and we wanna handle it through the (events) or (event-driven-architecture):
 // -> so,we can create the (custom-events) for that:and through that (custom-events) we can handle the (post) from the (user):
 // -> through that (custom-event) we can do the (multiple-operations) on that (post) by simply creating the multiple (event-listeners) for that:
-// V.IMP:It help us to handle the (post) from the (user) in a (modular-way) or in a (asynchronous-way):that what event-driven-architecture is all about or help us do:To handle things in a modular-way or in a asynchronous-way:
+// V.IMP:It help us to handle the (post) from the (user) in a (modular-way) or in a (asynchronous-way):that's what event-driven-architecture is all about or help us do:To handle things in a modular-way or in a asynchronous-way:
 
 
 
@@ -41,14 +41,7 @@ class User{
 }
 
 
-// // so user has to emit or trigger the (post) event:so that server can handle that post through the (events) or (event-driven-architecture):
 
-// // IMP-NOTE-4:So for that we have to extends,(inherit) or connect the (User-class) with the (events-module):which basically gave us the (EventEmitter) class:so that we can emit or trigger the (post) event from the (user):with the help of  properties of the (events-module):
-// class User extends EventEmitter{
-//     createPost(content){
-//         console.log("User Created Post:",content);
-//     }
-// }
 
 
 // chatgpt explanation on code:
