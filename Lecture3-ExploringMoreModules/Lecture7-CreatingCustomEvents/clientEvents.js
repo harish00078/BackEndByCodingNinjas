@@ -8,46 +8,44 @@ console.log("Learning About Creating-Custom-Events Or Event-Driven-Architecture"
 
 
 
-// IMP-NOTE-2:Know after getting the post or post-event from the user:we have to handle it through the (events) or (event-driven-architecture):
-// -> for that we need to create the (custom-events) :and through that (custom-events) we can handle the (post) from the (user):
-// -> so for creating the (custom-events):we have to use the (build-in) or (core-module) of the nodejs:and which is the (events) module:
+// IMP-NOTE-2: After receiving a post or post-event from the user, we need to handle it using event-driven architecture. 
 
-// first:Import the (event) module:
-// const Events = require("events");
+// -> To achieve this, we create custom events, which allow us to handle the user's post as an event.  
+// -> For creating custom events, we use the built-in 'events' module in Node.js.
 
-// V.IMP:we have to use the (EventEmitter-class) of the (events-module):which is gonna help us to create or work with the (custom-events) or (event-driven-architecture):so instead of first importing (events) and then use its (EventEmitter-class):we can directly import the (EventEmitter-class) from the (events-module):
+// First, import the 'events' module:
+const Events = require("events");
 
+// V.IMP: Instead of importing 'events' and then accessing 'EventEmitter', 
+// we can directly import 'EventEmitter' from the 'events' module:
 const EventEmitter = require("events");
 
+// => Implementing custom events using event-driven architecture:
 
+// IMP-NOTE-1: In this example, we receive a post from the user, but there is no direct 
+// interaction point with the user.  
+// -> To represent the user, we create a 'User' class, allowing us to pass the post as a property.  
 
-// => Implementing the (custom-event) or Event-Driven-Architecture:
+// IMP: Using the 'User' class, we can create user objects and assign posts to them.  
 
-// IMP-NOTE-1:Acc to example we are getting the post the (user):but here we did not have any interaction-point with the user:
-// so for representing the (user):we can create the (user) Class:and through that we can pass the (post) as it is from the (user):
-// IMP:we gonna do that by using (User-class):we can create the (user) or (user-object):and with in that (user-object) we can create the (post) with the help of (user-class) property:
+// IMP-NOTE-3: Once the post is created, we need to emit it as an event.  
+// -> This allows us to handle it in an event-driven manner.  
+// -> The 'emit' method of the 'EventEmitter' class helps us emit the post as an event.  
+// -> To use 'emit' within our 'User' class, we must extend 'EventEmitter' in 'User'.  
 
+// IMP-NOTE-4: Exporting the 'User' class so it can be used in the 'script.js' file for server-side handling.  
 
+export class User extends EventEmitter {
+    
+    // IMP: The 'createPost' method allows the user to create a post.
+    // -> When a post is created, an event is emitted.
 
-// IMP-NOTE-3:So after creating or having the post from the user:we have to emit or send that (post) as an (event):
-// so that we can handle that (post) as an (event) or through(event-driven-architecture):
-// IMP:So for emitting the Post as an event:we have to use the (emit) method of the (EventEmitter-class):which is gonna help us to emit the (post) as an (event):
-// -> and for using the (emit) method of the (EventEmitter-class) with in our (user-class):we have to extend the (EventEmitter-class) with in our (user-class):
-
-// IMP-NOTE-4:we have to export it so that we can use it in the (script.js) file of the server or server-side code:
-
-export class User extends EventEmitter{
-
-    // IMP:for creating the (post) with in the (user-class): we have to create the (createPost) property with the help of function or method:
-    // which is gonna help us to create the (post) with in the (user-class):
-
-    createPost(content){
-        console.log("User Created Post:",content);
-        // for using the (emit) method of the (EventEmitter-class):we have to use the (this.emit) method:
-        // -> which is gonna help us to emit the (post) as an (event):
-        // V.IMP: (this.emit) method takes the (event-name) as the first argument:and the (content) as the second argument:
-        this.emit("postCreated",content);
+    createPost(content) {
+        console.log("User Created Post:", content);
+        
+        // The 'emit' method of 'EventEmitter' is used to trigger an event.
+        // -> It takes the event name as the first argument and the content as the second argument.
+        // -> This allows other parts of the application to react when a post is created.
+        this.emit("postCreated", content);
     }
 }
-
-
