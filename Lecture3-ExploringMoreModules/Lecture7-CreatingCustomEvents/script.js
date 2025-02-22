@@ -49,27 +49,3 @@ class User extends EventEmitter{
 }
 
 
-
-
-
-// chatgpt explanation on code:
-const Events = require("events");
-
-// User class extends EventEmitter
-class User extends Events {
-    createPost(content) {
-        console.log("User Created Post:", content);
-        this.emit("postCreated", content); // Emitting an event
-    }
-}
-
-// Create a user instance
-const user1 = new User();
-
-// Listen for the "postCreated" event
-user1.on("postCreated", (content) => {
-    console.log("Event Received! Processing Post:", content);
-});
-
-// Create a post
-user1.createPost("Hello, this is my first post!");
