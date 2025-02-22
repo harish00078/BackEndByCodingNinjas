@@ -8,17 +8,16 @@ console.log("Learning About Creating-Custom-Events Or Event-Driven-Architecture"
 
 
 
-// IMP-NOTE-2:Know after getting the post from the user:we have to handle it through the (events) or (event-driven-architecture):
+// IMP-NOTE-2:Know after getting the post or post-event from the user:we have to handle it through the (events) or (event-driven-architecture):
 // -> for that we need to create the (custom-events) :and through that (custom-events) we can handle the (post) from the (user):
 // -> so for creating the (custom-events):we have to use the (build-in) or (core-module) of the nodejs:and which is the (events) module:
 
 // first:Import the (event) module:
 // const Events = require("events");
 
-// V.IMP:we have to use the (EventEmitter-class) of the (events-module):which is gonna help us to create the (custom-events) or (event-driven-architecture):so instead of first importing or using event:we can directly import the (EventEmitter-class) from the (events-module):
+// V.IMP:we have to use the (EventEmitter-class) of the (events-module):which is gonna help us to create or work with the (custom-events) or (event-driven-architecture):so instead of first importing (events) and then use its (EventEmitter-class):we can directly import the (EventEmitter-class) from the (events-module):
 
 const EventEmitter = require("events");
-
 
 
 
@@ -28,8 +27,10 @@ const EventEmitter = require("events");
 // so for representing the (user):we can create the (user) Class:and through that we can pass the (post) as it is from the (user):
 // IMP:we gonna do that by using (User-class):we can create the (user) or (user-object):and with in that (user-object) we can create the (post) with the help of (user-class) property:
 
-// IMP-NOTE-3:So has to emit or trigger the (custom-event) from the (user):so for that we have to extend the (User-class) with the (Events-class):
-// 
+
+
+// IMP-NOTE-3:So after creating or having the post:
+
 
 class User{
 
