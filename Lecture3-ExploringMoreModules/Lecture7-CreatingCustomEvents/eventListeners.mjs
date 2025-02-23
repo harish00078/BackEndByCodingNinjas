@@ -1,7 +1,7 @@
 // IMP:Here we are importing the (User) class from the (clientEvents.js) file: 
 // through which we are gonna be able to represents that the (post) has been created by the (user) and emit it as an event:
 
-import { UserEvents } from "./userEvents";
+import { UserEvents } from "./userEvents.mjs";
 
 const userEvent = new UserEvents();
 
