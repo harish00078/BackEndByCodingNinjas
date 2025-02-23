@@ -14,11 +14,16 @@ console.log("Learning About Creating-Custom-Events Or Event-Driven-Architecture"
 // -> For creating custom events, we use the built-in 'events' module in Node.js.
 
 // First, import the 'events' module:
-const Events = require("events");
+// const Events = require("events");
+
 
 // V.IMP: Instead of importing 'events' and then accessing 'EventEmitter', 
 // we can directly import 'EventEmitter' from the 'events' module:
-const EventEmitter = require("events");
+// const EventEmitter = require("events");
+
+// V.IMP:we have to import the (events) from the (events) module:with the help of (ES6-import-syntax):
+// we are not directly able to import the (EventEmitter) from the (events) module:through the (ES6-import-syntax):
+import * as  Events from "events";
 
 // => Implementing custom events using event-driven architecture:
 
@@ -35,7 +40,7 @@ const EventEmitter = require("events");
 
 // IMP-NOTE-4: Exporting the 'User' class so it can be used in the 'script.js' file for server-side handling.  
 
-export class User extends EventEmitter {
+export class User extends Events.EventEmitter {
     
     // IMP: The 'createPost' method allows the user to create a post.
     // -> When a post is created, an event is emitted.
