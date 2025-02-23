@@ -40,13 +40,13 @@ import * as  Events from "events";
 
 // IMP-NOTE-4: Exporting the 'User' class so it can be used in the 'script.js' file for server-side handling.  
 
-export class User extends Events.EventEmitter {
+export class UserEvents extends Events.EventEmitter {
     
     // IMP: The 'createPost' method allows the user to create a post.
     // -> When a post is created, an event is emitted.
 
     createPost(content) {
-        console.log("User Created Post:", content);
+        console.log("User Created Post:",content);
         
         // The 'emit' method of 'EventEmitter' is used to trigger an event.
         // -> It takes the event name as the first argument and the content as the second argument.
