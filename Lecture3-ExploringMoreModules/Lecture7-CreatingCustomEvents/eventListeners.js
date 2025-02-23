@@ -5,4 +5,4 @@ import { UserEvents } from "./userEvents";
 
 const userEvent = new UserEvents();
 
-userEvent.createPost('hey we have new event from the user');
+userEvent.createPost('hey we have new post from the user');
