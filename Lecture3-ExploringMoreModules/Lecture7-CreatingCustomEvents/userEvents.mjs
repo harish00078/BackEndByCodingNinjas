@@ -49,8 +49,8 @@ export class UserEvents extends Events.EventEmitter {
         console.log("User Created Post:",content);
         
         // The 'emit' method of 'EventEmitter' is used to trigger an event.
-        // -> It takes the event name as the first argument and the content as the second argument.
-        // -> This allows other parts of the application to react when a post is created.
+        // -> First: It takes the event name as the first argument and the content as the second argument.
+        // -> Second: This allows other parts of the application to react when a post is created.
         this.emit("postCreated", content);
     }
 }
