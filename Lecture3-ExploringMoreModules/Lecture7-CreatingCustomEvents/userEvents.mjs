@@ -4,7 +4,7 @@ console.log(
 );
 
 /*
- * IMP-NOTE: Understanding Event-Driven Architecture through an example:
+ * IMP-NOTE: Understanding Event-Driven-Architecture through an example:
  * ---------------------------------------------------------------------
  * -> We are getting the (post) from the (user) and want to handle it using (events) or (event-driven architecture).
  * -> To achieve this, we create (custom events) that allow us to handle user posts in a structured manner.
