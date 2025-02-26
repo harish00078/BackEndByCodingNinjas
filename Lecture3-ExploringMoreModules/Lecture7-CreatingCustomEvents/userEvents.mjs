@@ -8,13 +8,13 @@ console.log(
  * ---------------------------------------------------------------------
  * -> We are getting the (post) from the (user) and want to handle it using (events) or (event-driven architecture).
  * -> To achieve this, we create (custom events) that allow us to handle user posts in a structured manner.
- * -> With (custom events), we can perform multiple operations on the (post) by simply adding multiple (event listeners).
+ * -> With (custom events), we can perform multiple-operation-asynchronously on the (post) by simply adding multiple (event listeners).
  *
  * V.IMP: This helps us manage user posts in a (modular way) and in an (asynchronous manner).
  *        Event-driven architecture allows us to handle things efficiently without blocking the main thread.
  */
 
-// IMP-NOTE-2: After receiving a post or post event from the user, we need to process it using event-driven architecture.
+// IMP-NOTE-2: After receiving a post from the user, we need to process it using event-driven architecture.
 
 // -> To achieve this, we create (custom events), which allow us to handle the user's post as an event.
 // -> For creating custom events, we use the built-in 'events' module in Node.js.
@@ -23,17 +23,17 @@ console.log(
 // const Events = require("events");
 
 /*
- * V.IMP: Instead of importing the entire 'events' module and then accessing 'EventEmitter',
+ * V.IMP: Instead of importing the entire 'events' module and then accessing 'EventEmitter' class from it,
  *        we can directly import 'EventEmitter' from the 'events' module:
  *
  * const EventEmitter = require("events");
  *
- * However, since we are using ES6 import syntax, we cannot directly import 'EventEmitter'.
+ * However, since we are using ES6 import syntax, we cannot directly import 'EventEmitter' class from the module.
  * Instead, we import the entire module and access 'EventEmitter' from it.
  */
 import * as Events from "events";
 
-// => Implementing custom events using event-driven architecture:
+// => Implementing custom-events using event-driven architecture:
 
 /*
  * IMP-NOTE-1: In this example, we receive a post from the user, but there is no direct interaction with the user.
