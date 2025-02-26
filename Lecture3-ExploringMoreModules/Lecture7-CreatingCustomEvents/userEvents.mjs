@@ -1,73 +1,70 @@
 // Logging an introductory message about Event-Driven Architecture
 console.log(
-  "Learning About Creating-Custom-Events Or Event-Driven-Architecture"
+  "Learning About Creating Custom Events in Event-Driven Architecture"
 );
 
 /*
- * IMP-NOTE: Understanding Event-Driven-Architecture through an example:
- * ---------------------------------------------------------------------
- * -> We are getting the (post) from the (user) and want to handle it using (events) or (event-driven architecture).
- * -> To achieve this, we can create (custom events) that will allow us to handle user-posts through event-driven architecture or we can say asynchronously.
- * -> With (custom events), we can perform multiple-operation-asynchronously on the (post) by simply adding multiple (event listeners) to it.
+ * Understanding Event-Driven Architecture through an example:
+ * -----------------------------------------------------------
+ * -> We are receiving a post from a user and want to handle it using events (event-driven architecture).
+ * -> To achieve this, we can create custom events that allow us to process user posts asynchronously.
+ * -> With custom events, we can perform multiple operations on a post by simply adding multiple event listeners.
+ * -> This modular approach ensures that each operation runs independently without blocking the main thread.
  *
- * V.IMP: This helps us manage user posts in a (modular-way) and in an (asynchronous-manner).
- *        Event-driven architecture allows us to handle things efficiently without blocking the main thread.
+ * ✅ Key Benefit: Event-driven architecture improves performance and scalability by handling events asynchronously.
  */
 
-// IMP-NOTE-2: After receiving a post from the user, we need to process it using event-driven architecture.
-
-// -> To achieve this, we create (custom events), which allow us to handle the user's post as an event.
-// -> For creating custom events, we use the built-in 'events' module in Node.js.
-
-// First, import the 'events' module:
-// const Events = require("events");
+// Creating Custom Events in an Event-Driven Architecture
+// -------------------------------------------------------
 
 /*
- * V.IMP: Instead of importing the entire 'events' module and then accessing 'EventEmitter' class from it,
- *        we can directly import 'EventEmitter' from the 'events' module:
+ * In Node.js, we use the built-in 'events' module to create and handle custom events.
+ * -> The 'events' module provides an 'EventEmitter' class that allows us to create custom events.
+ * -> The 'EventEmitter' class is the core of the 'events' module.
+ * The 'EventEmitter' class provides methods like 'emit()' to trigger an event:
+ * and 'on()' to listen for events.
  *
- * const EventEmitter = require("events");
+ * -> 1: Importing 'EventEmitter' using CommonJS syntax:we can directly import the EventEmitter class from the events module.
+ * IMP:or we can latter access it in own created class:when we use (event) module with in our own created class.
+ * const EventEmitter = require("events").EventEmitter;
  *
- * However, since we are using ES6 import syntax, we cannot directly import 'EventEmitter' class from the module.
- * Instead, we import the entire module and access 'EventEmitter' from it.
+ * // example:if we are importing the (event) only using (CommonJS) syntax:
+ * const events = require("events");
+ * class UserEvents extends events.EventEmitter  {
+ * // class body
+ * }
+ *
+ * -> 2: Importing 'EventEmitter' using ES6 syntax:
  */
-import * as Events from "events";
-
-// => Implementing custom-events using event-driven architecture:
+import { EventEmitter } from "events";
 
 /*
- * IMP-NOTE-1: In this example, we receive a post from the user, but there is no direct interaction with the user.
- * -> To represent the user, we create a 'UserEvents' class that extends 'EventEmitter',
- *    allowing us to pass the post as a property and handle it as an event.
- *
- * IMP: Using the 'UserEvents' class, we can create user objects and assign posts to them.
+ * Defining a 'UserEvents' class that extends 'EventEmitter'
+ * This allows us to create custom events and handle them in an event-driven manner.
  */
-
-/*
- * IMP-NOTE-3: Once the post is created, we need to emit it as an event.
- * -> This allows us to handle it in an event-driven manner.
- * -> The 'emit' method of the 'EventEmitter' class is used to trigger the postCreated event.
- * -> To use 'emit' within our 'UserEvents' class, we must extend 'EventEmitter'.
- */
-
-/*
- * IMP-NOTE-4: We export the 'UserEvents' class so that it can be used in other files,
- *             such as 'script.js', for server-side handling.
- */
-
-export class UserEvents extends Events.EventEmitter {
+// we also have to export the class in (ES6) syntax-way:if we are Importing the things in (ES6) syntax-way as well:
+export class UserEvents extends EventEmitter {
   /*
-   * IMP: The 'createPost' method allows a user to create a post.
-   * -> When a post is created, an event is emitted.
+   * The 'createPost' method allows a user to create a post.
+   * -> When a post is created, the 'postCreated' event is emitted.
+   * -> This allows other parts of the application to listen for and react to this event.
    */
   createPost(content) {
     console.log("User Created Post:", content);
 
     /*
-     * The 'emit' method of 'EventEmitter' is used to trigger an event.
-     * -> The first argument is the event name ('postCreated'), and the second argument is the post content.
-     * -> This enables other parts of the application to react whenever a post is created.
+     * Emitting an event named 'postCreated'
+     * -> The first argument is the event name ('postCreated').
+     * -> The second argument is the post content.
      */
     this.emit("postCreated", content);
   }
 }
+
+/*
+ * ✅ Summary:
+ * -> We created a class 'UserEvents' that extends 'EventEmitter' to handle user posts as events.
+ * -> The 'createPost' method emits a 'postCreated' event whenever a user creates a post.
+ * -> Other parts of the application can listen for this event and perform actions asynchronously.
+ * -> This approach follows event-driven architecture principles, making the application more modular and efficient.
+ */
