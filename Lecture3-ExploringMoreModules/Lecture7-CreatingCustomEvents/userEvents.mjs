@@ -7,10 +7,10 @@ console.log(
  * IMP-NOTE: Understanding Event-Driven-Architecture through an example:
  * ---------------------------------------------------------------------
  * -> We are getting the (post) from the (user) and want to handle it using (events) or (event-driven architecture).
- * -> To achieve this, we create (custom events) that allow us to handle user-posts through event-driven architecture.
- * -> With (custom events), we can perform multiple-operation-asynchronously on the (post) by simply adding multiple (event listeners).
+ * -> To achieve this, we can create (custom events) that will allow us to handle user-posts through event-driven architecture or we can say asynchronously.
+ * -> With (custom events), we can perform multiple-operation-asynchronously on the (post) by simply adding multiple (event listeners) to it.
  *
- * V.IMP: This helps us manage user posts in a (modular way) and in an (asynchronous manner).
+ * V.IMP: This helps us manage user posts in a (modular-way) and in an (asynchronous-manner).
  *        Event-driven architecture allows us to handle things efficiently without blocking the main thread.
  */
 
