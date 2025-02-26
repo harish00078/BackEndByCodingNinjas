@@ -26,6 +26,5 @@ userEvent.addListener("postCreated", saveToDatabase);
 userEvent.addListener("postCreated", sendNotification);
 userEvent.addListener("postCreated", updateTimeLine);
 
-// Creating a new post, which should emit the (postCreated) event.
-// This should trigger all three listeners defined above.
+// V.IMP-NOTE:f
 userEvent.createPost('hey we have new post from the user');
