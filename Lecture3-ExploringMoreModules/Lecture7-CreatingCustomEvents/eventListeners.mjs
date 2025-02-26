@@ -3,7 +3,7 @@
 import { UserEvents } from "./userEvents.mjs";
 
 // Creating an instance of the UserEvents class.
-const userEvent = new UserEvents(); 
+const user = new UserEvents(); 
 
 // Function to simulate saving the post to a database.
 function saveToDatabase() {
@@ -22,9 +22,9 @@ function updateTimeLine(){
 
 // IMP: Here we are listening to the (postCreated) event and handling it through multiple event listeners.
 // Whenever the (postCreated) event is emitted, these functions will execute in order.
-userEvent.addListener("postCreated", saveToDatabase);
-userEvent.addListener("postCreated", sendNotification);
-userEvent.addListener("postCreated", updateTimeLine);
+user.addListener("postCreated", saveToDatabase);
+user.addListener("postCreated", sendNotification);
+user.addListener("postCreated", updateTimeLine);
 
 // V.IMP-NOTE:f
-userEvent.createPost('hey we have new post from the user');
+user.createPost('hey we have new post from the user');
