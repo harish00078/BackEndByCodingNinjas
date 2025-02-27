@@ -21,7 +21,7 @@ console.log(
  * In Node.js, we use the built-in ['events'] module to create and handle custom-events.
  * -> The 'events' module provides an 'EventEmitter' class that allows us to create custom-events.
  * -> IMP: The 'EventEmitter' class is the core of the 'events' module.
- * The 'EventEmitter' class provides methods like 'emit()' to trigger an event: and 'on()' to listen for those events.
+ * The 'EventEmitter' class provides methods like 'emit()' to trigger an event: and 'on()' or (addListener) to listen for those events.
  *
  * -> 1: Importing 'EventEmitter' using CommonJS syntax:we can directly import the EventEmitter class from the events module.
  * const EventEmitter = require("events").EventEmitter;
