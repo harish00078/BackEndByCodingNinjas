@@ -2,9 +2,11 @@
 // This class helps us represent that a (post) has been created by the (user) and emit it as an event.
 import { UserEvents } from "./userEvents.mjs";
 
-// IMP:we are gonna be able to do that with the help of (class):by Creating an instance or (object) of the UserEvents class.
-// This instance or (object) will be used to (emit) post as event.
-// V.IMP-NOTE:because we are gonna be use the (property) of the (UserEvents) class to (emit) the (post) as an event:which we basically defined in the (userEvents) class:
+// IMP: We can achieve this by creating an instance (or object) of the UserEvents-class.  
+// This instance or object will be responsible for emitting the post as an event.  
+
+// V.IMP-NOTE: We utilize the properties of the UserEvents-class to emit the post as an event through that (instance) or (object):  
+// These properties are defined within the UserEvents-class, allowing us to trigger and handle events efficiently.
 const user = new UserEvents(); 
 
 // Function to simulate saving the post to a database.
@@ -31,6 +33,7 @@ user.addListener("postCreated", saveToDatabase);
 user.addListener("postCreated", sendNotification);
 user.addListener("postCreated", updateTimeLine);
 
-// V.IMP-NOTE: Emitting the "postCreated" event by calling the createPost method.
-// This will trigger all event listeners associated with the "postCreated" event.
+
+// V.IMP-NOTE: Here we got the (post) from the (user):through the help of (request) method.
+// -> after getting the (post)
 user.createPost('hey we have new post from the user');
