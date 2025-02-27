@@ -7,7 +7,9 @@ import { UserEvents } from "./userEvents.mjs";
 
 // V.IMP-NOTE: We utilize the properties of the UserEvents-class to emit the post as an event through that (instance) or (object):  
 // These properties are defined within the UserEvents-class, allowing us to trigger and handle events efficiently:
-
+// ->IMP:for creating the (instance) or (object) of the (UserEvents-class):we are using the (new) keyword to do that.
+// ->IMP:Here we are creating the (instance) of the (UserEvents-class) and storing it in the (user) variable.
+// ->IMP:This (instance) will be responsible for emitting the (post) as an event. 
 const user = new UserEvents(); 
 
 // Function to simulate saving the post to a database.
