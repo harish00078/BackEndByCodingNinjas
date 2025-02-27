@@ -3,28 +3,33 @@
 import { UserEvents } from "./userEvents.mjs";
 
 // Creating an instance of the UserEvents class.
+// This instance will be used to emit and listen to events related to user posts.
 const user = new UserEvents(); 
 
 // Function to simulate saving the post to a database.
+// This function will execute when the "postCreated" event is triggered.
 function saveToDatabase() {
     console.log("Post Saved To Database:");
 }
 
 // Function to simulate sending a notification to users.
+// This function will be triggered when a new post is created.
 function sendNotification() {
     console.log("Notification Sent:");
 }
 
 // Function to simulate updating the user’s timeline.
+// When a new post is created, this function updates the user's timeline accordingly.
 function updateTimeLine(){
     console.log("TimeLine Updated:");
 }
 
 // IMP: Here we are listening to the (postCreated) event and handling it through multiple event listeners.
-// Whenever the (postCreated) event is emitted, these functions will execute in order.
+// Whenever the (postCreated) event is emitted, the registered event listeners (functions) will execute in order.
 user.addListener("postCreated", saveToDatabase);
 user.addListener("postCreated", sendNotification);
 user.addListener("postCreated", updateTimeLine);
 
-// V.IMP-NOTE:f
+// V.IMP-NOTE: Emitting the "postCreated" event by calling the createPost method.
+// This will trigger all event listeners associated with the "postCreated" event.
 user.createPost('hey we have new post from the user');
