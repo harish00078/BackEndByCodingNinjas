@@ -15,6 +15,18 @@ const server = express();
 // => Creating routes in an Express server differs from defining routes in a basic Node.js server.  
 // -> Express provides a simpler and more efficient way to create multiple HTTP-routes by using different type of HTTP-methods such as GET, POST, PUT, DELETE, etc.  
 
+// => **IMP-NOTE:** There are mainly two ways to create routes in Express:  
+// 1. **Using the server-object** directly.  
+// 2. **Using the router-object** to define routes separately.we will get from the express-module: 
+
+// => **IMP:** First Method: Creating routes using the server object directly.  
+// -> There are multiple ways to define routes using the server object:
+// -> **[1st Way]:** Using HTTP methods (GET, POST, PUT, DELETE, etc.) directly on the server-object.  
+// -> **[2nd Way]:** Using the `use` method of the server-object to create middleware-based routes.  
+// -> **[3rd Way]:** Using the `route` method to define multiple-handlers for a single-route.  
+// -> **[4th Way]:** Using the `all` method to handle all HTTP-methods for a specific-route.  
+
+
 // => IMP: In Express, we can directly access or use those  HTTP-methods from the server-object:for creating the routes or urls:
 // -> These methods correspond to standard HTTP-methods, such as GET, POST, PUT, DELETE, etc.  
 
@@ -30,7 +42,9 @@ const server = express();
 // V.IMP-NOTE: Express simplifies route handling compared to a basic Node.js server.  
 // -> **IMP:** Unlike in a standard Node.js server, where we manually check the URL using `if-else` conditions, Express automatically matches incoming-requests to the routes which we have already created:  
 // -> V.IMP: Express automatically matches incoming requests to the created-routes or urls and calls the appropriate handler-functions or route handler-function which we have already created and connected to each and  every-route.
-// -> **IMP:** This eliminates the need for manual URL checking and enhances code readability and maintainability.
+// -> **IMP:** This eliminates the need for manual URL checking and enhances code readability and maintainability:
+
+
 server.get('/',(req,res)=>{
     res.send('<h1>Hello World</h1>');
 })
