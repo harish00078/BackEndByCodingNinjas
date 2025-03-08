@@ -11,4 +11,4 @@ const server = express();
 
 
 // ->3:after creating server:we have to create (port-number) for the server:
-// -> so that the server can listen for the incoming requests which are coming on this particular port-number:
+// -> so that the server can only listen for the incoming-requests which are coming on this particular port-number:
