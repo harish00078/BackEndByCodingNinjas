@@ -22,6 +22,12 @@ const server = express();
 // 2nd: is the (callback-function) or handler:
 // -> the callback-function or handler will be executed when the incoming-request comes on this particular route:
 
+// V.IMP-NOTE:with the help of express:we are able to creates the routes with diff http-methods in a very simple way:
+// ->IMP: And most Imp-thing is that:here we did not (check) the urls or routes manually:like we did in the nodejs-server with the help of (if-else) conditions:
+// ->V.IMP: Instead here we define or create the routes and url so that express will automatically check the incoming-request and match it with the routes and call the handler of that particular-route:
+// ->IMP: Express will automatically check the incoming-request and match it with the routes or urls that we have created in the server:
+// ->IMP: And it will automatically call the handler or callback-function of that particular route or url:
+
 server.get('/',(req,res)=>{
     res.send('Hello World! harish this side:');
 })
