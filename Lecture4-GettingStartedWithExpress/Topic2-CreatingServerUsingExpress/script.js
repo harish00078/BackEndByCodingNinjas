@@ -8,18 +8,24 @@ const express = require('express');
 // -> and that variable will be our server-instance or server-object:through which we can access all the methods and properties of the server:to interact or work with the server:
 const server = express();
 
-// ->5:after creating the server:we have to create the routes or urls for the server:
-// -> so that user can interact with the server by sending the requests on these routes or urls and get the response from the server:
-// -> for that we have to use the (get) method of the server-object:
-// -> this (get) method takes two arguments:
-// 1st is the (route):
-// 2nd is the (callback-function):
-// -> this callback-function will be executed when the incoming-request comes on this particular route:
+// ->5:after creating the server:we have to create the routes or urls in the server:
+// -> through which users can interact with the server by sending the requests on these routes or urls and get the response from the server:
+
+// => Creating the (routes) or (urls) in the express-server:Is different from creating the routes in the nodejs-server:
+// -> With the help of an Express server, we can easily create multiple HTTP-routes or URLs by using different-types HTTP-methods such as GET, POST, PUT, DELETE, etc.
+
+// =>IMP: For creating the routes in the express-server:we can directly or simply access the different types of (HTTP-methods):
+// ->IMP: And these methods takes two arguments:
+// 1st: is the (route):
+// 2nd: is the (callback-function) or handler:
+// -> the callback-function or handler will be executed when the incoming-request comes on this particular route:
 server.get('/',(req,res)=>{
     res.send('Hello World! harish this side:');
 })
 
-
+server.get('/user',(req,res)=>{
+    res.send('hey its user route:');
+})
 
 
 
