@@ -14,11 +14,14 @@ const server = express();
 // => Creating the (routes) or (urls) in the express-server:Is different from creating the routes in the nodejs-server:
 // -> With the help of an Express server, we can easily create multiple HTTP-routes or URLs by using different-types HTTP-methods such as GET, POST, PUT, DELETE, etc.
 
-// =>IMP: For creating the routes in the express-server:we can directly or simply access the different types of (HTTP-methods):
-// ->IMP: And these methods takes two arguments:
-// 1st: is the (route):
+// =>IMP: For creating the routes in the express-server:we can directly or simply access the different types of (HTTP-methods) from the server-object:
+// -> and these methods are the same as the HTTP-methods such as GET, POST, PUT, DELETE, etc.
+
+// =>IMP: And these methods takes two arguments:
+// 1st: is the (route) or url:
 // 2nd: is the (callback-function) or handler:
 // -> the callback-function or handler will be executed when the incoming-request comes on this particular route:
+
 server.get('/',(req,res)=>{
     res.send('Hello World! harish this side:');
 })
