@@ -8,34 +8,35 @@ const express = require('express');
 // -> and that variable will be our server-instance or server-object:through which we can access all the methods and properties of the server:to interact or work with the server:
 const server = express();
 
-// ->5:after creating the server:we have to create the routes or urls in the server:
-// -> through which users can interact with the server by sending the requests on these routes or urls and get the response from the server:
 
-// => Creating the (routes) or (urls) in the express-server:Is different from creating the routes in the nodejs-server:
-// -> With the help of an Express server, we can easily create multiple HTTP-routes or URLs by using different-types HTTP-methods such as GET, POST, PUT, DELETE, etc.
+// 5: After creating the express-server, we need to define routes or URLs within it.  
+// -> These routes allow users to interact with the server by sending requests and receiving responses.  
 
-// =>IMP: For creating the routes in the express-server:we can directly or simply access the different types of (HTTP-methods) from the server-object:
-// -> and these methods are the same as the HTTP-methods such as GET, POST, PUT, DELETE, etc.
+// => Creating routes in an Express server differs from defining routes in a basic Node.js server.  
+// -> Express provides a simpler and more efficient way to create multiple HTTP-routes by using different type of HTTP-methods such as GET, POST, PUT, DELETE, etc.  
 
-// =>IMP: And these methods takes two arguments:
-// 1st: is the (route) or url:
-// 2nd: is the (callback-function) or handler:
-// -> the callback-function or handler will be executed when the incoming-request comes on this particular route:
+// => IMP: In Express, we can directly access or use those  HTTP-methods from the server-object:for creating the routes or urls:
+// -> These methods correspond to standard HTTP-methods, such as GET, POST, PUT, DELETE, etc.  
 
-// V.IMP-NOTE:with the help of express:we are able to creates the routes with diff http-methods in a very simple way:
-// ->IMP: And most Imp-thing is that:here we did not (check) the urls or routes manually:like we did in the nodejs-server with the help of (if-else) conditions:
-// ->V.IMP: Instead here we define or create the routes and url so that express will automatically check the incoming-request and match it with the routes and call the handler of that particular-route:
-// ->IMP: Express will automatically check the incoming-request and match it with the routes or urls that we have created in the server:
-// ->IMP: And it will automatically call the handler or callback-function of that particular route or url:
+// => IMP: Each of these methods takes two arguments:  
+// 1. The **route/(URL)** –> define the URL or route on which the request is received.
+// 2. The **callback-function/(handler)** –> define the function that is executed when the server receives a request on the specified route:To send a response back to the client or to perform any other operation based on the request.
 
+// => This callback-function takes two arguments:
+// 1. The **request-object** –> Contains information about the incoming request.
+// 2. The **response-object** –> Used to send a response back to the client.                    
+
+
+// V.IMP-NOTE: Express simplifies route handling compared to a basic Node.js server.  
+// -> **IMP:** Unlike in a standard Node.js server, where we manually check the URL using `if-else` conditions, Express automatically matches incoming-requests to the routes which we have already created:  
+// -> V.IMP: Express automatically matches incoming requests to the created-routes or urls and calls the appropriate handler-functions or route handler-function which we have already created and connected to each and  every-route.
+// -> **IMP:** This eliminates the need for manual URL checking and enhances code readability and maintainability.
 server.get('/',(req,res)=>{
-    res.send('Hello World! harish this side:');
+    res.send('<h1>Hello World</h1>');
 })
-
 server.get('/user',(req,res)=>{
-    res.send('hey its user route:');
+    res.send('<h1>User Page</h1>');
 })
-
 
 
 
