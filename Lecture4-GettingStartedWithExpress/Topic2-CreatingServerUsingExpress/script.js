@@ -17,14 +17,14 @@ const server = express();
 
 // => **IMP-NOTE:** There are mainly two ways to create routes in Express:   
 // 1. **Using the server-object** directly.  
-// 2. **Using the router-object** to define routes separately.we will get it from the express-module: 
+// 2. **Using the router-object** to define (routes-separately).we will get it from the express-module: 
 
 // => **IMP:** First Method: Creating routes or urls using the (server-object) directly:
-// ->V.IMP: There are multiple ways to define routes using the server-object as well:
+// ->V.IMP: There are also multiple ways to define routes using the server-object as well:
 // -> **IMP:** We can define routes using the following ways:
 
 // -> **[1st Way]:** Using HTTP methods (GET, POST, PUT, DELETE, etc.) directly on the server-object.or we can say that we can directly access the HTTP-methods from the server-object to define routes or urls.  
-// -> **[2nd Way]:** Using the `use` method of the server-object to create middleware-based routes.  
+// -> **[2nd Way]:** Using the `use` method of the server-object to define middleware-functions for a specific-route or url. 
 // -> **[3rd Way]:** Using the `route` method of the server-object to define multiple-handlers for a single-route or url.  
 // -> **[4th Way]:** Using the `all` method of the server-object to handle all HTTP-methods for a specific-route or url.  
 
