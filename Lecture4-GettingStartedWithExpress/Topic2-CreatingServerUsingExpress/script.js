@@ -19,7 +19,7 @@ const server = express();
 // 1. **Using the server-object** directly.  
 // 2. **Using the router-object** to define (routes-separately).we will get it from the express-module: 
 
-// => **IMP:** First Method: Creating routes or urls using the (server-object) directly:
+// => **IMP:** [First-way]: Creating routes or urls using the (server-object) directly:
 // ->V.IMP: There are also multiple ways to define routes using the server-object as well:
 // -> **IMP:** We can define routes using the following ways:
 
@@ -38,18 +38,51 @@ const server = express();
 // 1. The **request-object** –> Contains information about the incoming-request.
 // 2. The **response-object** –> Used to send a response back to the client.                    
 
+
+server.get('/',(req,res)=>{
+    // (send-method): the res.send() method is used to send a response to the client. It automatically sets the (Content-Type) header based on the response (data-type) and ends the response after sending it.
+    res.send('<h1>Home Page</h1>');
+})
+// server.get('/user',(req,res)=>{
+//     res.send('<h1>User Page</h1>');
+// })
+
+
+/************************************************************************* */
+// => **IMP:** [Second-Way]: Using the `use` method of the server-object to define middleware-functions for a specific-route or url:
+// V.IMP(use-method): The .use() method is used to define middleware functions that execute for every incoming request on the specified route or URL. It allows handling multiple HTTP methods (GET, POST, PUT, DELETE, etc.) on the same route before reaching the final route handler.
+// -> The .use() method in Express is primarily used to define middleware functions that execute before reaching the final route handler. Middleware functions can process requests, modify them, or perform specific tasks before sending a response.
+// -> **IMP:** The `use` method takes two arguments:
+// 1. The **route/(URL)** –> define the URL or route on which the middleware-function is executed.
+// 2. The **middleware-function** –> define the function that is executed when the server receives a request on the specified route:To perform any operation based on the request or to pass the request to the next middleware-function.
+
+// => **IMP:** Middleware-functions are functions that have access to the (request-object), (response-object), and the (next-function) in the application’s request-response cycle.
+// -> **IMP:** The (next-function) is a (callback-function) that is used to pass the request to the next middleware-function in the application’s request-response cycle.
+// -> **V.IMP-NOTE:** If the current middleware-function does not end the request-response cycle, it must call the next-function to pass the request to the next middleware-function in the stack.
+// Middleware for the '/user' route (executes for all HTTP methods)
+server.use("/user", (req, res, next) => {
+    console.log(`Middleware executed for ${req.method} request on /user`);
+    next(); // Passes control to the next middleware or route handler
+});
+
+// Handling different HTTP methods on '/user'
+server.get("/user", (req, res) => {
+    res.send("<h1>GET request - User Page</h1>");
+});
+
+server.post("/user", (req, res) => {
+    res.send("<h1>POST request - User Created</h1>");
+});
+/****************************************************************************** */
+
+
+
+
+
 // V.IMP-NOTE: Express simplifies route handling compared to a basic Node.js server.  
 // -> **IMP:** Unlike in a standard Node.js server, where we manually check the URL using `if-else` conditions, Express automatically matches incoming-requests (route or url) to the routes or urls which we have already created:  
 // -> **V.IMP:** Express automatically matches incoming-requests (routes or URLs) with the defined routes or urls and calls the appropriate or associated (handler-function):which we have already assigned to each and every route or url.  
 // -> **IMP:** This eliminates the need for manual URL checking and enhances code readability and maintainability:
-
-
-server.get('/',(req,res)=>{
-    res.send('<h1>Hello World</h1>');
-})
-server.get('/user',(req,res)=>{
-    res.send('<h1>User Page</h1>');
-})
 
 
 
