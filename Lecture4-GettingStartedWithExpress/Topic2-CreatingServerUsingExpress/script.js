@@ -22,6 +22,7 @@ const server = express();
 // => **IMP:** First Method: Creating routes or urls using the (server-object) directly:
 // ->V.IMP: There are multiple ways to define routes using the server-object as well:
 // -> **IMP:** We can define routes using the following ways:
+
 // -> **[1st Way]:** Using HTTP methods (GET, POST, PUT, DELETE, etc.) directly on the server-object.  
 // -> **[2nd Way]:** Using the `use` method of the server-object to create middleware-based routes.  
 // -> **[3rd Way]:** Using the `route` method of the server-object to define multiple-handlers for a single-route or url.  
@@ -40,8 +41,8 @@ const server = express();
 // 2. The **response-object** –> Used to send a response back to the client.                    
 
 // V.IMP-NOTE: Express simplifies route handling compared to a basic Node.js server.  
-// -> **IMP:** Unlike in a standard Node.js server, where we manually check the URL using `if-else` conditions, Express automatically matches incoming-requests to the routes which we have already created:  
-// -> V.IMP: Express automatically matches incoming requests to the created-routes or urls and calls the appropriate handler-functions or route handler-function which we have already created and connected to each and  every-route.
+// -> **IMP:** Unlike in a standard Node.js server, where we manually check the URL using `if-else` conditions, Express automatically matches incoming-requests (route or url) to the routes or urls which we have already created:  
+// -> **V.IMP:** Express automatically matches incoming requests (routes or URLs) with the defined routes and calls the appropriate or associated (handler-function):which we have already assigned to each and every route.  
 // -> **IMP:** This eliminates the need for manual URL checking and enhances code readability and maintainability:
 
 
