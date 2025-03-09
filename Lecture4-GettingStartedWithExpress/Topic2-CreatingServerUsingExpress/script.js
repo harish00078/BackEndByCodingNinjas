@@ -23,15 +23,13 @@ const server = express();
 // ->V.IMP: There are multiple ways to define routes using the server-object as well:
 // -> **IMP:** We can define routes using the following ways:
 
-// -> **[1st Way]:** Using HTTP methods (GET, POST, PUT, DELETE, etc.) directly on the server-object.  
+// -> **[1st Way]:** Using HTTP methods (GET, POST, PUT, DELETE, etc.) directly on the server-object.or we can say that we can directly access the HTTP-methods from the server-object to define routes or urls.  
 // -> **[2nd Way]:** Using the `use` method of the server-object to create middleware-based routes.  
 // -> **[3rd Way]:** Using the `route` method of the server-object to define multiple-handlers for a single-route or url.  
 // -> **[4th Way]:** Using the `all` method of the server-object to handle all HTTP-methods for a specific-route or url.  
 
 
-
 // => **IMP:** First Way: Using HTTP methods directly on the server-object:
-
 // -> IMP: Each of these methods takes two arguments:  
 // 1. The **route/(URL)** –> define the URL or route on which the request is received.
 // 2. The **callback-function/(handler)** –> define the function that is executed when the server receives a request on the specified route:To send a response back to the client or to perform any other operation based on the request.
