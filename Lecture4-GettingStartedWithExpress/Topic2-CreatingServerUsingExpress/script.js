@@ -35,8 +35,8 @@ const server = express();
 // 1. The **route/(URL)** –> define the URL or route on which the request is received.
 // 2. The **callback-function/(handler)** –> define the function that is executed when the server receives a request on the specified route:To send a response back to the client or to perform any other operation based on the request.
 
-// => This callback-function takes two arguments:
-// 1. The **request-object** –> Contains information about the incoming request.
+// => AS we have already learn that  callback-function also takes two arguments:
+// 1. The **request-object** –> Contains information about the incoming-request.
 // 2. The **response-object** –> Used to send a response back to the client.                    
 
 // V.IMP-NOTE: Express simplifies route handling compared to a basic Node.js server.  
