@@ -42,7 +42,7 @@ const server = express();
 
 // V.IMP-NOTE: Express simplifies route handling compared to a basic Node.js server.  
 // -> **IMP:** Unlike in a standard Node.js server, where we manually check the URL using `if-else` conditions, Express automatically matches incoming-requests (route or url) to the routes or urls which we have already created:  
-// -> **V.IMP:** Express automatically matches incoming requests (routes or URLs) with the defined routes and calls the appropriate or associated (handler-function):which we have already assigned to each and every route.  
+// -> **V.IMP:** Express automatically matches incoming-requests (routes or URLs) with the defined routes or urls and calls the appropriate or associated (handler-function):which we have already assigned to each and every route or url.  
 // -> **IMP:** This eliminates the need for manual URL checking and enhances code readability and maintainability:
 
 
