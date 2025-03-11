@@ -57,9 +57,13 @@ server.get('/',(req,res)=>{
 // 2. The **middleware-function** –> define the function that is executed when the server receives a request on the specified route:To perform any operation based on the request or to pass the request to the next middleware-function.
 
 // => **IMP:** Middleware-functions are functions that have access to the (request-object), (response-object), and the (next-function) in the application’s request-response cycle.
-// -> **IMP:** The (next-function) is a (callback-function) that is used to pass the request to the next middleware-function in the application’s request-response cycle.
-// -> **V.IMP-NOTE:** If the current middleware-function does not end the request-response cycle, it must call the next-function to pass the request to the next middleware-function in the stack.
-// Middleware for the '/user' route (executes for all HTTP methods)
+// => **IMP:** The (next-function) is a (callback-function) that is used to pass the request to the next middleware-function in the application’s request-response cycle.
+// -> If the current middleware-function does not end the request-response cycle, it must call the next middleware-function to pass the request to the next middleware-function in the stack.
+// -> and if we does not have any next middleware-function rather than current middleware-function:then it gonna  passes the control to the actual route or url handler of the request:so after checking request with the (middleware-function) it will pass the request to the actual route or url-handler of the request:
+// V.IMP: The .use() method is used to define middleware functions that execute before reaching the final route handler.
+// V.IMP: Middleware is useful for logging, authentication, modifying requests, etc
+
+// Middleware for the '/user' route (executes for all HTTP methods):
 server.use("/user", (req, res, next) => {
     console.log(`Middleware executed for ${req.method} request on /user`);
     next(); // Passes control to the next middleware or route handler
