@@ -51,7 +51,7 @@ server.get('/',(req,res)=>{
 /************************************************************************* */
 // => **IMP:** [Second-Way]: Using the `use` method of the server-object to define middleware-functions for a specific-route or url:
 // V.IMP:The .use() method is used to define middleware functions that execute for every incoming request on the specified route or URL.
-// V.IMP:It allows us to check all types of method requests (GET, POST, PUT, DELETE, etc.) through middleware before executing their respective route or URL handlers. This is how we are able to handle multiple types of requests on a single route or URL.
+// V.IMP:It allows us to check all types of http-method requests (GET, POST, PUT, DELETE, etc.) on the specific route or url through middleware before executing their respective route or URL handlers. This is how we are able to handle multiple types of requests on a single route or URL.
 // -> Middleware is useful for logging, authentication, modifying requests, etc.
 
 // -> **IMP:** The `use` method takes two arguments:
@@ -62,8 +62,7 @@ server.get('/',(req,res)=>{
 // 2. The **response-object** –> Used to send a response back to the client.
 // 3. The **next-function** –> Used to pass the request
 // -> **IMP:** The next-function is a callback-function that is used to pass the request to the next middleware-function in the application’s request-response cycle.
-// -> If the current middleware-function does not end the request-response cycle, it must call the next middleware-function to pass the request to the next middleware-function in the stack.
-// -> and if we does not have any next middleware-function rather than current middleware-function:then it gonna  passes the control to the actual route or url handler of the request:so after checking request with the (middleware-function) it will pass the request to the actual route or url-handler of the request:
+// V.IMP: If the current middleware doesn’t end the request-response cycle, it must call the next middleware. If no next middleware exists, control passes to the actual route or URL handler.
 
 
 
