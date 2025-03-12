@@ -53,16 +53,19 @@ server.get('/',(req,res)=>{
 // V.IMP:The .use() method is used to define middleware functions that execute for every incoming request on the specified route or URL.
 // V.IMP:It allows us to check all types of method requests (GET, POST, PUT, DELETE, etc.) through middleware before executing their respective route or URL handlers. This is how we are able to handle multiple types of requests on a single route or URL.
 // -> Middleware is useful for logging, authentication, modifying requests, etc.
+
 // -> **IMP:** The `use` method takes two arguments:
 // 1. The **route/(URL)** –> define the URL or route on which the middleware-function is executed.
 // 2. The **middleware-function** –> define the function that is executed when the server receives a request on the specified route:To perform any operation based on the request or to pass the request to the next middleware-function.
-
-// => **IMP:** Middleware-functions are functions that have access to the (request-object), (response-object), and the (next-function) in the application’s request-response cycle.
-// => **IMP:** The (next-function) is a (callback-function) that is used to pass the request to the next middleware-function in the application’s request-response cycle.
+// -> **IMP:** The middleware-function also takes three arguments:
+// 1. The **request-object** –> Contains information about the incoming-request.
+// 2. The **response-object** –> Used to send a response back to the client.
+// 3. The **next-function** –> Used to pass the request
+// -> **IMP:** The next-function is a callback-function that is used to pass the request to the next middleware-function in the application’s request-response cycle.
 // -> If the current middleware-function does not end the request-response cycle, it must call the next middleware-function to pass the request to the next middleware-function in the stack.
 // -> and if we does not have any next middleware-function rather than current middleware-function:then it gonna  passes the control to the actual route or url handler of the request:so after checking request with the (middleware-function) it will pass the request to the actual route or url-handler of the request:
-// V.IMP: The .use() method is used to define middleware functions that execute before reaching the final route handler.
-// V.IMP: Middleware is useful for logging, authentication, modifying requests, etc
+
+
 
 // Middleware for the '/user' route (executes for all HTTP methods):
 server.use("/user", (req, res, next) => {
