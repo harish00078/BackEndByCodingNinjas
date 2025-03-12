@@ -50,8 +50,9 @@ server.get('/',(req,res)=>{
 
 /************************************************************************* */
 // => **IMP:** [Second-Way]: Using the `use` method of the server-object to define middleware-functions for a specific-route or url:
-// V.IMP(use-method): The .use() method is used to define middleware functions that execute for every incoming request on the specified route or URL. It allows handling multiple HTTP methods (GET, POST, PUT, DELETE, etc.) on the same route before reaching the final route handler.
-// -> The .use() method in Express is primarily used to define middleware functions that execute before reaching the final route handler. Middleware functions can process requests, modify them, or perform specific tasks before sending a response.
+// V.IMP:The .use() method is used to define middleware functions that execute for every incoming request on the specified route or URL.
+// V.IMP:It allows us to check all types of method requests (GET, POST, PUT, DELETE, etc.) through middleware before executing their respective route or URL handlers. This is how we are able to handle multiple types of requests on a single route or URL.
+// -> Middleware is useful for logging, authentication, modifying requests, etc.
 // -> **IMP:** The `use` method takes two arguments:
 // 1. The **route/(URL)** –> define the URL or route on which the middleware-function is executed.
 // 2. The **middleware-function** –> define the function that is executed when the server receives a request on the specified route:To perform any operation based on the request or to pass the request to the next middleware-function.
