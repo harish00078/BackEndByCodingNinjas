@@ -60,8 +60,7 @@ server.get('/',(req,res)=>{
 // -> **IMP:** The middleware-function also takes three arguments:
 // 1. The **request-object** –> Contains information about the incoming-request.
 // 2. The **response-object** –> Used to send a response back to the client.
-// 3. The **next-function** –> Used to pass the request
-// -> **IMP:** The next-function is a callback-function that is used to pass the request to the next middleware-function in the application’s request-response cycle.
+// 3. The **next-function** –> The next-function is a callback-function that is used to pass the request to the next middleware-function in the application’s request-response cycle.
 // V.IMP: If the current middleware doesn’t end the request-response cycle, it must call the next middleware. If no next middleware exists, control passes to the actual route or URL handler.
 
 
