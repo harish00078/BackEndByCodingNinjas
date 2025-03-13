@@ -61,7 +61,7 @@ server.get('/',(req,res)=>{
 // 1. The **request-object** –> Contains information about the incoming-request.
 // 2. The **response-object** –> Used to send a response back to the client.
 // 3. The **next-function** –> The next-function is a callback-function that is used to pass the request to the next middleware-function in the application’s request-response cycle.
-// V.IMP: If the current middleware doesn’t end the request-response cycle, it must call the next middleware. If no next middleware exists, then we passes the control to the route or url handler:through which we are basically able to handle the request route or url:
+// V.IMP: If the current middleware doesn’t end the request-response cycle, it must call the next middleware. If no next middleware exists, then we passes the control to the route or url handler:through which we are basically able to handle the request on the particular route or url:
 
 
 
