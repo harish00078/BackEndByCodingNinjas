@@ -3,13 +3,13 @@
 const http = require("http");
 
 const server = http.createServer((req, res) => {
-  // IMP = here the request-argument basically repersents a (http-object) or (http-req-object):which basically have all the things related to request that has been send by the client to us:
+  // IMP = here the request-argument basically represents a (http-object) or (http-req-object):which basically have all the things related to request that has been send by the client to us:
   // like:the type of (request) and (url) of the request:
   console.log(req.url);
   // here we are checking our request-urls with the help of (if-conditions):
 
   if (req.url == "/product") {
-    // IMP = we also have other way to append or add content in our response-object:and that is (write) function:but this functon mostly help us to modify our response or we can say add more content in our response:
+    // IMP = we also have other way to append or add content in our response-object:and that is (write) function:but this function mostly help us to modify our response or we can say add more content in our response:
 
     res.write("welcome to my server:   ");
 
@@ -28,7 +28,7 @@ const server = http.createServer((req, res) => {
   } else if (req.url == "/user") {
     return res.end("hey! I am new-user ");
   }
-  // V.IMP = here if we are ending the request then we have to use the (return) statement with the (end) method:because without it our response-object did not get ending and did  get crash with each other:if we are using it outsite the (conditional-statements):
+  // V.IMP = here if we are ending the request then we have to use the (return) statement with the (end) method:because without it our response-object did not get ending and did  get crash with each other:if we are using it outside the (conditional-statements):
   // V.V.IMP(NOTE) = Its gonna crashes with the (conditional-statement) responses:if we did not use the (return) statement with the end-method:because (systems) gonna thing about that we are ending or using the end.method twice on the particular request:
 
   return res.end("welcome! To the Website ");
