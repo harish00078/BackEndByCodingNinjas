@@ -14,6 +14,11 @@ const server = http.createServer((req, res) => {
   // -> 1 = fs.readFileSync("./index.html") reads the file index.html. But when it reads it, it gets the data in a format called binary (which is how computers understand data).
   // -> 2 = The .toString() part converts that binary data into text (a format we humans can read).
   // -> 3 = Since index.html is a text file (HTML), we need it as text to work with it. That's why we use .toString() method to turn the computer's binary format into readable text format:
+
+  // const data1 = fs.readFileSync("./index.html").toString();
+
+  // IMP-NOTE:instead of using the (toString()) method we can use the ("utf-8") method:it is a method of (fs) module:which is used to read the file and convert it into a string automatically:
+  
   const data1 = fs.readFileSync("./index.html").toString();
 
   res.end(data1);
