@@ -17,9 +17,7 @@ const server = http.createServer((req, res) => {
 
   // const data1 = fs.readFileSync("./index.html").toString();
 
-  // IMP-NOTE:instead of using the (toString()) method we can use the ("utf-8") method:it is a method of (fs) module:which is used to read the file and convert it into a string automatically:
-
-  const data1 = fs.readFileSync("./index.html", "utf-8");
+  
 
   res.end(data1);
 });
