@@ -48,7 +48,7 @@
 // -> 2 = You can use the shorthand syntax to export things:
 // module.exports = { sum, div };
 
-// -> (Second type): Instead of defining functions separately and then attaching them to `module.exports`, you can define and export them together in one step:mostly use of it that we want to create want to create and exports things separately instead of putting them together in one object:
+// -> (Second type): Instead of defining functions separately and then attaching them to `module.exports`, you can define and export them together in one step:mostly use of it is that we want to create and exports things separately instead of putting them together in one object:
 // (Explanation): This means you create and export your functions at the same time by directly assigning them as properties on the `module.exports` object:
 // (Note): Here, you add properties (like `.sum` or `.div`) directly to `module.exports` using dot notation, allowing you to define and export individual functions in a concise way.
 
