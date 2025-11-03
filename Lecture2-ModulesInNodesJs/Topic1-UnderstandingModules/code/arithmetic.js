@@ -59,6 +59,13 @@ module.exports.div = function (a, b) {
   return a / b;
 };
 
+// -> (Third type): This is similar to the second type, but here we use the `exports` object instead of `module.exports` to attach properties.
+// Important Note: The `exports` object is simply a reference to `module.exports`. Therefore, using `exports` to add new properties works (e.g., `exports.func = ...`), but assigning a new object directly to `exports` (e.g., `exports = { ... }`) will break this reference and will NOT export as expected. 
+// Summary: Only use `exports` to add new properties to the module, not to reassign the whole object.
+exports.sum = (a, b) => {
+  return a + b;
+};
+
 // --- 2. Exporting a Single Function Directly ---
 // If you only want to export one function, you can assign it directly to `module.exports`:
 
