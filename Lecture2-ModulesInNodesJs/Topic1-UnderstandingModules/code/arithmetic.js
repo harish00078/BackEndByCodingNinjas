@@ -52,27 +52,27 @@
 // (Explanation): This means you create and export your functions at the same time by directly assigning them as properties on the `module.exports` object:
 // (Note): Here, you add properties (like `.sum` or `.div`) directly to `module.exports` using dot notation, allowing you to define and export individual functions in a concise way.
 
-module.exports.sum = (a, b) => {
-  return a + b;
-};
-module.exports.div = function (a, b) {
-  return a / b;
-};
+// module.exports.sum = (a, b) => {
+//   return a + b;
+// };
+// module.exports.div = function (a, b) {
+//   return a / b;
+// };
 
 // -> (Third type): This is similar to the second type, but here we use the `exports` object instead of `module.exports` to export properties.
 // Important Note: The `exports` object is simply a reference to `module.exports`. Therefore, using `exports` to add new properties works (e.g., `exports.func = ...`), but assigning a new object directly to `exports` (e.g., `exports = { ... }`) will break this reference and will NOT export as expected. 
 // Summary: Only use `exports` to add new properties to the module, not to reassign the whole object.
-exports.sum = (a, b) => {
-  return a + b;
-};
+// exports.sum = (a, b) => {
+//   return a + b;
+// };
 
 // --- 2. Exporting a Single thing Directly (direct or non-property export) ---
 // NOTE:this category is also called "non-property export" because you're directly exporting the function or things (class, variable,etc)for as it is they are, not attaching it to a property of `module.exports`:
 // we can do that by simply assigning the function or things to `module.exports` directly with the help of (equal-sign) or (assignment-operator):
 
-module.exports = function sum(x, y) {
-  return x + y;
-};
+// module.exports = function sum(x, y) {
+//   return x + y;
+// };
 
 
 // --- Additional Notes ---

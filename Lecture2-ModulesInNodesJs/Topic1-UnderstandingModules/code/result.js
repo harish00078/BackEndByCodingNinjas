@@ -2,15 +2,19 @@
 
 
 // In Node.js, modules can be imported in different ways depending on how they are exported:
-// NOTE: We have to use the (require) keyword to import modules in Node.js for commonjs module syntax:
+// NOTE: We use the (require) keyword or function to import modules in Node.js for commonjs module syntax:
 // IMP: So we have two-categories of syntax available to export things using CommonJS-syntax:in the same way we have two-categories of syntax available to import things using CommonJS-syntax:
 // -> 1 = Importing one or multiple-things as an Object: (properties-of-object):
-// -> 2 = Importing a Single thing Directly (means we are importing the function or things for as it is they are): (direct or non-property export):
+// -> 2 = Importing a Single thing Directly (or we can say that be are importing the function or things for as it is they are): (direct or non-property export):
 
 // (first-type): Importing one or multiple-things as an Object: (properties-of-object):
-// IMP:know with in this category mainly we have two-types of syntax available to import things:
-// -> 1 = importing the entire module as an object, then access exported members as properties:
+// IMP:know with in this category mainly we have two-ways of syntax available to import things:
+// -> 1 = Importing the entire-module as an object, then access exported members as properties:
 // -> 2 = Destructure specific exports directly (works when module.exports is an object):
+
+// [1] Import the entire module as an object using require method and store it in a variable, then access its exported-members via the variable's properties using dot-notation:
+const arithmetic = require("./arithmetic");
+console.log(arithmetic.sum(5, 10));
 
 
 
@@ -31,8 +35,8 @@
 // So, the module exports a single function directly.
 
 // Therefore, we import it as follows:
-const sum = require("./arithmetic");
-console.log(sum(34, 5)); // Output: 39
+// const sum = require("./arithmetic");
+// console.log(sum(34, 5)); // Output: 39
 
 // Note: If you try to import using destructuring or as an object, it will not work in this case,
 // because the module itself is a function, not an object with properties.
