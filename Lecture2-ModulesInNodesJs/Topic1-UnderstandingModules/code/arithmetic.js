@@ -19,7 +19,7 @@
 // => Know we have different-syntax-types available to export things using CommonJS-syntax:
 // -> but they mainly lies under two-categories:
 // -> 1 = Exporting one or multiple things as an Object: (properties-of-object):
-// -> 2 = Exporting a Single thing Directly: (direct or non-property export):
+// -> 2 = Exporting a Single thing Directly (): (direct or non-property export):
 
 // --- 1. Exporting one or multiple things as an Object: ---
 // => know with in this category mainly we have three-types of syntax available to export things:

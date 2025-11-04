@@ -1,20 +1,20 @@
-// Demonstrating how to import and use modules exported from 'arithmetic.js' using CommonJS syntax.
+// Demonstrating how to import and use modules exported from 'arithmetic.js' using CommonJS syntax:
 
 
-// In Node.js, modules can be imported in different ways depending on how they are exported. 
-// Let's clarify the main approaches:
+// In Node.js, modules can be imported in different ways depending on how they are exported:
+// NOTE: We have to use the (require) keyword to import modules in Node.js for commonjs module syntax:
+// IMP: So we have two-categories of syntax available to export things using CommonJS-syntax:in the same way we have two-categories of syntax available to import things using CommonJS-syntax:
+// -> 1 = Importing one or multiple-things as an Object: (properties-of-object):
+// -> 2 = Importing a Single thing Directly (means we are importing the function or things for as it is they are): (direct or non-property export):
 
-// --- Exporting in CommonJS ---
-// 1. Exporting multiple functions as properties of an object (module.exports = { ... })
-// 2. Exporting a single function directly (module.exports = function ...)
-// 3. Attaching functions as properties to module.exports or exports
+// (first-type): Importing one or multiple-things as an Object: (properties-of-object):
+// IMP:know with in this category mainly we have two-types of syntax available to import things:
+// -> 1 = importing the entire module as an object, then access exported members as properties:
+// -> 2 = Destructure specific exports directly (works when module.exports is an object):
 
-// --- Importing in CommonJS ---
-// There are two main ways to import modules:
 
-// [1] Import the entire module as an object, then access exported members as properties:
-    // const arithmetic = require("./arithmetic");
-    // console.log(arithmetic.add(5, 5));
+
+   
 
 // [2] Destructure specific exports directly (works when module.exports is an object):
     // const { add, divide } = require("./arithmetic");
