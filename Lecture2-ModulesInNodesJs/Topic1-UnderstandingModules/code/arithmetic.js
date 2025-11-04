@@ -66,40 +66,14 @@ exports.sum = (a, b) => {
   return a + b;
 };
 
-// --- 2. Exporting a Single Function Directly ---
-// If you only want to export one function, you can assign it directly to `module.exports`:
+// --- 2. Exporting a Single thing Directly (direct or non-property export) ---
+// NOTE:this category is also called "non-property export" because you're directly exporting the function or things (class, variable,etc)for as it is they are, not attaching it to a property of `module.exports`:
+// we can do that by simply assigning the function or things to `module.exports` directly with the help of (equal-sign) or (assignment-operator):
 
 module.exports = function sum(x, y) {
   return x + y;
 };
 
-// --- 3. Exporting Multiple Functions as Properties ---
-// You can attach functions directly as properties to `module.exports`:
-
-// module.exports.sum = function (x, y) {
-//   return x + y;
-// };
-// module.exports.multiply = function (x, y) {
-//   return x * y;
-// };
-
-// --- 4. Using Arrow Functions ---
-// Arrow functions can also be exported in the same way:
-
-// module.exports.multiply = (x, y) => x * y;
-
-// --- 5. Using the `exports` Shortcut ---
-// `exports` is a shorthand for `module.exports` and is commonly used to attach properties:
-
-exports.subtraction = function (x, y) {
-  return x - y;
-};
-
-// You can also use arrow functions:
-
-// exports.sum = (x, y) => x + y;
-
-// Note: Assigning a new object to `exports` (e.g., `exports = { sum }`) will not work as expected, because it breaks the reference to `module.exports`.
 
 // --- Additional Notes ---
 // - When you import a module, the entire file is executed once, and only the exported parts are accessible.
