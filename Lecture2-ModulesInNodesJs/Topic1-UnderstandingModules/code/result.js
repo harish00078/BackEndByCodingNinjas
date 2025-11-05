@@ -1,6 +1,5 @@
 // Demonstrating how to import and use modules exported from 'arithmetic.js' using CommonJS syntax:
 
-
 // In Node.js, modules can be imported in different ways depending on how they are exported:
 // NOTE: We use the (require) keyword or function to import modules in Node.js for commonjs module syntax:
 // IMP: So we have two-categories of syntax available to export things using CommonJS-syntax:in the same way we have two-categories of syntax available to import things using CommonJS-syntax:
@@ -19,19 +18,16 @@
 // [2-way] Destructure or (object-destructuring) help us to do specific-imports-directly it (works when we are getting the object in exports):
 // IMP: In this case, we can import specific-exports directly without having to create a variable to store the entire-module.
 // (destructuring or object-destructuring): In destructuring, basically we can get or access the specific exported-properties of the object and store them into the new-object directly which we have created using the (curly-brackets) on the import side with the help of require method:and from that new-object we can easily access or use properties of the exported-module:
-const {sum} = require("./arithmetic");
+const { sum } = require("./arithmetic");
 console.log(sum(5, 10));
 
-   
 
-// [2] Destructure specific exports directly (works when module.exports is an object):
-    // const { add, divide } = require("./arithmetic");
-    // console.log(add(5, 10));
 
-// [3] If the module exports a single function directly (module.exports = function...), 
+
+// [3] If the module exports a single function directly (module.exports = function...),
 // you can import it as a function:
-    // const sum = require("./arithmetic");
-    // console.log(sum(34, 5));
+// const sum = require("./arithmetic");
+// console.log(sum(34, 5));
 
 // --- Example with the current 'arithmetic.js' ---
 // In 'arithmetic.js', we have:
@@ -46,6 +42,5 @@ console.log(sum(5, 10));
 // because the module itself is a function, not an object with properties.
 
 // --- Additional Note ---
-// Node.js caches modules after the first require call. 
+// Node.js caches modules after the first require call.
 // If you require the same module again, you get the cached version, not a fresh instance.
-
