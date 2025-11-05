@@ -16,9 +16,11 @@
 // const arithmetic = require("./arithmetic");
 // console.log(arithmetic.sum(5, 10));
 
-// [2-way] Destructure or (object-destructuring) help us to does specific-imports-directly it (works when we are getting the object in exports):
-// IMP: In this case, we can import specific-exports directly without having to create a variable to store the entire module.
-// (destructuring or object-destructuring): means that:if we are getting the object in export:we can get or access its specific exported-properties and store them into the new-object directly which we can create using the (curly-brackets):and from that new-object we can easily access or use them:
+// [2-way] Destructure or (object-destructuring) help us to do specific-imports-directly it (works when we are getting the object in exports):
+// IMP: In this case, we can import specific-exports directly without having to create a variable to store the entire-module.
+// (destructuring or object-destructuring): In destructuring, basically we can get or access the specific exported-properties of the object and store them into the new-object directly which we have created using the (curly-brackets) on the import side with the help of require method:and from that new-object we can easily access or use properties of the exported-module:
+const {sum} = require("./arithmetic");
+console.log(sum(5, 10));
 
    
 
