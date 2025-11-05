@@ -10,14 +10,15 @@
 // (first-type): Importing one or multiple-things as an Object: (properties-of-object):
 // IMP:know with in this category mainly we have two-ways of syntax available to import things:
 // -> 1 = Importing the entire-module as an object, then access exported members as properties:
-// -> 2 = Destructure or (object-destructuring) help us to does specific exports directly it (works when we are getting the object in exports):
+// -> 2 = Destructure or (object-destructuring) help us to does specific imports directly it (works when we are getting the object in exports):
 
 // [1-way] Import the entire module as an object using require method and store it in a variable, then access its exported-members via the variable's properties using dot-notation:
 // const arithmetic = require("./arithmetic");
 // console.log(arithmetic.sum(5, 10));
 
-// [2-way] Destructure or (object-destructuring) help us to does specific exports directly it (works when we are getting the object in exports):
-
+// [2-way] Destructure or (object-destructuring) help us to does specific-imports-directly it (works when we are getting the object in exports):
+// IMP: In this case, we can import specific-exports directly without having to create a variable to store the entire module.
+// (destructuring or object-destructuring): means that:if we are getting the object in export:we can get or access its specific exported-properties and store them into the new-object directly which we can create using the (curly-brackets):and from that new-object we can easily access or use them:
 
    
 
