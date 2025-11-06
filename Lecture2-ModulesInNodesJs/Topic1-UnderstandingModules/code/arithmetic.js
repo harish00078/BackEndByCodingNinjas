@@ -68,7 +68,7 @@
 
 // --- 2. Exporting a Single thing Directly (direct or non-property export) ---
 // IMP:this category is also called "non-property export" because you're directly exporting the function or things (class, variable,etc)for as it is they are, not attaching it to as property of `module.exports`:
-// we can do that by simply assigning the function or things to `module.exports` directly with the help of (equal-sign) or (assignment-operator):instead of passing it through object:
+// we can do that by simply assigning the function or things to `module.exports` directly with the help of (equalto-sign) or (assignment-operator):instead of passing it through object:
 
 // NOTE: Within this category (direct or non-property export), we can only export a single item per file. 
 // This limitation exists because of Node.js’s core module system — `module.exports` can hold only one value at a time.
