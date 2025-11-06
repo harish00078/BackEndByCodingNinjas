@@ -67,12 +67,21 @@
 // };
 
 // --- 2. Exporting a Single thing Directly (direct or non-property export) ---
-// NOTE:this category is also called "non-property export" because you're directly exporting the function or things (class, variable,etc)for as it is they are, not attaching it to as property of `module.exports`:
+// IMP:this category is also called "non-property export" because you're directly exporting the function or things (class, variable,etc)for as it is they are, not attaching it to as property of `module.exports`:
 // we can do that by simply assigning the function or things to `module.exports` directly with the help of (equal-sign) or (assignment-operator):instead of passing it through object:
 
-// module.exports = function sum(x, y) {
-//   return x + y;
-// };
+// NOTE: Within this category (direct or non-property export), we can only export a single item per file. 
+// This limitation exists because of Node.js’s core module system — `module.exports` can hold only one value at a time.
+// If we try to export multiple values directly (e.g., multiple functions or classes) using `module.exports =`, 
+// each new assignment will overwrite the previous one, meaning only the last exported item will remain.
+// Technically, we could place multiple direct exports in separate files and import them individually, 
+// but we cannot import multiple “direct exports” from the same file at once.
+// Additionally, since Node.js caches required modules, repeatedly requiring the same file for different exports 
+// would not reload or expose the previous exports — leading to unexpected behavior or errors.
+
+module.exports = function sum(x, y) {
+  return x + y;
+};
 
 
 // --- Additional Notes ---

@@ -18,11 +18,20 @@
 // [2-way] Destructure or (object-destructuring) help us to do specific-imports-directly it (works when we are getting the object in exports):
 // IMP: In this case, we can import specific-imports-directly without having to create a variable to store the entire-module.
 // (destructuring or object-destructuring): In destructuring, basically we can get or access the exported-properties of the object and store them into the new-object directly which we have created using the (curly-brackets) on the import side with the help of require method:and with the help of that new-object we can easily access or use those properties of the exported-module:
-const { sum } = require("./arithmetic");
-console.log(sum(5, 10));
+
+// const { sum } = require("./arithmetic");
+// console.log(sum(5, 10));
 
 // (Second-type): Importing a Single thing Directly (or we can say that be are importing the function or things for as it is they are): (direct or non-property export):
-//  IMP:
+// NOTE: Another reason it’s called a “single-thing direct import” is because, in this pattern, we can only import one item directly from a file. 
+// This is due to Node.js’s core module system — each file can have only one direct export (via `module.exports =`), 
+// meaning only one value can be imported from that file. Attempting to directly export multiple items from the same file will cause the previous exports to be overwritten.
+// IMP:For Importing a single thing directly: we simple have to define the (variable-name) for the (function) or (thing) which we are importing directly:and it automatically gonna save in that variable-name:
+// and we did not have use the exact variable-name as export it can be different:
+
+const addition = require('./arithmetic.js');
+console.log('direct imports: ',addition(5, 10));
+
 
 
 // --- Additional Note ---
