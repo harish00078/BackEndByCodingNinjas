@@ -76,8 +76,7 @@
 // each new assignment will overwrite the previous one, meaning only the last exported item will remain.
 // Technically, we could place multiple direct exports in separate files and import them individually, 
 // but we cannot import multiple “direct exports” from the same file at once.
-// Additionally, since Node.js caches required modules, repeatedly requiring the same file for different exports 
-// would not reload or expose the previous exports — leading to unexpected behavior or errors.
+// IMP-NOTE: Additionally,since Node.js (caches) required modules, repeatedly requiring the same file for different exports would not reload or expose the previous exports — leading to unexpected behavior or errors.
 
 module.exports = function sum(x, y) {
   return x + y;
