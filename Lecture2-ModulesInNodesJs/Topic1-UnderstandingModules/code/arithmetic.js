@@ -71,7 +71,7 @@
 // we can do that by simply assigning the function or things to `module.exports` directly with the help of (equalto-sign) or (assignment-operator):instead of passing it through object:
 
 // NOTE: Within this category (direct or non-property export), we can only export a single item per file. 
-// This limitation exists because of Node.js’s core module system — `module.exports` can hold only one value at a time.
+// V.IMP: This limitation exists because of Node.js’s core module system — `module.exports` can hold only one value at a time.
 // If we try to export multiple values directly (e.g., multiple functions or classes) using `module.exports =`, 
 // each new assignment will overwrite the previous one, meaning only the last exported item will remain.
 // Technically, we could place multiple direct exports in separate files and import them individually, 
