@@ -67,7 +67,7 @@
 // };
 
 // --- 2. Exporting a Single thing Directly (direct or non-property export) ---
-// NOTE:this category is also called "non-property export" because you're directly exporting the function or things (class, variable,etc)for as it is they are, not attaching it to a property of `module.exports`:
+// NOTE:this category is also called "non-property export" because you're directly exporting the function or things (class, variable,etc)for as it is they are, not attaching it to as property of `module.exports`:
 // we can do that by simply assigning the function or things to `module.exports` directly with the help of (equal-sign) or (assignment-operator):
 
 // module.exports = function sum(x, y) {
