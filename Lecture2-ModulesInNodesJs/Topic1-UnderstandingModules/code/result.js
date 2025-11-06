@@ -16,30 +16,13 @@
 // console.log(arithmetic.sum(5, 10));
 
 // [2-way] Destructure or (object-destructuring) help us to do specific-imports-directly it (works when we are getting the object in exports):
-// IMP: In this case, we can import specific-exports directly without having to create a variable to store the entire-module.
-// (destructuring or object-destructuring): In destructuring, basically we can get or access the specific exported-properties of the object and store them into the new-object directly which we have created using the (curly-brackets) on the import side with the help of require method:and from that new-object we can easily access or use properties of the exported-module:
+// IMP: In this case, we can import specific-imports-directly without having to create a variable to store the entire-module.
+// (destructuring or object-destructuring): In destructuring, basically we can get or access the exported-properties of the object and store them into the new-object directly which we have created using the (curly-brackets) on the import side with the help of require method:and with the help of that new-object we can easily access or use those properties of the exported-module:
 const { sum } = require("./arithmetic");
 console.log(sum(5, 10));
 
 
 
-
-// [3] If the module exports a single function directly (module.exports = function...),
-// you can import it as a function:
-// const sum = require("./arithmetic");
-// console.log(sum(34, 5));
-
-// --- Example with the current 'arithmetic.js' ---
-// In 'arithmetic.js', we have:
-// module.exports = function sum(x, y) { return x + y; };
-// So, the module exports a single function directly.
-
-// Therefore, we import it as follows:
-// const sum = require("./arithmetic");
-// console.log(sum(34, 5)); // Output: 39
-
-// Note: If you try to import using destructuring or as an object, it will not work in this case,
-// because the module itself is a function, not an object with properties.
 
 // --- Additional Note ---
 // Node.js caches modules after the first require call.
