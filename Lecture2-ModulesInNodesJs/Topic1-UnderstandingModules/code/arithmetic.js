@@ -62,9 +62,9 @@
 // -> (Third type): This is similar to the second type, but here we use the `exports` object instead of `module.exports` to export properties.
 // Important Note: The `exports` object is simply a reference to `module.exports`. Therefore, using `exports` to add new properties works (e.g., `exports.func = ...`), but assigning a new object directly to `exports` (e.g., `exports = { ... }`) will break this reference and will NOT export as expected. 
 // Summary: Only use `exports` to add new properties to the module, not to reassign the whole object.
-exports.sum = (a, b) => {
-  return a + b;
-};
+// exports.sum = (a, b) => {
+//   return a + b;
+// };
 
 // --- 2. Exporting a Single thing Directly (direct or non-property export) ---
 // NOTE:this category is also called "non-property export" because you're directly exporting the function or things (class, variable,etc)for as it is they are, not attaching it to a property of `module.exports`:

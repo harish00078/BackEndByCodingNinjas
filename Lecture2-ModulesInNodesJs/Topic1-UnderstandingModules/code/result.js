@@ -21,7 +21,8 @@
 const { sum } = require("./arithmetic");
 console.log(sum(5, 10));
 
-
+// (Second-type): Importing a Single thing Directly (or we can say that be are importing the function or things for as it is they are): (direct or non-property export):
+//  IMP:
 
 
 // --- Additional Note ---
