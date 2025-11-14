@@ -85,3 +85,22 @@ function askForSum() {
 }
 
 askForSum();
+
+
+// Explanation (process.stdout):
+// console.log()
+
+// When you write:
+
+// console.log("Invalid input...");
+// console.log(`The sum is ${sum}`);
+
+
+// Every console.log() uses process.stdout behind the scenes.
+
+// console.log() is just a wrapper for:
+
+// process.stdout.write(string + "\n");
+
+
+// So every message printed on the terminal also uses process.stdout.
