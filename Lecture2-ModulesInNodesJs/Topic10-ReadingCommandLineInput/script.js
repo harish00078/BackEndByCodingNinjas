@@ -45,43 +45,43 @@ const interface = readline.createInterface({
 // -> Write the another (string) or (question) to the (user)with in that (firstNumber's) callback-function:
 // -> And this (secondNumber) also gonna have its own callback-function To store the number or input into its(argument):and after that we can perform the operations on them:
 
-interface.question("Enter First Number:", (firstNumber) => {
-  // IMP:callback function chaining:To get the second-input from the (user):
-  interface.question("Enter Second Number:", (secondNumber) => {
-    // Here we have the access to firstNumber and secondNumber:
-    // IMP:As we have learned in the (js):we are able to do the function-chaining in the (js):because of the (closures):
-    const sum = Number(firstNumber) + Number(secondNumber);
-    console.log(`The sum of two numbers is: ${sum}`);
-    // IMP: After performing the operations:we have to close the interface:so that we can close the connection with the console or terminal:and the program can be terminated automatically:
-    // IMP: we can close the interface with the help of (close) function of the interface-object:
-    interface.close();
-  });
-});
+// interface.question("Enter First Number:", (firstNumber) => {
+//   // IMP:callback function chaining:To get the second-input from the (user):
+//   interface.question("Enter Second Number:", (secondNumber) => {
+//     // Here we have the access to firstNumber and secondNumber:
+//     // IMP:As we have learned in the (js):we are able to do the function-chaining in the (js):because of the (closures):
+//     const sum = Number(firstNumber) + Number(secondNumber);
+//     console.log(`The sum of two numbers is: ${sum}`);
+//     // IMP: After performing the operations:we have to close the interface:so that we can close the connection with the console or terminal:and the program can be terminated automatically:
+//     // IMP: we can close the interface with the help of (close) function of the interface-object:
+//     interface.close();
+//   });
+// });
 
 
 
 // Step 3: Function to prompt and read two numbers from the user, then compute their sum
-// function askForSum() {
-//   rl.question("Enter First Number: ", (firstInput) => {
-//     // Validate first input
-//     if (isNaN(firstInput) || firstInput.trim() === "") {
-//       console.log("Invalid input. Please enter a valid number for the first input.");
-//       return askForSum();
-//     }
-//     rl.question("Enter Second Number: ", (secondInput) => {
-//       // Validate second input
-//       if (isNaN(secondInput) || secondInput.trim() === "") {
-//         console.log("Invalid input. Please enter a valid number for the second input.");
-//         return askForSum();
-//       }
-//       // Convert inputs to numbers and calculate sum
-//       const num1 = Number(firstInput);
-//       const num2 = Number(secondInput);
-//       const sum = num1 + num2;
-//       console.log(`The sum of ${num1} and ${num2} is: ${sum}`);
-//       rl.close();
-//     });
-//   });
-// }
+function askForSum() {
+  interface.question("Enter First Number: ", (firstInput) => {
+    // Validate first input
+    if (isNaN(firstInput) || firstInput.trim() === "") {
+      console.log("Invalid input. Please enter a valid number for the first input.");
+      return askForSum();
+    }
+    interface.question("Enter Second Number: ", (secondInput) => {
+      // Validate second input
+      if (isNaN(secondInput) || secondInput.trim() === "") {
+        console.log("Invalid input. Please enter a valid number for the second input.");
+        return askForSum();
+      }
+      // Convert inputs to numbers and calculate sum
+      const num1 = Number(firstInput);
+      const num2 = Number(secondInput);
+      const sum = num1 + num2;
+      console.log(`The sum of ${num1} and ${num2} is: ${sum}`);
+      interface.close();
+    });
+  });
+}
 
-// askForSum();
+askForSum();
