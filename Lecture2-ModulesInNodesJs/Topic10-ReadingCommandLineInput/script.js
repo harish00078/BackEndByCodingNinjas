@@ -57,3 +57,31 @@ interface.question("Enter First Number:", (firstNumber) => {
     interface.close();
   });
 });
+
+
+
+// Step 3: Function to prompt and read two numbers from the user, then compute their sum
+// function askForSum() {
+//   rl.question("Enter First Number: ", (firstInput) => {
+//     // Validate first input
+//     if (isNaN(firstInput) || firstInput.trim() === "") {
+//       console.log("Invalid input. Please enter a valid number for the first input.");
+//       return askForSum();
+//     }
+//     rl.question("Enter Second Number: ", (secondInput) => {
+//       // Validate second input
+//       if (isNaN(secondInput) || secondInput.trim() === "") {
+//         console.log("Invalid input. Please enter a valid number for the second input.");
+//         return askForSum();
+//       }
+//       // Convert inputs to numbers and calculate sum
+//       const num1 = Number(firstInput);
+//       const num2 = Number(secondInput);
+//       const sum = num1 + num2;
+//       console.log(`The sum of ${num1} and ${num2} is: ${sum}`);
+//       rl.close();
+//     });
+//   });
+// }
+
+// askForSum();
