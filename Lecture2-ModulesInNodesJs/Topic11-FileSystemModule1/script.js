@@ -1,39 +1,34 @@
-console.log("here we are learning about file-system-module in node js");
-// (FS)-File System Module:It basically allows us to work with the file system on our computer or machine:
-// V.IMP: We can use it to read, write, delete, update (data) in files and folders on our computer:It also help us to move our files and folders on the computer:
-// V.IMP-NOTE:Working with file-system is basically a (input-output) operation:because (fs) is also managed by the other system which is the operating system: so it is an input-output operation:because it has to interact with the operating system to perform the operations:
-// IMP-NOTE: It is a core module in node js, so we don't need to install it separately:
+console.log("Learning about the File System (fs) module in Node.js");
 
-// we have two-types of (fs-module) methods in (nodejs):
-// -> 1 = synchronous-methods:
-// -> 2 = asynchronous-methods:
-// Synchronous:It means that the code will be executed in a sequence, one after the other:It is blocking code, which means that the code will be executed in a sequential manner:
-// Asynchronous:It means that the code will be executed in a non-sequential manner:It is non-blocking code, which means that the code will be executed in a non-sequential manner:
+// The File System (fs) module enables us to interact with the file system on our computer. 
+// With it, we can perform operations like reading, writing, updating, deleting, and moving files and directories.
+// V.IMP-Note: File system operations are input/output (I/O) operations, as they require communication with the operating system.
+// Important: "fs" is a core/built-in Node.js module, so there's no need to install it separately.
 
-// -> 1 = Synchronous-methods of Fs-Module:(CURD-Operations):
+// Node.js provides two types of methods in the fs module:
+// 1. Synchronous methods (blocking): Code executes sequentially; each operation must finish before moving to the next.
+// 2. Asynchronous methods (non-blocking): Code can run without waiting for file operations to complete.
 
-// 1 = Importing the (fs) module:
+// --- Synchronous Methods Example (CRUD Operations) ---
+
+// 1. Import the fs module:
 const fs = require("fs");
-// => Read-Operation:
-// 2 = Reading the file:with the help of fs-module's synchronous-methods:
-// (readFileSync) method is used to read the file:
-// V.IMP:It takes two parameters:
-// -> 1 = the path of the file:
-// -> 2 = the encoding of the file:It is optional and defaults to 'utf8':
-// V.IMP-NOTE: The (readFileSync) method of (fs) module returns a (buffer) object or buffer-data by default:and we need to work with string data:so for that we have to convert the buffer-data into string-data:
-// So that why we need to provide the (encoding-parameter) to the (readFileSync) method:which is basically the (utf8) encoding-parameter:it gonna convert the buffer data into string data:
-// V.IMP-NOTE:There is another way to do that:Instead of providing the (utf8) encoding-parameter to the (readFileSync) method: we can also use the (toString) method to convert the buffer-data into string-data:
 
-// -> first way:this is the way we gonna use:
-const data = fs.readFileSync('./data.txt','utf8');
-// -> second way:
-// const data = fs.readFileSync('./data.txt').toString();
-// -> third way:used by the tutor:
-// const data = fs.readFileSync('./data.txt');
-// const dataString = data.toString();
-// console.log(dataString);
-// -> fourth way:used on the CN-notes:
-// const data = fs.readFileSync(path,{encoding :'utf8'});
-console.log("File is read successfully",data);
+// 2. Read Operation (Synchronous) with the help of (readFileSync) method:
+// The readFileSync method reads the contents of a file synchronously.
+// It takes two arguments:
+//   1. Path to the file.
+//   2. (Optional) Encoding format, usually 'utf8' to get a string instead of a Buffer.
 
-// -> 2 = Asynchronous-methods of Fs-Module:(CURD-Operations):
+// Recommended way (with encoding parameter):
+const data = fs.readFileSync('./data.txt', 'utf8');
+
+// Alternative ways:
+// const data = fs.readFileSync('./data.txt').toString(); // Convert buffer to string manually.
+// const data = fs.readFileSync('./data.txt');            // Returns a Buffer.
+// const data = fs.readFileSync(path, { encoding: 'utf8' });
+
+// Output the read data:
+console.log("File read successfully:", data);
+
+// --- Next: Asynchronous Methods of the fs Module (CRUD Operations) ---
