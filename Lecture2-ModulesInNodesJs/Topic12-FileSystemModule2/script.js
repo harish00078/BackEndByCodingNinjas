@@ -1,51 +1,57 @@
-console.log("Learning About File-System Module");
-// (FS)-File System Module:It basically allows us to work with the file system on our computer or machine:
+console.log("Learning about the File System (fs) module in Node.js");
+// The File System (fs) module allows us to interact with the file system: reading, writing, updating, and deleting files.
 
-// here we are learning about the (synchronous) methods of the file system module:
-// -> 2 = Creating a file:
-// using the (writeFileSync) method:which is used to (create) a file and (write) data to it:or also it basically overwrites an existing one:it is a synchronous method:
-// IMP:It takes 2 arguments/parameters:
-// -> 1 =  the (path) of the file:if it exits then it will overwrite the file:if doesn't exist then it will create a new-file:
-// -> 2 =  the (data) that we want to write to the file:
-
-// Import the (fs) module:
+// Import the built-in 'fs' module
 const fs = require("fs");
 
-// Creating a file and writing data to it:
-// with the help of the (writeFileSync) method:
-// V.IMP-NOTE:so some time when we write the data to the file:or try to create the new-file:then it will give us the error:because we may not have the permission to write to the file on user's computer:so that where to avoid that error we can use the (try-catch) block method:
- try{
-    const createFile = fs.writeFileSync("data.txt", "name:John Doe,age:25,city:New York");
- }catch(error){
-    console.log(error,"Error Occurred");
- }
+// --- 1. Creating and Writing to a File (Synchronous) ---
 
-
-// Reading the data from the file:with the help of the (readFileSync) method:
-const readFile1 = fs.readFileSync("data.txt", "utf-8");
-console.log(readFile1);
-
-
-// -> 3 = Updating-file or updating-data in the file:
-// using the (appendFileSync) method:which is used to (update) the file or (add) data to the file:it is a synchronous method:
-// IMP:It takes 2 arguments/parameters:
-// -> 1 =  the (path) of the file:if it exits then it will update the file or its data:if doesn't exist then it will create a new-file: 
-// -> 2 =  the (data) that we want to write to the file:
-const updateFile = fs.appendFileSync("data.txt","\nName:david Doe,age:30,city:Los Angeles");
-
-const readFile2 = fs.readFileSync("data.txt", "utf-8");
-console.log(readFile2);
-
-// -> 4 = Deleting a file:
-// using the (unlinkSync) method:which is used to (delete) a file:it is a synchronous method:
-// IMP:It only takes 1 argument/parameter:
-// -> 1 =  the (path) of the file:which we want to delete:
-// IMP-NOTE:so some time when we try to delete the file:then it will give us the error:because we may not have the permission to delete the file on user's computer or may have another error condition while deleting the file:so that where to avoid that error we can use the (try-catch) block method:
-try{
-   const deleteFile = fs.unlinkSync("data.txt");
-}catch(error){
-    console.log(error,"Error Occurred");
+// Use try-catch to handle any errors (e.g., insufficient permissions)
+try {
+    fs.writeFileSync("data.txt", "name: John Doe\nage: 25\ncity: New York", "utf-8");
+    console.log("File 'data.txt' created and data written successfully.");
+} catch (error) {
+    console.error("Error occurred while creating or writing to the file:", error.message);
 }
 
-const readFile3 = fs.readFileSync("data.txt", "utf-8");
-console.log(readFile3);
+// --- 2. Reading from the File (Synchronous) ---
+try {
+    const fileContent = fs.readFileSync("data.txt", "utf-8");
+    console.log("Reading from 'data.txt':");
+    console.log(fileContent);
+} catch (error) {
+    console.error("Error occurred while reading the file:", error.message);
+}
+
+// --- 3. Appending Data to the File (Synchronous) ---
+try {
+    fs.appendFileSync("data.txt", "\nname: David Doe\nage: 30\ncity: Los Angeles", "utf-8");
+    console.log("Data appended to 'data.txt' successfully.");
+    const updatedContent = fs.readFileSync("data.txt", "utf-8");
+    console.log("Updated file content:");
+    console.log(updatedContent);
+} catch (error) {
+    console.error("Error occurred while appending to the file:", error.message);
+}
+
+// --- 4. Deleting the File (Synchronous) ---
+try {
+    fs.unlinkSync("data.txt");
+    console.log("File 'data.txt' deleted successfully.");
+} catch (error) {
+    console.error("Error occurred while deleting the file:", error.message);
+}
+
+// Try reading the file again to demonstrate it is deleted.
+try {
+    const afterDeleteContent = fs.readFileSync("data.txt", "utf-8");
+    console.log(afterDeleteContent);
+} catch (error) {
+    console.error("File not found after deletion (as expected):", error.message);
+}
+
+
+// IMP-NOTE:
+// We don’t use writeFile/writeFileSync to add more data because they overwrite the
+// existing file completely. They replace old content with the new content.
+// To *add* data without removing the previous content, we use appendFile/appendFileSync.
