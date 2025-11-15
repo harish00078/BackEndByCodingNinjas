@@ -31,4 +31,3 @@ const data = fs.readFileSync('./data.txt', 'utf8');
 // Output the read data:
 console.log("File read successfully:", data);
 
-// --- Next: Asynchronous Methods of the fs Module (CRUD Operations) ---
