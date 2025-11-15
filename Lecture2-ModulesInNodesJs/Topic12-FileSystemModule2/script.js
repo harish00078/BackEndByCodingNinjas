@@ -24,6 +24,7 @@ try {
 }
 
 // --- 3. Appending Data to the File (Synchronous) ---
+// IMP: The appendFile/appendFileSync methods are used to (append) or (update) data to an existing file.and also creates new-file like (write-method) if it does not exist:
 try {
     fs.appendFileSync("data.txt", "\nname: David Doe\nage: 30\ncity: Los Angeles", "utf-8");
     console.log("Data appended to 'data.txt' successfully.");
@@ -52,6 +53,29 @@ try {
 
 
 // IMP-NOTE:
+// (writeFile/writeFileSync):
 // We don’t use writeFile/writeFileSync to add more data because they overwrite the
 // existing file completely. They replace old content with the new content.
+
+// example:-
+// const fs = require("fs");
+// First write
+// fs.writeFileSync("example.txt", "Hello");
+// Add more using writeFileSync (WRONG way if you want to add)
+// fs.writeFileSync("example.txt", "World");
+// Output in file:  World
+// (The "Hello" is completely removed)
+
+
+// (appendFile/appendFileSync):
 // To *add* data without removing the previous content, we use appendFile/appendFileSync.
+
+// example:-
+// const fs = require("fs");
+// First write
+// fs.writeFileSync("example.txt", "Hello");
+// Add more using appendFileSync (CORRECT way to add)
+// fs.appendFileSync("example.txt", "\nWorld");
+// Output in file:
+// Hello
+// World
