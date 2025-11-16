@@ -7,6 +7,7 @@ console.log("learning about path module");
 
 // here we learn about the path module:
 // -> Import (fs-module):because it works with it:
+
 const fs = require("fs");
 // -> Import (path-module):we gonna learn to use it with the (fs-module):
 const path = require("path");
