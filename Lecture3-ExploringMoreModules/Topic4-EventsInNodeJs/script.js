@@ -5,7 +5,7 @@ console.log("Learn about events in Node.js");
 
 // -> 1 = Event-Driven Architecture (Most Popular):
 // Node.js is fundamentally built on an event-driven architecture. This means much of its core functionality is managed using events.
-// In Node.js, events signal that something has happened, and *event listeners* (callback functions) handle those events. 
+// In Node.js, events signal that something has happened, and *event listeners* (callback functions) handle those events.
 // As a result, Node.js is commonly referred to as an event-driven platform.
 // In simpler terms, events notify us when actions occur (such as HTTP requests, file reads, etc.), and we use listeners to respond appropriately.
 
@@ -14,12 +14,12 @@ console.log("Learn about events in Node.js");
 // - Handling HTTP requests/responses
 // - Many other system or user events
 
-// Thus, event-driven architecture is one of the most widely used approaches in Node.js applications. 
+// Thus, event-driven architecture is one of the most widely used approaches in Node.js applications.
 // In this design, we set up listeners for specific events. When an event occurs, its corresponding callback is triggered—this is also called an event handler.
 
 // -> 2 = Events & HTTP Requests:
 // In the context of web development with Node.js, events frequently refer to events emitted during an HTTP request/response cycle.
-// Using the event-driven architecture, we can listen for different stages of the HTTP request and execute logic at the right moment. 
+// Using the event-driven architecture, we can listen for different stages of the HTTP request and execute logic at the right moment.
 // This approach is similar in spirit to the way JavaScript handles browser events using event-handler functions (callbacks).
 // In Node.js, HTTP event handlers are also callback functions that execute in response to specific events in the lifecycle of a request.
 
@@ -49,7 +49,7 @@ console.log("Learn about events in Node.js");
 // => In the example below, we create a simple HTTP server that listens for incoming HTTP requests and handles them using the event-driven approach.
 // Here, we specifically listen for POST requests, and use the 'data' & 'end' events to process the request body.
 
-// V.IMP NOTE: How do we add event listeners to objects (like requests) in Node.js? 
+// V.IMP NOTE: How do we add event listeners to objects (like requests) in Node.js?
 // We use the `.on()` method, e.g. `req.on("eventName", callback)`.
 // The `.on()` method in Node.js attaches an event listener function to an event emitter, so you can listen for specific events and react when they occur.
 
@@ -85,10 +85,10 @@ const server = http.createServer((req, res) => {
     req.on("end", () => {
       // Now, 'body' contains the full, assembled data
       console.log("body-data(after-chunk)", body);
+      // After receiving and processing the full data, we can respond to the client:
+      // Use res.end() to finalize and send the response:
+      res.end("Data is received successfully");
     });
-    // After receiving and processing the full data, respond to the client:
-    // Use res.end() to finalize and send the response:
-    res.end("Data is received successfully");
   } else {
     // Optionally, send a default/global response for non-POST requests:
     res.end("hey there its me:welcome to the nodejs");
