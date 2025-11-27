@@ -23,6 +23,8 @@ console.log(
  * -> IMP: The 'EventEmitter' class is the core of the 'events' module.
  * The 'EventEmitter' class provides methods like 'emit()' to trigger an event: and 'on()' or (addListener) to listen for those events.
  *
+ * => 1: Importing (events) module or (EventEmitter) class through commonjs-syntax:
+ * 
  * -> 1: Importing 'EventEmitter' using CommonJS syntax:we can directly import the EventEmitter class from the events module as well.through multiple-ways:
  * const EventEmitter = require("events").EventEmitter;
  *
@@ -33,7 +35,7 @@ console.log(
  * // class body
  * }
  *
- * -> 2: Importing 'EventEmitter' using ES6 syntax:
+ * => 2: Importing the (events) module or (EventEmitter) class using ES6 syntax:
  */
 import { EventEmitter } from "events";
 
