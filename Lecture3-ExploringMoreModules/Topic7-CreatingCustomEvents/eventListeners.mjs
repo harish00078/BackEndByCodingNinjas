@@ -10,7 +10,7 @@ import { UserEvents } from "./userEvents.mjs";
 // ->IMP:for creating the (instance) or (object) of the (UserEvents-class):we are using the (new) keyword to do that.
 // ->IMP:Here we are creating the (instance) of the (UserEvents-class) and storing it in the (user) variable.
 // ->IMP:This (instance) will be responsible for emitting the (post) as an event. 
-const user = new UserEvents(); 
+const userEvent = new UserEvents(); 
 
 // Function to simulate saving the post to a database.
 // This function will execute when the "postCreated" event is triggered.
@@ -33,9 +33,9 @@ function updateTimeLine(){
 // IMP: Here we are listening to the (postCreated) event and handling it through multiple event listeners.
 // Whenever the (postCreated) event is emitted, the registered event listeners (functions) will execute in order.
 // V.IMP:for listening to the (postCreated) event:we are using the (addListener) method of (nodejs):
-user.addListener("postCreated", saveToDatabase);
-user.addListener("postCreated", sendNotification);
-user.addListener("postCreated", updateTimeLine);
+userEvent.addListener("postCreated", saveToDatabase);
+userEvent.addListener("postCreated", sendNotification);
+userEvent.addListener("postCreated", updateTimeLine);
 
 
 // V.IMP-NOTE: Here we got the (post) from the (user):through the help of (http-request) method.
@@ -43,4 +43,4 @@ user.addListener("postCreated", updateTimeLine);
 // -> IMP: for that we have to use the (properties) of the (object):which we created from the (UserEvents-class):and where we have defined the (properties) to emit the (post) as an event.
 // -> IMP: Here we are using the (createPost) method to emit the (post) as an event.
 // -> IMP: This method will emit the (post) as an event and will trigger all the event listeners that are listening to the (postCreated) event.
-user.createPost('hey we have new post from the user');
+userEvent.createPost('hey we have new post from the user');
