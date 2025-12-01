@@ -76,6 +76,8 @@ export class UserEvents extends EventEmitter {
      * -> The second argument is the post (content).
      */
     // IMP-NOTE:[this] refers to the current-instance or object of the class.
+    // (This-keyword): this gives us access to the object made from the class.So we can emit events using that object.
+    // IMP: In simple-words:whatever the thing which is created from the class:can be accessed through the (this) keyword or this basically refers to the object made from the class.and we can use that thing to emit events through the help of this keyword.
     this.emit("postCreated", content);
   }
 }
