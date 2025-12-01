@@ -24,7 +24,7 @@ console.log(
  * The 'EventEmitter' class provides methods like 'emit()' to trigger an event: and 'on()' or (addListener) to listen for those events.
  *
  * => 1: Importing (events) module or (EventEmitter) class through commonjs-syntax:
- * 
+ *
  * -> 1: Importing 'EventEmitter' using CommonJS syntax:we can directly import the EventEmitter class from the events module as well.through multiple-ways:
  * const EventEmitter = require("events").EventEmitter;
  *
@@ -58,11 +58,11 @@ export class UserEvents extends EventEmitter {
     /*
      * IMPORTANT NOTE: After receiving a (POST) request or (data) from the user,
      * we pass the received (post) to the (UserEvents) class, which extends or connect with the (EventEmitter) class:
-     * 
+     *
      * =>V.IMP-NOTE: we are able to do that by creating the (object) of the (UserEvents) class.
      * and through that (object) we can access the properties (function,methods and etc) of the class:and with in those properties we are basically emitting the events:
-     * 
-     * 
+     *
+     *
      * Using this mechanism:
      * - We can (emit) the (post) as an (event) to other parts of the application.
      * - We can (listen) for the (event) and execute asynchronous (actions) on the (post).
@@ -77,7 +77,12 @@ export class UserEvents extends EventEmitter {
      */
     // IMP-NOTE:[this] refers to the current-instance or object of the class.
     // (This-keyword): this gives us access to the object made from the class.So we can emit that object as an event.
-    // IMP: In simple-words:whatever the thing which is created from the class:can be accessed through the (this) keyword or this basically refers to the object made from the class.and we can use that thing to emit events through the help of this keyword.
+    // IMP: In simple-words:whatever the thing which is created from the class:can be accessed through the (this) keyword or this basically refers to the object made from the class.and we can use that thing to emit events through the help of this keyword.Without this, the class won’t know which object be have to emit as an event.
+    // The 'this' keyword refers to the specific object created from the class.
+    // It is necessary because a class can create many different objects, and each
+    // object may use the class methods separately. Using 'this' helps the class
+    // know exactly which object is calling the method that has emit event in it, so the correct object can
+    // emit the event. Without 'this', the class would not know which instance should trigger the event.
     this.emit("postCreated", content);
   }
 }
